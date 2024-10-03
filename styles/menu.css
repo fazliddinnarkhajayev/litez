@@ -3,10 +3,15 @@
     max-width: 210px;
     min-width: 60px;
     background-color: #201E2E;
-    color: #FFFFFF;
+    color: red;
     padding: 10px;
     height: calc(100vh - 66px);
     border-top: 1px solid #383645;
+    transition: ease 5s;
+}
+
+.menu.close {
+    max-width: 60px;
 }
 
 .menu__list {
@@ -28,6 +33,7 @@
     padding: 12px 10px;
     border-radius: 10px;
     position: relative;
+    transition: ease 5s;
 }
 
 .menu__list-item:hover {
@@ -59,6 +65,28 @@
 
 .menu__list-item.active p {
     opacity: 1;
+}
+
+.menu__list-item.close {
+     transition: ease 5s;
+    background-color: transparent;
+}
+
+.menu__list-item.close p {
+     transition: ease 5s;
+    display: none;
+}
+
+.menu__list-item.close img {
+     transition: ease 5s;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__list-item.close span {
+     transition: ease 5s;
+    bottom: -10%;
+    right: -10%;
 }
 
 .menu__list-item.active img {
