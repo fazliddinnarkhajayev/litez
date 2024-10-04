@@ -13,28 +13,29 @@
         <div class="header">
 
             <div class="header__logo-wrapper">
-                <img src="./img/image.png" class="header__logo" alt="logo" width="26" height="36">
+                <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
             <h1 class="header__title">Litez Management System</h1>
             </div>
 
             <div class="header__search-wrapper">
-                <img src="./img/image.png" class="search-icon" alt="search-icon" width="20" height="20">
+                <img src="./img/search-icon.svg" class="search-icon" alt="search-icon" width="20" height="20">
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
 
             <div class="header__info-wrapper">
                 <ul class="info-list">
                     <li class="info-list__item">
-                        <img src="./img/image.png" alt="icon" width="20" height="20">
-                        <span class="info-list__item-badge badge badge-small">1</span>
+                        <img src="./img/bell.svg" alt="icon" width="20" height="20">
+                        <span class="info-list__item-badge badge badge-blue">1</span>
+                        <!-- <span class="info-list__item-badge badge badge-extra-small badge-blue">1</span> -->
                     </li>
                     <li class="info-list__item">
-                        <img src="./img/image.png" alt="icon" width="20" height="20">
-                        <span class="info-list__item-badge badge badge-small badge-danger">1</span>
+                        <img src="./img/comment.svg" alt="icon" width="20" height="20">
+                        <span class="info-list__item-badge badge badge-danger">1</span>
                     </li>
                     <li class="info-list__item">
-                        <img src="./img/image.png" alt="icon" width="20" height="20">
-                        <span class="info-list__item-badge badge badge-small badge-success">12</span>
+                        <img src="./img/approve.svg" alt="icon" width="20" height="20">
+                        <span class="info-list__item-badge badge badge-success">12485</span>
                     </li>
                 </ul>
             </div>
@@ -43,67 +44,146 @@
 
             <div class="header__account-wrapper">
                 <p class="account-name">Yuriy Li</p>
-                <img class="account-logo" src="./img/image.png" alt="account logo" width="30" height="30">
-                <img class="account-drop-icon" src="./img/image.png" alt="account drop icon" width="9" height="6">
+                <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
             </div>
         </div>
 
-        <div class="menu close">
+        <div class="menu">
             <ul class="menu__list">
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Главная</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img class="svg-icon" src="/img/main-vector.svg" alt="image" width="20" height="20">
+                        <p>Главная</p>
+                        <span class="menu__list-item-badge badge">1</span>
+                    </a>
                 </li>
-                <li class="menu__list-item close active">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Мои заказы</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item active">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/orders.svg" alt="image" width="20" height="20">
+                        <p>Мои заказы</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Финансы</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/dollar.svg" alt="image" width="20" height="20">
+                        <p>Финансы</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Статистика</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/grow-graph.svg" alt="image" width="20" height="20">
+                        <p>Статистика</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Документы</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/document.svg" alt="image" width="20" height="20">
+                        <p>Документы</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
             </ul>
 
-            <ul class="menu__list"></ul>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Задачи</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/approve.svg" alt="image" width="20" height="20">
+                        <p>Задачи</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close active">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Чат</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item active">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/chat.svg" alt="image" width="20" height="20">
+                        <p>Чат</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Мои запросы</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/request.svg" alt="image" width="20" height="20">
+                        <p>Мои запросы</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Уведомления</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/bell.svg" alt="image" width="20" height="20">
+                        <p>Уведомления</p>
+                        <span class="menu__list-item-badge badge">1</span>
+                    </a>
                 </li>
-                <li class="menu__list-item close">
-                    <img src="/img/image.png" alt="image" width="20" height="20">
-                    <p>Отзывы и жалобы</p>
-                    <span class="menu__list-item-badge badge badge-small">1</span>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/start.svg" alt="image" width="20" height="20">
+                        <p>Отзывы и жалобы</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
                 </li>
             </ul>
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/callegue.svg" alt="image" width="20" height="20">
+                        <p>Коллеги</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
+                </li>
+                <li class="menu__list-item active">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/buildings.svg" alt="image" width="20" height="20">
+                        <p>Мои компании</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/profile.svg" alt="image" width="20" height="20">
+                        <p>Профиль</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/help.svg" alt="image" width="20" height="20">
+                        <p>Полезное</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
+                </li>
+                <li class="menu__list-item active">
+                    <a href="#" class="menu__list-item-link">
+                        <img src="/img/message.svg" alt="image" width="20" height="20">
+                        <p>Написать нам</p>
+                        <!-- <span class="menu__list-item-badge badge">1</span> -->
+                        <span class="item-right-border"></span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="menu__toggle-button" id="menuToggle">
+                <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
+                <p>Свернуть</p>
+            </button>
         </div>
     </div>
 
@@ -112,3 +192,4 @@
 </html>
 
 
+<script src="./script.js"></script>

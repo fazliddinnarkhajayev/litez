@@ -80,6 +80,7 @@ html {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    opacity: 0.5;
 }
 
 .header__search-wrapper .search-input {
@@ -89,7 +90,6 @@ html {
 }
 
 .header__info-wrapper {
-    margin-left: auto;
     margin-right: 10px;
 }
 .header__info-wrapper .info-list {
@@ -120,20 +120,22 @@ html {
 
 .badge {
     display: inline-block;
-    padding: 0.4em 0.8em;         /* Adjust padding for size */
-    font-size: 0.875rem;          /* Smaller font for a badge look */
+    padding: 4px;          /* Adjust padding for size */
+    font-size: 10px;          /* Smaller font for a badge look */
     font-weight: bold;            /* Make the text bold */
     color: white;                 /* Text color */
     background-color: #535260;    /* Background color (blue) */
     border-radius: 12px;          /* Rounded corners */
-    text-align: center;           /* Center text */
     white-space: nowrap;          /* Prevent the badge from breaking lines */
-    vertical-align: middle;       /* Align with surrounding text or content */
+    height: 18px;
+    min-width: 18px;     /* Align with surrounding text or content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-   
-  .badge-small {
-    padding: 0.2em 0.7em;
-    font-size: 0.75rem;           /* Smaller badge */
+
+  .badge-blue {
+    background-color: #2196F3;    /* Green color for success */
   }
   
   .badge-success {
@@ -153,6 +155,7 @@ html {
     height: 40px;
     min-width: 40px;
     padding: 10px 20px;
+    border: none;
     border-radius: 10px;
     background-color: #4CAF50;
     color: #fff;
@@ -164,6 +167,7 @@ html {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .account-name {
@@ -177,5 +181,5 @@ html {
 
   .account-logo {
     margin-left: 5px;
-    
+    margin-right: 5px;
   }
