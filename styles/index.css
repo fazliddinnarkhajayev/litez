@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Futura PT","Arial","sans-serif";
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(253, 249, 249);
+    color: #222;
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 1710px;
+}
+
+.badge {
+    padding: 4px;          /* Adjust padding for size */
+    font-size: 10px;          /* Smaller font for a badge look */
+    font-weight: bold;            /* Make the text bold */
+    line-height: 1;
+    color: white;                 /* Text color */
+    background-color: #535260;    /* Background color (blue) */
+    border-radius: 12px;          /* Rounded corners */
+    white-space: nowrap;          /* Prevent the badge from breaking lines */
+    height: 18px;
+    min-width: 18px;     /* Align with surrounding text or content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge-blue {
+    background-color: #2196F3;    /* Green color for success */
+  }
+  
+  .badge-success {
+    background-color: #28a745;    /* Green color for success */
+  }
+  
+  .badge-danger {
+    background-color: #dc3545;    /* Red color for danger */
+  }
+  
+  .badge-warning {
+    background-color: #ffc107;    /* Yellow color for warning */
+  }

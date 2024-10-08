@@ -1,5 +1,5 @@
 .menu {
-    width: 210px;
+    min-width: 210px;
     background-color: #201E2E;
     color: white;
     padding: 10px 0;
@@ -92,7 +92,7 @@
 }
 
 .menu__toggle-button {
-    background-color: transparent;
+    background-color: #201E2E;
     border: none;
     outline: hidden;
     padding: 20px;
