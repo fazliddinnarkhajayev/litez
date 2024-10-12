@@ -5,7 +5,7 @@
     padding: 10px 0;
     height: calc(100vh - 66px);
     border-top: 1px solid #383645;
-    transition: width 0.3s ease;
+    transition: min-width 0.3s ease;
 }
 
 .menu__list {
@@ -76,7 +76,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
 .item-right-border {
@@ -125,17 +125,16 @@
 
 .menu.close {
     min-width: 60px;
-    transition: width ease 0.3s;
 }
 
 .menu.close .menu__list-item p {
     display: none;
 }
 
-/* .menu.close .menu__list-item img {
+.menu.close .menu__list-item img {
     margin: 0;
     padding: 0;
-} */
+}
 
 .menu.close .menu__list-item .menu__list-item-badge {
     bottom: 3px;
