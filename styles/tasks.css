@@ -1,0 +1,19 @@
+.content-header__create {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+th:nth-child(1) {
+    padding-left: 15px;
+}
+
+td:nth-child(1) {
+    padding-left: 15px;
+}
