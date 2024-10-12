@@ -124,7 +124,8 @@
 }
 
 .menu.close {
-    width: 60px;
+    min-width: 60px;
+    transition: width ease 0.3s;
 }
 
 .menu.close .menu__list-item p {

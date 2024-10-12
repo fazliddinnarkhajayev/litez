@@ -3,6 +3,8 @@
     align-items: center;
     gap: 10px;
     margin-left: auto;
+    margin-left: auto;
+    width: 420px;
 }
 
 .pagination__count-text {
