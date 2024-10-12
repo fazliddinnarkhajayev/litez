@@ -27,6 +27,7 @@
    font-size: 14px;
    height: 20px;
    color: white;
+   white-space: nowrap;
 }
 
 .header__search-wrapper {

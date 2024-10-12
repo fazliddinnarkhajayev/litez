@@ -16,6 +16,7 @@
 table {
     border-radius: 10px;
     border-collapse: collapse;
+    width: 100%;
 }
 
 tr {
@@ -201,8 +202,32 @@ th.th-filter {
     text-overflow: ellipsis;
 }
 
+/* for span inside p class=text */
+.td-data .text .bold {
+    font-weight: 600;
+}
+
 .td-data .text.bold {
     font-weight: 600;
+}
+
+.td-data .text.success {
+    font-weight: 600;
+    color: #43A047;
+}
+
+.td-data .text.danger {
+    font-weight: 600;
+    color: #B71C1C;
+}
+
+/* sibling to .text  */
+.td-data .sub-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: 10;
 }
 
 .td-data .route-list {

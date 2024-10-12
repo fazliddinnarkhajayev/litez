@@ -1,0 +1,77 @@
+.amount-balances-list {
+    display: flex;
+    align-items: self-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.amount-balances-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 540px;
+    padding: 15px;
+}
+
+.balance-item.inflow {
+    border-color: #4CAF50;
+}
+
+.balance-item.debt {
+    border-color: #B71C1C;
+}
+
+.balance-item.overdue {
+    border-color: #E1E0EB;
+}
+
+.balance-item .balance-item__header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #E1E0EB;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.balance-item .balance-item__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: #383645;
+    margin: 0;
+}
+
+.balance-item .balance_item__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.balance-item .balance_item__list .currency-code {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8C8B98;
+}
+
+.balance-item .balance_item__list .amount {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;    
+    margin: 0;
+}
+

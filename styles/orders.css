@@ -124,6 +124,12 @@
     height: 20px;
 }
 
+
+.content-filter__item img.to-bottom {
+    width: 8px;
+    height: 5px;
+}
+
 .content-filter__item .to-bottom{
     margin-left: auto;
 }
