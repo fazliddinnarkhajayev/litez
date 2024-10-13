@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/task/create-task.css">
+    <link rel="stylesheet" href="styles/task/task-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Tasks</title>
+</head>
+<body>
+    
+<div class="container">
+        <div class="header">
+
+            <div class="header__logo-wrapper">
+                <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
+            <h1 class="header__title">Litez Management System</h1>
+            </div>
+
+            <div class="header__search-wrapper">
+                <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                <input class="search-input" type="text" placeholder="Искать везде">
+            </div>
+
+            <div class="header__info-wrapper">
+                <ul class="info-list">
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/bell.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-blue">1</span>
+                            <!-- <span class="info-list__item-badge badge badge-extra-small badge-blue">1</span> -->
+                        </button>
+                    </li>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/comment.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-danger">1</span>
+                        </li>
+                    </button>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/approve.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-success">12485</span>
+                        </li>
+                    </button>
+                </ul>
+            </div>
+
+            <button class="header__create">Создать</button>
+
+            <div class="header__account-wrapper">
+                <p class="account-name">Yuriy Li</p>
+                <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img class="svg-icon" src="/img/main-vector.svg" alt="image" width="20" height="20">
+                            <p>Главная</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item active">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/orders.svg" alt="image" width="20" height="20">
+                            <p>Мои заказы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/dollar.svg" alt="image" width="20" height="20">
+                            <p>Финансы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/grow-graph.svg" alt="image" width="20" height="20">
+                            <p>Статистика</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/document.svg" alt="image" width="20" height="20">
+                            <p>Документы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/approve.svg" alt="image" width="20" height="20">
+                            <p>Задачи</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item active">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/chat.svg" alt="image" width="20" height="20">
+                            <p>Чат</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/request.svg" alt="image" width="20" height="20">
+                            <p>Мои запросы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/bell.svg" alt="image" width="20" height="20">
+                            <p>Уведомления</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/start.svg" alt="image" width="20" height="20">
+                            <p>Отзывы и жалобы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/callegue.svg" alt="image" width="20" height="20">
+                            <p>Коллеги</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item active">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/buildings.svg" alt="image" width="20" height="20">
+                            <p>Мои компании</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/profile.svg" alt="image" width="20" height="20">
+                            <p>Профиль</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/help.svg" alt="image" width="20" height="20">
+                            <p>Полезное</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item active">
+                        <a href="#" class="menu__list-item-link">
+                            <img src="/img/message.svg" alt="image" width="20" height="20">
+                            <p>Написать нам</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+    
+                <button class="menu__toggle-button" id="menuToggle">
+                    <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
+                    <p>Свернуть</p>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="append-to-order">
+                    <div class="task-detail-header">
+                        <h2 class="task-detail-header__tile">Задачи > <span>LT-24AB26</span></h2>
+                        <div class="task-detail-header__operations">
+                            <button>Редактировать</button>
+                            <button><img src="/img/three-dot.svg" alt="icon" width="15" height="3"></button>
+                        </div>
+                    </div>
+
+                    <div class="task-detail__task-name">
+                        <h3>Название задачи</h3>
+                        <button><img src="/img/edit-grey.svg" alt="edit logo" width="15" height="15"></button>
+                    </div>
+
+                    <div class="task-detail__task-locations">
+                        <p class="attach">Привязан к заказу</p>
+                        <p class="locations">A1234 · Ташкент — Москва</p>
+                        <button><img src="/img/edit-grey.svg" alt="edit logo" width="15" height="15"></button>
+                    </div>
+
+                    <div class="description-wrapper">
+                        <p class="description-text">Наша задача в области логистики - обеспечить эффективное управление поставками и складскими запасами. Мы стремимся оптимизировать логистические процессы, сократить издержки и улучшить обслуживание клиентов. Для этого мы разрабатываем инновационные решения и используем передовые технологии.</p>
+                        <ul class="description-list">
+                            <li>Наладить коммуникацию с клиентом</li>
+                            <li>Заключить договор</li>
+                            <li>Произвести логистику товаров</li>
+                            <li>Оптимизировать дальнейшую работу с клиентом</li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-pages">
+                        <ul class="routes-list">
+                            <li class="active">
+                                <a href="#">Комментарии</a>
+                            </li>
+                            <li>
+                                <a href="#">Вложения</a>
+                            </li>
+                            <li>
+                                <a href="#">История</a>
+                            </li>
+                        </ul>
+
+                        <div class="comments-wrapper">
+                            <div class="comment">
+                                <img src="/img/account.png" alt="account img" width="40" height="40">
+                                <div class="comment-input-wrapper">
+                                    <textarea class="comment-input" placeholder="Добавить комментарий"></textarea>
+                                    <div class="buttons-wrapper">
+                                        <button class="save">Отправить</button>
+                                        <button class="cancel">Отмена</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="comments-list">
+                                <li>
+                                    <img src="/img/account.png" alt="account image" width="40" height="40">
+                                    <div class="comments-list__inner">
+                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня, 12:45</span></h4>
+                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="/img/account.png" alt="account image" width="40" height="40">
+                                    <div class="comments-list__inner">
+                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня, 12:45</span></h4>
+                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+
+                    <ul class="additional-info__list">
+                        <li>
+                            <p>Статус</p>
+                            <div class="select-wrapper">
+                                <img src="/img/info.svg" alt="icon"  width="16" height="16">
+                                <select>
+                                    <option value="">Открыта</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Приоритет</p>
+                            <div class="select-wrapper">
+                                <img src="/img/priority-pink.svg" alt="icon"  width="16" height="16">
+                                <select>
+                                    <option value="">Открыта</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Дедлайн</p>
+                            <div class="select-wrapper">
+                                <img src="/img/calendar-balck.svg" alt="icon"  width="16" height="18">
+                                <select>
+                                    <option value="">5 июля, 11:30</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="additional-info__border"></span>
+
+                    <ul class="additional-info__list author">
+                        <li>
+                            <p>Автор</p>
+                            <div class="select-wrapper">
+                                <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                <p class="account-name">Yuriy Li</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Исполнитель</p>
+                            <div class="select-wrapper">
+                                <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                <select>
+                                    <option value="">Открыта</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Наблюдатели</p>
+                            <ul class="authir-inner-lists">
+                                <li>
+                                    <div class="select-wrapper">
+                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <p class="account-name">Yuriy Li</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-wrapper">
+                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <p class="account-name">Yuriy Li</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-wrapper">
+                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <p class="account-name">Yuriy Li</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="additional-info__add-observer">Добавить наблюдателя</button>
+
+                    <span class="additional-info__border"></span>
+
+                    <ul class="additional-date__list">
+                        <li>
+                            <p class="name">ID задачи</p>
+                            <p class="text">LT-24AB26</p>
+                        </li>
+                        <li>
+                            <p class="name">Дата создание</p>
+                            <p class="text">5 июля, 11:30</p>
+                        </li>
+                        <li>
+                            <p class="name">Обновлено</p>
+                            <p class="text">6 июля, 17:20</p>
+                        </li>
+                        <li>
+                            <p class="name">Посл. изменение</p>
+                            <div class="text-wrapper">
+                                <img src="/img/account.png" alt="account icon" width="30" height="30">
+                                <p >Yuriy Li</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+</body>
+</html>
+
+
+<script src="./script.js"></script>

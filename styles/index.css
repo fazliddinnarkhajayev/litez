@@ -46,6 +46,7 @@ html {
     padding: 20px 30px;
     width: 100%;
     max-width: 1710px;
+    height: calc(100vh - 66px);
 }
 
 .badge {
@@ -62,6 +63,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid transparent;
   }
 
   .badge-blue {
@@ -70,6 +72,12 @@ html {
   
   .badge-success {
     background-color: #28a745;    /* Green color for success */
+  }
+
+  .badge-border-success {
+    background-color: #fff;    /* Green color for success */
+    border-color: #28a745;
+    color: #28a745;
   }
   
   .badge-danger {

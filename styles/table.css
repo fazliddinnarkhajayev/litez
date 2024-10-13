@@ -184,6 +184,11 @@ th.th-filter {
     color: #43A047;
 }
 
+.td-data .status.task-completed {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
 .td-data .status.canceled {
     background-color: #FFF0F2;
     color: #B71C1C;
@@ -192,6 +197,21 @@ th.th-filter {
 .td-data .status.planned {
     background-color: #F8F7FA;
     color: #535260;
+}
+
+.td-data .status.working {
+    background-color: #F1F8FE;
+    color: #2196F3;
+}
+
+.td-data .status.open {
+    background-color: #E1E0EB;
+    color: #535260;
+}
+
+.td-data .status.waiting {
+    background-color: #F4FAF5;
+    color: #43A047;
 }
 
 .td-data .text {
@@ -219,6 +239,11 @@ th.th-filter {
 .td-data .text.danger {
     font-weight: 600;
     color: #B71C1C;
+}
+
+.td-data .text.task-canceled {
+    text-decoration: line-through;
+    color: #535260;
 }
 
 /* sibling to .text  */
@@ -309,3 +334,46 @@ th.th-filter {
     justify-items: center;
     z-index: 10;
 }
+
+.td-data .priority-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.td-data .priority-button.red {
+    background-color: #FFF0F2;
+}
+
+.td-data .priority-button.blue {
+    background-color: #F1F8FE;
+}
+
+.td-data.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.td-data.accounts {
+    display: flex;
+    align-items: center;
+}
+
+.td-data.accounts img:not(:nth-child(1)) {
+    width: 30px; /* Adjust size */
+    height: 30px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid white; /* Optional: Adds a white border around the image */
+    margin-left: -15px; /* Overlapping effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); /* Optional: Adds a subtle shadow */
+  }
+
+  tr.open td {
+    background-color: #E1E0EB;
+  }
