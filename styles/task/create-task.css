@@ -135,6 +135,7 @@
 .additional-info {
     width: 100%;
     max-width: 480px;
+    height: 100%;
     border-left: 1px solid #E1E0EB;
     padding-left: 30px;
     display: flex;
@@ -159,6 +160,7 @@
     line-height: 20px;
     background-color: transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .operation-buttons button.cancel {
@@ -188,8 +190,10 @@
 
 .additional-info__list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .additional-info__list li p {
@@ -205,6 +209,8 @@
     align-items: center;
     border: 1px solid #C5C4CF;
     border-radius: 10px;
+    width: 217px;
+
 }
 
 .additional-info__list li .select-wrapper select {
@@ -213,4 +219,49 @@
     background-color: transparent;
     border: none;
     outline: none;
+    width: 100%;
+}
+
+.additional-info__list.author li .select-wrapper {
+    border-color: transparent;
+}
+
+.additional-info__list.author li .account-name{
+    margin: 0;
+    margin-left: 10px;
+    margin-right: auto;
+    color: #000000;
+}
+
+.authir-inner-lists {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.additional-date__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.additional-date__list li {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.additional-date__list li .name {
+    font-size: 14px;
+    color: #535260;
+}
+
+.additional-date__list li .text {
+    width: 200px;
+    color: black;
 }

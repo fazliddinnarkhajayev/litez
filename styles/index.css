@@ -46,6 +46,7 @@ html {
     padding: 20px 30px;
     width: 100%;
     max-width: 1710px;
+    height: calc(100vh - 66px);
 }
 
 .badge {
