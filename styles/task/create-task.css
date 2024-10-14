@@ -17,6 +17,11 @@
     margin-bottom: 15px;
 }
 
+.append-to-order__title a {
+    text-decoration: none;
+    color: #8C8B98;
+}
+
 .append-to-order__title span {
     color: #000000;
 }

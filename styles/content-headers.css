@@ -76,10 +76,16 @@
     display: flex;
     align-items: center;
     padding: 10px;
+    padding-right: 20px;
     border-radius: 10px;
     border: 1px solid #C5C4CF;
     background-color: transparent;
-    gap: 8px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
 
 .content-header__upload.selected {

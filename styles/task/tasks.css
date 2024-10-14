@@ -10,6 +10,10 @@
     gap: 10px;
 }
 
+.content-header__create-link {
+    text-decoration: none;
+}
+
 th:nth-child(1) {
     padding-left: 15px;
 }
