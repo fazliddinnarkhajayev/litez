@@ -214,6 +214,11 @@ th.th-filter {
     color: #43A047;
 }
 
+.td-data .td-data__link {
+    text-decoration: none;
+    color: #000000;
+}
+
 .td-data .text {
     margin: 0;
     max-width: 360px;

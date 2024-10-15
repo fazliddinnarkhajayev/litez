@@ -12,6 +12,11 @@
     color: #8C8B98;
 }
 
+.task-detail-header__tile a {
+    text-decoration: none;
+    color: #8C8B98;
+}
+
 .task-detail-header__tile span {
     color: #000000;
 }

@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/task/create-task.css">
+    <link rel="stylesheet" href="styles/statistics.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Tasks</title>
+    <title>Orders</title>
 </head>
 <body>
     
@@ -200,130 +202,118 @@
             </div>
 
             <div class="content">
-                <div class="append-to-order">
-                    <h2 class="append-to-order__title"><a href="./tasks.html">Задачи</a> > <span>Создание задачи</span></h2>
-                    <input type="text" class="append-to-order__title-input" placeholder="Заголовок задачи">
-                    <div class="order-choise">
-                        <h3 class="order-choise__title">Привязать к заказу</h3>
-                        <select class="order-choise__select">
-                            <option value="SA45">SA43</option>
-                            <option value="SA45">SA44</option>
-                            <option value="SA45">SA45</option>
-                            <option value="SA45">SA46</option>
-                        </select>
+                
+                <div class="content-header">
+                    <h2 class="content-header__title">Статистика</h2>
+
+                    <div class="content-filter__item">
+                        <img src="/img/date.svg" alt="incon" width="20" height="20">
+                        <p class="indicators__list-item-text">Все заказы</p>
+                        <img class="to-bottom" src="/img/select-vector.svg" alt="incon" width="8" height="5">
                     </div>
-                    <textarea class="task-description" placeholder="Описание задачи"></textarea>
-                    <div class="files">
-                        <button class="files_attach-button">
-                            <img src="/img/file-attach.svg" alt="attach icon" width="14" height="16">
-                            <span>Прикрепить</span>
-                        </button>
-                        <ul class="files__list">
-                            <li class="files__list-item">
-                                <img src="/img/jpeg-icon.png" alt="icon"  width="16" height="20">
-                                <p>photo-18200905-1145.jpg</p>
-                                <img src="/img/garbage.svg" alt="icon"  width="16" height="16">
-                            </li>
-                            <li class="files__list-item">
-                                <img src="/img/zip-icon.png" alt="icon"  width="16" height="20">
-                                <p>photo-20240905-1145.jpg</p>
-                                <img src="/img/garbage.svg" alt="icon"  width="16" height="16">
-                            </li>
-                        </ul>
-                    </div>
+                    <button class="content-header__upload selected">
+                        <img src="/img/upload.svg" alt="export-icon" width="20" height="20">
+                        <span>Экспорт</span>
+                    </button>
                 </div>
 
-                <div class="additional-info">
+                <div class="diagram-wrapper">
+                    <ul class="diagrams-list">
 
-                    <div class="operation-buttons">
-                        <button class="cancel">Отменить</button>
-                        <button class="save">Сохранить</button>
-                    </div>
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-info__list">
-                        <li>
-                            <p>Статус</p>
-                            <div class="select-wrapper">
-                                <img src="/img/info.svg" alt="icon"  width="16" height="16">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Приоритет</p>
-                            <div class="select-wrapper">
-                                <img src="/img/priority-pink.svg" alt="icon"  width="16" height="16">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Дедлайн</p>
-                            <div class="select-wrapper">
-                                <img src="/img/calendar-balck.svg" alt="icon"  width="16" height="18">
-                                <select>
-                                    <option value="">5 июля, 11:30</option>
-                                </select>
-                            </div>
-                        </li>
-                    </ul>
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-info__list author">
-                        <li>
-                            <p>Автор</p>
-                            <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon"  width="30" height="30">
-                                <p class="account-name">Yuriy Li</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Исполнитель</p>
-                            <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon"  width="30" height="30">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Наблюдатели</p>
-                            <ul class="authir-inner-lists">
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
+                        <!-- Orders Chart -->
+                        <li class="diagrams-list__item orders">
+                            <h2 class="diagrams-list__title">Заказы</h2>
+                            <ul class="diagram-item__info-list">
+                                <li class="dg-info-list__item active">
+                                    <p class="amount">36</p>
+                                    <p class="state">активных</p>
                                 </li>
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
+                                <li class="dg-info-list__item completed">
+                                    <p class="amount">24</p>
+                                    <p class="state">завершено</p>
                                 </li>
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
+                                <li class="dg-info-list__item planned">
+                                    <p class="amount">3</p>
+                                    <p class="state">запланированны</p>
+                                </li>
+                                <li class="dg-info-list__item canceled">
+                                    <p class="amount">1</p>
+                                    <p class="state">аннулированы</p>
                                 </li>
                             </ul>
+                            <div class="chart">
+                                <div class="chart-content">
+                                    <canvas id="ordersChart"></canvas>
+                                </div>
+                            </div>
                         </li>
-                    </ul>
-
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-date__list">
-                        <li>
-                            <p class="name">ID задачи</p>
-                            <p class="text">LT-24AB26</p>
+                
+                        <!-- Finances Chart -->
+                      <li class="diagrams-list__item finances">
+                        <h2 class="diagrams-list__title">Финансы</h2>
+                        <ul class="diagram-item__info-list">
+                            <li class="dg-info-list__item completed">
+                                <p class="state">Сумма поступлений</p>
+                                <p class="amount">126 345 200 500 UZS</p>
+                            </li>
+                            <li class="dg-info-list__item canceled">
+                                <p class="state">Сумма задолжностей</p>
+                                <p class="amount">8 345 200 500 UZS</p>
+                            </li>
+                        </ul>
+                        <div class="chart">
+                            <div class="chart-content">
+                                <canvas id="financesChart"></canvas>
+                            </div>
+                        </div>
+                      </li>
+                
+                        <!-- Tasks Chart -->
+                        <li class="diagrams-list__item tasks">
+                            <h2 class="diagrams-list__title">Задачи</h2>
+                            <ul class="diagram-item__info-list">
+                                <li class="dg-info-list__item delivered">
+                                    <p class="amount">36</p>
+                                    <p class="state">поставлено</p>
+                                </li>
+                                <li class="dg-info-list__item completed">
+                                    <p class="amount">24</p>
+                                    <p class="state">выполнено</p>
+                                </li>
+                                <li class="dg-info-list__item active">
+                                    <p class="amount">12</p>
+                                    <p class="state">Открыто</p>
+                                </li>
+                            </ul>
+                            <div class="chart">
+                                <div class="chart-content">
+                                    <canvas id="tasksChart"></canvas>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <p class="name">Дата создание</p>
-                            <p class="text">5 июля, 11:30</p>
+                
+                        <!-- Requests Chart (Pie) -->
+                        <li class="diagrams-list__item requests">
+                            <h2 class="diagrams-list__title">Запросы</h2>
+                            <ul class="diagram-item__info-list">
+                                <li class="dg-info-list__item delivered">
+                                    <p class="amount">36</p>
+                                    <p class="state">В обработке</p>
+                                </li>
+                                <li class="dg-info-list__item completed">
+                                    <p class="amount">9</p>
+                                    <p class="state">Одобрено</p>
+                                </li>
+                                <li class="dg-info-list__item canceled">
+                                    <p class="amount">3</p>
+                                    <p class="state">Отклонены</p>
+                                </li>
+                            </ul>
+                            <div class="chart">
+                                <div class="chart-content">
+                                    <canvas id="requestsChart"></canvas>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -332,9 +322,9 @@
         </div>
 </div>
 
-
 </body>
 </html>
 
 
 <script src="./script.js"></script>
+<script src="./chart.js"></script>
