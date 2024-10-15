@@ -47,6 +47,7 @@
 
 .menu__list-item.active img {
     filter: invert(64%) sepia(97%) saturate(625%) hue-rotate(357deg) brightness(103%) contrast(104%);
+    opacity: 1;
 }
 
 .menu__list-item.active .item-right-border {
