@@ -3,12 +3,6 @@ document.getElementById('menuToggle').addEventListener('click', function() {
     sidebar.classList.toggle('close');
 });
 
-// document.getElementById('toggleButton').addEventListener('click', function() {
-//     const sidebar = document.querySelector('.sidebar');
-//     sidebar.classList.toggle('active');
-// });
-
-
  // When the DOM is loaded, set the active link
  document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('.menu__list-item a');
@@ -41,3 +35,8 @@ console.log(menuItems)
       });
     });
   });
+
+document.getElementById('th-date-option-toggle').addEventListener('click', function() {
+    const sidebar = document.querySelector('.menu');
+    sidebar.classList.toggle('close');
+});

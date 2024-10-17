@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="./orders.html" class="menu__list-item-link">
+                        <a href="./index.html" class="menu__list-item-link">
                             <img src="/img/orders.svg" alt="image" width="20" height="20">
                             <p>Мои заказы</p>
                             <!-- <span class="menu__list-item-badge badge">1</span> -->
@@ -324,21 +324,30 @@
                                    <th class="checkbox">
                                        <input class="checkbox-input" type="checkbox" checked />
                                    </th>
-                                   <th>Номер заказа · Маршрут</th>
+                                   <th class="directions">Номер заказа · Маршрут</th>
                                    <th>Статус</th>
-                                   <th>Дата погрузки</th>
+                                   <th class="date">Дата погрузки</th>
                                    <th>Клиент</th>
-                                   <th>Товар</th>
+                                   <th class="product">Товар</th>
                                    <th>Пункт назначения / Таможня</th>
                                    <th>Договор №</th>
-                                   <th>Дата договор</th>
+                                   <th class="date">Дата договор</th>
                                    <th>Заявка №</th>
-                                   <th>Дата заявки</th>
+                                   <th class="date">Дата заявки</th>
                                    <th>Вид транспорта</th>
                                    <th>Номер транспорта</th>
                                    <th>Данные водителя</th>
                                    <th>Контакты водителя</th>
+                                   <th>Погран переход</th>
                                    <th>Статус перевозки</th>
+                                   <th>Заезд на СВХ</th>
+                                   <th class="date">Дата выгрузки</th>
+                                   <th>Простой</th>
+                                   <th>Ставка</th>
+                                   <th>НДС 12%</th>
+                                   <th>Предоплата</th>
+                                   <th>Долг</th>
+                                   <th>Сумма поступлений</th>
                                    <th>Сообщений</th>
                                    <th>Задач</th>
                                    <th>Документов</th>
@@ -354,15 +363,16 @@
                                         </div>
                                     </th>
                                     <th class="th-filter">
-                                        <div class="th-filter-data status">
-                                            <select class="th-filter-data__select">
-                                                <option value="10">Все</option>
-                                                <option value="50">Активный</option>
-                                                <option value="50">Завершен</option>
-                                                <option value="50">Запланирован</option>
-                                                <option value="50">Аннулирован</option>
-                                            </select>
-                                            <img class="status-image" src="/img/select-vector.svg" alt="" width="7" height="4">
+                                            <div class="th-filter-data status">
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">Все</button>
+                                                <div class="select">
+                                                    <button class="select__option">Активный</button>
+                                                    <button class="select__option">Завершен</button>
+                                                    <button class="select__option">Запланирован</button>
+                                                    <button class="select__option">Аннулирован</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -461,6 +471,60 @@
                                             <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
                                         </div>
                                     </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
                                  </tr>
                             </thead>
                             <tbody>
@@ -492,7 +556,7 @@
                                     </td>
                                    <td> 
                                      <div class="td-data">
-                                        <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Ск</p>
+                                        <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                     </div>
                                 </td>
                                    <td> 
@@ -502,7 +566,10 @@
                                      <div class="td-data">02.05.24</div>
                                     </td>
                                    <td> 
-                                     <div class="td-data">06-24/FY-17И (ВКУП-002082)</div>
+                                     <div class="td-data">
+                                        <p class="text">06-24/FY-17И </p>
+                                        <span class="subtext">(ВКУП-002082)</span>
+                                     </div>
                                     </td>
                                    <td> 
                                      <div class="td-data">14.09.2024</div>
@@ -520,10 +587,37 @@
                                      <div class="td-data">+998 90 123 45 67</div>
                                     </td>
                                     <td> 
+                                        <div class="td-data">Наджимов Казыгурт</div>
+                                    </td>
+                                    <td> 
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                         </div>
                                     </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 дня / 3 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">25 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 750 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">15 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">10 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">14 335 000 сум</div>
+                                    </td>                                 
                                     <td> 
                                         <div class="td-data">
                                            <div class="td-data-badge">
@@ -604,7 +698,7 @@
                                      </td>
                                     <td> 
                                       <div class="td-data">
-                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Ск</p>
+                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                          <div class="inner">
                                              <button class="read-more"> Читать далее
                                                  <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7" height="4">
@@ -627,7 +721,10 @@
                                       <div class="td-data">02.05.24</div>
                                      </td>
                                     <td> 
-                                      <div class="td-data">06-24/FY-17И (ВКУП-002082)</div>
+                                      <div class="td-data">
+                                          <p class="text">06-24/FY-17И </p>
+                                          <span class="subtext">(ВКУП-002082)</span>
+                                      </div>
                                      </td>
                                     <td> 
                                       <div class="td-data">14.09.2024</div>
@@ -645,15 +742,42 @@
                                       <div class="td-data">+998 90 123 45 67</div>
                                      </td>
                                      <td> 
+                                        <div class="td-data">Наджимов Казыгурт</div>
+                                    </td>
+                                     <td> 
                                          <div class="td-data">
                                              <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                              <div class="inner">
                                                  <button class="read-more"> Читать далее
                                                      <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7" height="4">
-                                                 </button>
-                                             </div>
-                                         </div>
-                                     </td>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 дня / 3 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">25 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 750 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">15 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">10 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">14 335 000 сум</div>
+                                    </td>  
                                      <td> 
                                         <div class="td-data">
                                            <div class="td-data-badge">
@@ -707,7 +831,7 @@
                                      </td>
                                     <td> 
                                       <div class="td-data">
-                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Ск</p>
+                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                      </div>
                                  </td>
                                     <td> 
@@ -717,7 +841,10 @@
                                       <div class="td-data">02.05.24</div>
                                      </td>
                                     <td> 
-                                      <div class="td-data">06-24/FY-17И (ВКУП-002082)</div>
+                                        <div class="td-data">
+                                            <p class="text">06-24/FY-17И </p>
+                                            <span class="subtext">(ВКУП-002082)</span>
+                                        </div>
                                      </td>
                                     <td> 
                                       <div class="td-data">14.09.2024</div>
@@ -735,10 +862,37 @@
                                       <div class="td-data">+998 90 123 45 67</div>
                                      </td>
                                      <td> 
+                                        <div class="td-data">Наджимов Казыгурт</div>
+                                    </td>
+                                     <td> 
                                          <div class="td-data">
                                              <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                          </div>
                                      </td>
+                                     <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 дня / 3 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">25 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 750 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">15 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">10 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">14 335 000 сум</div>
+                                    </td>
                                      <td> 
                                         <div class="td-data">
                                            <div class="td-data-badge">
@@ -792,7 +946,7 @@
                                      </td>
                                     <td> 
                                       <div class="td-data">
-                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Ск</p>
+                                         <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                      </div>
                                  </td>
                                     <td> 
@@ -802,7 +956,10 @@
                                       <div class="td-data">02.05.24</div>
                                      </td>
                                     <td> 
-                                      <div class="td-data">06-24/FY-17И (ВКУП-002082)</div>
+                                      <div class="td-data">
+                                         <p class="text">06-24/FY-17И </p>
+                                         <span class="subtext">(ВКУП-002082)</span>
+                                      </div>
                                      </td>
                                     <td> 
                                       <div class="td-data">14.09.2024</div>
@@ -820,10 +977,37 @@
                                       <div class="td-data">+998 90 123 45 67</div>
                                      </td>
                                      <td> 
+                                        <div class="td-data">Наджимов Казыгурт</div>
+                                    </td>
+                                     <td> 
                                          <div class="td-data">
                                              <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                          </div>
                                      </td>
+                                     <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">24.09.2024</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 дня / 3 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">25 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">3 750 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">15 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">10 000 000 сум</div>
+                                    </td>
+                                    <td> 
+                                        <div class="td-data">14 335 000 сум</div>
+                                    </td>
                                      <td> 
                                      <div class="td-data">
                                         <div class="td-data-badge">
