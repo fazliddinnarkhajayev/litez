@@ -262,35 +262,65 @@
                 </div>
 
                 <div class="content-filter">
-                        <div class="content-filter__item search">
-                            <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
-                            <p class="indicators__list-item-text">Поиск в заказах</p>
+                        <div class="content-filter__item">
+                            <div class="content-filter__image-wrapper">
+                                <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
+                            </div>
+                            <input type="text" placeholder="Поиск в заказах">
                         </div>
 
                         <div class="content-filter__item">
-                            <img src="/img/date.svg" alt="incon" width="20" height="20">
+                            <div class="select-wrapper">
+                                <button class="selected-option">
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/date.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <span>За весь период</span>
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                    </div>
+                                </button>
+                                
+                                <!-- Options dropdown -->
+                                <div class="options-wrapper" style="display: none;">
+                                    <!-- Text option -->
+                                    <button class="select__option" id="allTimeOption">За весь период</button>
+                            
+                                    <!-- Date input with save button -->
+                                    <div class="select__option">
+                                        <input type="date" class="date-input">
+                                        <button class="save-date-btn">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- <img src="/img/date.svg" alt="incon" width="20" height="20">
                             <p class="indicators__list-item-text">Все заказы</p>
-                            <img class="to-bottom" src="/img/vector-dark.svg" alt="incon" width="20" height="20">
+                            <img class="to-bottom" src="/img/vector-dark.svg" alt="incon" width="20" height="20"> -->
                         </div>
 
                         <div class="content-filter__item switch">
-                            <div class="on">
+                            <button class="on">
                              <img src="/img/filter.svg" alt="incon" width="20" height="20">
                              <p class="indicators__list-item-text">Фильтры</p>
-                            </div>
-                            <div class="off">
-                             <img class="to-bottom" src="/img/no-filter.svg" alt="incon" width="20" height="20">
-                            </div>
+                            </button>
+                            <button class="off">
+                             <img src="/img/no-filter.svg" alt="incon" width="20" height="20">
+                            </button>
                         </div>
 
                         <div class="content-filter__item sort">
-                            <img src="/img/top-bottom.svg" alt="incon" width="20" height="20">
-                            <p class="indicators__list-item-text">Сортировать</p>
+                            <button class="sort-button">
+                                <img src="/img/top-bottom.svg" alt="incon" width="10" height="10">
+                                <p class="indicators__list-item-text">Сортировать</p>
+                            </button>
                         </div>
 
                         <div class="content-filter__item hide">
-                            <img src="/img/hide.svg" alt="incon" width="20" height="20">
-                            <p class="indicators__list-item-text">Скрыть</p>
+                            <button class="sort-button">
+                                <img src="/img/hide.svg" alt="incon" width="20" height="20">
+                                <p class="indicators__list-item-text">Скрыть</p>
+                            </button>
                         </div>
 
                         <div class="pagination">
@@ -363,22 +393,26 @@
                                         </div>
                                     </th>
                                     <th class="th-filter">
-                                            <div class="th-filter-data status">
-                                            <div class="select-wrapper">
-                                                <button class="selected-option">Все</button>
-                                                <div class="select">
-                                                    <button class="select__option">Активный</button>
-                                                    <button class="select__option">Завершен</button>
-                                                    <button class="select__option">Запланирован</button>
-                                                    <button class="select__option">Аннулирован</button>
+                                        <div class="th-filter-data select">
+                                            <div class="th-select-wrapper">
+                                                <button class="th-selected-option">
+                                                    <span>Все</span>
+                                                    <img src="/img/select-vector.svg" alt="search-icon" width="7" height="4">
+                                                </button>
+                                                <div class="th-select">
+                                                    <button class="th-select__option" disabled>Все</button>
+                                                    <button class="th-select__option">Активный</button>
+                                                    <button class="th-select__option">Завершен</button>
+                                                    <button class="th-select__option">Запланирован</button>
+                                                    <button class="th-select__option">Аннулирован</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </th>
                                     <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <span>12.08.2024</span>
-                                            <img class="select-image" src="/img/select-vector.svg" alt="search-icon" width="7" height="4">
+                                        <div class="th-filter-data date">
+                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg" alt="search-icon" width="10" height="10"></button>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -406,9 +440,9 @@
                                         </div>
                                     </th>
                                     <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <span>Все</span>
-                                            <img class="select-image" src="/img/select-vector.svg" alt="search-icon" width="7" height="4">
+                                        <div class="th-filter-data date">
+                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg" alt="search-icon" width="10" height="10"></button>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -418,21 +452,9 @@
                                         </div>
                                     </th>
                                     <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <span>Все</span>
-                                            <img class="select-image" src="/img/select-vector.svg" alt="search-icon" width="7" height="4">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        <div class="th-filter-data date">
+                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg" alt="search-icon" width="10" height="10"></button>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -469,6 +491,18 @@
                                         <div class="th-filter-data">
                                             <input class="th-filter-data__input" type="text" placeholder="Поиск">
                                             <img class="search-image" src="/img/magnifier.svg" alt="search-icon" width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data date">
+                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg" alt="search-icon" width="10" height="10"></button>
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data date">
+                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg" alt="search-icon" width="10" height="10"></button>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -1068,3 +1102,4 @@
 
 
 <script src="./script.js"></script>
+<script src="./js/select.js"></script>
