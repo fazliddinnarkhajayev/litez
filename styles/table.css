@@ -455,6 +455,29 @@ th.th-filter {
     /* Optional: Adds a subtle shadow */
 }
 
+.td-data .operation-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.td-data .operation-buttons button {
+    padding: 2px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.td-data .operation-buttons button.open {
+    color: #2196F3;
+}
+
+.td-data .operation-buttons button.delete {
+    color: #F44336;
+}
+
 tr.open td {
     background-color: #E1E0EB;
 }

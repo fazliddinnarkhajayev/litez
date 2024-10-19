@@ -3,7 +3,6 @@
     align-items: center;
     gap: 10px;
     margin-left: auto;
-    margin-left: auto;
     width: 420px;
 }
 
@@ -14,6 +13,7 @@
     line-height: 21px;
     text-align: left;
     opacity: 0.5;
+    margin-left: auto;
 }
 
 .pagination__select-wrapper {
@@ -34,8 +34,10 @@
     border-radius: 10px;
     background-color: transparent;
     padding: 10px;
-    -webkit-appearance: none; /* For Safari and Chrome */
-    -moz-appearance: none; /* For Firefox */
+    -webkit-appearance: none;
+    /* For Safari and Chrome */
+    -moz-appearance: none;
+    /* For Firefox */
     outline: none;
 }
 
@@ -56,5 +58,5 @@
 }
 
 .pagination__buttons button:hover {
-    border-color:#C5C4CF;
+    border-color: #C5C4CF;
 }

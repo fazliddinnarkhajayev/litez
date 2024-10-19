@@ -1,0 +1,141 @@
+.notification-wrapper {
+  width: 100%;
+  max-width: 1470px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.notifications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.notifications-header__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 0;
+}
+
+.notifications-header__set-all-read {
+  padding: 11px 13px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2196F3;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.notifications-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notifications-pagination__route-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.notifications-pagination__route-list li button {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: #8C8B98;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.notifications-pagination__route-list li.active button {
+  color: #000000;
+  border-color: #C5C4CF;
+}
+
+.notifications-list {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notifications-list li {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.item-header p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000000;
+}
+
+.item-header p.date {
+  color: #535260;
+  font-weight: 400;
+  font-size: 13pz;
+}
+
+.item-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.item-text span {
+  color: #2196F3;
+}
+
+.item-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.item-buttons button {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  line-height: 20px;
+  color: #535260;
+  background-color: transparent;
+}
+
+.item-buttons button.to-chat {
+  border-color: #C5C4CF;
+}
