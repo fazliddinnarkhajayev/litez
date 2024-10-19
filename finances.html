@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,26 @@
     <link rel="stylesheet" href="styles/table.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Finances</title>
 </head>
+
 <body>
-    
-<div class="container">
+
+    <div class="container">
         <div class="header">
 
             <div class="header__logo-wrapper">
                 <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
-            <h1 class="header__title">Litez Management System</h1>
+                <h1 class="header__title">Litez Management System</h1>
             </div>
 
             <div class="header__search-wrapper">
-                <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                <div class="img-wrapper">
+                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                </div>
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
 
@@ -43,13 +49,13 @@
                         <button class="info-list__item-button">
                             <img src="./img/comment.svg" alt="icon" width="20" height="20">
                             <span class="info-list__item-badge badge badge-danger">1</span>
-                        </li>
+                    </li>
                     </button>
                     <li class="info-list__item">
                         <button class="info-list__item-button">
                             <img src="./img/approve.svg" alt="icon" width="20" height="20">
                             <span class="info-list__item-badge badge badge-success">12485</span>
-                        </li>
+                    </li>
                     </button>
                 </ul>
             </div>
@@ -58,8 +64,10 @@
 
             <div class="header__account-wrapper">
                 <p class="account-name">Yuriy Li</p>
-                <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
-                <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                <button>
+                    <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                    <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                </button>
             </div>
         </div>
 
@@ -107,7 +115,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./tasks.html" class="menu__list-item-link">
@@ -149,7 +157,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./collegeus.html" class="menu__list-item-link">
@@ -176,7 +184,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./benefits.html" class="menu__list-item-link">
@@ -195,7 +203,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <button class="menu__toggle-button" id="menuToggle">
                     <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
                     <p>Свернуть</p>
@@ -203,7 +211,7 @@
             </div>
 
             <div class="content">
-                
+
                 <div class="content-header">
                     <h2 class="content-header__title">Финансы</h2>
 
@@ -244,48 +252,69 @@
                 </div>
 
                 <div class="content-filter">
-                        <div class="content-filter__item search">
+                    <div class="content-filter__item">
+                        <div class="content-filter__image-wrapper">
                             <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
-                            <p class="indicators__list-item-text">Поиск в заказах</p>
                         </div>
+                        <input type="text" placeholder="Поиск в заказах">
+                    </div>
 
-                        <div class="content-filter__item">
-                            <img src="/img/date.svg" alt="incon" width="20" height="20">
-                            <p class="indicators__list-item-text">Все заказы</p>
-                            <img class="to-bottom" src="/img/select-vector.svg" alt="incon" width="8" height="5">
-                        </div>
+                    <div class="content-filter__item">
+                        <div class="select-wrapper">
+                            <button class="selected-option">
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/date.svg" alt="icon" width="20" height="20">
+                                </div>
+                                <span>За весь период</span>
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
 
-                        <div class="content-filter__item switch">
-                            <div class="on">
-                             <img src="/img/filter.svg" alt="incon" width="20" height="20">
-                             <p class="indicators__list-item-text">Фильтры</p>
+                            <!-- Options dropdown -->
+                            <div class="options-wrapper" style="display: none;">
+                                <!-- Text option -->
+                                <button class="select__option" id="allTimeOption">За весь период</button>
+
+                                <!-- Date input with save button -->
+                                <div class="select__option">
+                                    <input type="date" class="date-input">
+                                    <button class="save-date-btn">Save</button>
+                                </div>
                             </div>
-                            <div class="off">
-                             <img class="" src="/img/no-filter.svg" alt="incon" width="20" height="20">
-                            </div>
                         </div>
+                    </div>
 
+                    <div class="content-filter__item switch">
+                        <button class="on">
+                            <img src="/img/filter.svg" alt="incon" width="20" height="20">
+                            <p class="indicators__list-item-text">Фильтры</p>
+                        </button>
+                        <button class="off">
+                            <img src="/img/no-filter.svg" alt="incon" width="20" height="20">
+                        </button>
+                    </div>
 
-                        <div class="pagination">
-                            <p class="pagination__count-text">1-50 из 128 заказов</p>
-                            
-                           <div class="pagination__select-wrapper">
+                    <div class="pagination">
+                        <p class="pagination__count-text">1-50 из 128 заказов</p>
+
+                        <div class="pagination__select-wrapper">
                             <select class="pagination__select">
                                 <option value="10">10</option>
                                 <option value="50">50</option>
                             </select>
                             <img src="/img/vector-dark.svg" alt="">
-                           </div>
-
-                            <div class="pagination__buttons">
-                                <button>
-                                    <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
-                                </button>
-                                <button>
-                                    <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
-                                </button>
-                            </div>
                         </div>
+
+                        <div class="pagination__buttons">
+                            <button>
+                                <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
+                            </button>
+                            <button>
+                                <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 <ul class="amount-balances-list">
@@ -353,279 +382,280 @@
                     </li>
                 </ul>
 
-                 <div class="table-container">
+                <div class="table-container">
                     <div class="table-wrapper">
                         <table>
                             <thead>
                                 <tr>
-                                   <th class="checkbox">
-                                       <input class="checkbox-input" type="checkbox" checked />
-                                   </th>
-                                   <th>Номер заказа · Маршрут</th>
-                                   <th>Посл. поступление</th>
-                                   <th>Сумма фрахта</th>
-                                   <th>Cумма поступлений</th>
-                                   <th>Долг</th>
-                                   <th>Статус оплаты</th>
-                                   <th>Дата погрузки</th>
-                                   <th>Клиент / компания</th>
-                                   <th>Договор №</th>
-                                   <th>Заявка</th>
-                                   <th>Акт / Счет фактура</th>
+                                    <th class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" checked />
+                                    </th>
+                                    <th class="directions">Номер заказа · Маршрут</th>
+                                    <th>Посл. поступление</th>
+                                    <th>Сумма фрахта</th>
+                                    <th>Cумма поступлений</th>
+                                    <th>Долг</th>
+                                    <th>Статус оплаты</th>
+                                    <th>Дата погрузки</th>
+                                    <th>Клиент / компания</th>
+                                    <th>Договор №</th>
+                                    <th>Заявка</th>
+                                    <th>Акт / Счет фактура</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                   <td>
-                                       <div class="td-data checkbox">
-                                           <input class="checkbox-input" type="checkbox" checked />
-                                           <span class="checkbox-span-border active"></span>
-                                       </div>
-                                   </td>
-                                   <td> 
-                                     <div class="td-data">
-                                        <p class="text"><span class="bold">A1233</span> · Ташкент- Энгельс- Московская обл ( Мыuaidwuaidgu)</p>
-                                     </div>
-                                    </td>
-                                   <td> 
-                                     <div class="td-data">
-                                        <p class="text success">+4 800 000 UZS от</p>
-                                        <span class="sub-text">12.10.24</span>
-                                     </div>
-                                   </td>
-                                   <td> 
-                                     <div class="td-data">24 800 000 UZS</div>
-                                   </td> 
-                                    <td>
-                                     <div class="td-data">14 800 000 UZS</div>
-                                    </td>
-                                   <td> 
-                                     <div class="td-data">
-                                        <p class="text danger">10 000 000 UZS</p>
-                                     </div>
-                                    </td>
-                                   <td> 
-                                     <div class="td-data">
-                                        <p class="text">Осталось 30 дней</p>
-                                    </div>
-                                </td>
-                                   <td> 
-                                     <div class="td-data">12.10.2024</div>
-                                    </td>
-                                   <td> 
-                                     <div class="td-data">ООО “Компания”</div>
-                                    </td>
-                                   <td> 
-                                     <div class="td-data">
-                                        <p class="text">C-0009/23-МТ</p>
-                                        <span class="sub-text">от 12.10.24</span>
-                                     </div>
-                                    </td>
-                                   <td> 
-                                    <div class="td-data">
-                                        <p class="text">REQ123ABC-01</p>
-                                        <span class="sub-text">от 12.10.24</span>
-                                     </div>
-                                    </td>
-                                   <td> 
-                                    <div class="td-data">
-                                        <p class="text">ACT123ABC-01</p>
-                                        <span class="sub-text">от 12.10.24</span>
-                                     </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="td-data checkbox">
-                                            <input class="checkbox-input" type="checkbox" checked />
-                                            <span class="checkbox-span-border completed"></span>
-                                        </div>
-                                    </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text success">+4 800 000 UZS от</p>
-                                         <span class="sub-text">12.10.24</span>
-                                      </div>
-                                    </td>
-                                    <td> 
-                                      <div class="td-data">24 800 000 UZS</div>
-                                    </td> 
-                                     <td>
-                                      <div class="td-data">14 800 000 UZS</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text danger">10 000 000 UZS</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text danger">Просрочено</p>
-                                     </div>
-                                 </td>
-                                    <td> 
-                                      <div class="td-data">12.10.2024</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">ООО “Компания”</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text">C-0009/23-МТ</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">REQ123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">ACT123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                 </tr>
-                                 <tr>
                                     <td>
                                         <div class="td-data checkbox">
                                             <input class="checkbox-input" type="checkbox" checked />
                                             <span class="checkbox-span-border active"></span>
                                         </div>
                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text success">+4 800 000 UZS от</p>
-                                         <span class="sub-text">12.10.24</span>
-                                      </div>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">A1233</span> · Ташкент- Энгельс-
+                                                Московская обл ( Мыuaidwuaidgu)</p>
+                                        </div>
                                     </td>
-                                    <td> 
-                                      <div class="td-data">24 800 000 UZS</div>
-                                    </td> 
-                                     <td>
-                                      <div class="td-data">14 800 000 UZS</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text danger">10 000 000 UZS</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text overdue">Осталось 30 дней</p>
-                                     </div>
-                                 </td>
-                                    <td> 
-                                      <div class="td-data">12.10.2024</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">ООО “Компания”</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text">C-0009/23-МТ</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">REQ123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">ACT123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                 </tr>
-                                 <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text success">+4 800 000 UZS от</p>
+                                            <span class="sub-text">12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">24 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">14 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text danger">10 000 000 UZS</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">Осталось 30 дней</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">12.10.2024</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ООО “Компания”</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">C-0009/23-МТ</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">REQ123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">ACT123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>
                                         <div class="td-data checkbox">
                                             <input class="checkbox-input" type="checkbox" checked />
                                             <span class="checkbox-span-border completed"></span>
                                         </div>
                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text success">+4 800 000 UZS от</p>
-                                         <span class="sub-text">12.10.24</span>
-                                      </div>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
+                                        </div>
                                     </td>
-                                    <td> 
-                                      <div class="td-data">24 800 000 UZS</div>
-                                    </td> 
-                                     <td>
-                                      <div class="td-data">14 800 000 UZS</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text danger">10 000 000 UZS</p>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text overdue">Осталось 30 дней</p>
-                                     </div>
-                                 </td>
-                                    <td> 
-                                      <div class="td-data">12.10.2024</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">ООО “Компания”</div>
-                                     </td>
-                                    <td> 
-                                      <div class="td-data">
-                                         <p class="text">C-0009/23-МТ</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">REQ123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                    <td> 
-                                     <div class="td-data">
-                                         <p class="text">ACT123ABC-01</p>
-                                         <span class="sub-text">от 12.10.24</span>
-                                      </div>
-                                     </td>
-                                 </tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text success">+4 800 000 UZS от</p>
+                                            <span class="sub-text">12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">24 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">14 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text danger">10 000 000 UZS</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text danger">Просрочено</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">12.10.2024</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ООО “Компания”</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">C-0009/23-МТ</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">REQ123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">ACT123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data checkbox">
+                                            <input class="checkbox-input" type="checkbox" checked />
+                                            <span class="checkbox-span-border active"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text success">+4 800 000 UZS от</p>
+                                            <span class="sub-text">12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">24 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">14 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text danger">10 000 000 UZS</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text overdue">Осталось 30 дней</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">12.10.2024</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ООО “Компания”</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">C-0009/23-МТ</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">REQ123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">ACT123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data checkbox">
+                                            <input class="checkbox-input" type="checkbox" checked />
+                                            <span class="checkbox-span-border completed"></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">A1233</span> · Ташкент- Наманган</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text success">+4 800 000 UZS от</p>
+                                            <span class="sub-text">12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">24 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">14 800 000 UZS</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text danger">10 000 000 UZS</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text overdue">Осталось 30 дней</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">12.10.2024</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ООО “Компания”</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">C-0009/23-МТ</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">REQ123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text">ACT123ABC-01</p>
+                                            <span class="sub-text">от 12.10.24</span>
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                 </div>
+                </div>
 
-                 <div class="pagination">
+                <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
-                    
-                   <div class="pagination__select-wrapper">
-                    <select class="pagination__select">
-                        <option value="10">10</option>
-                        <option value="50">50</option>
-                    </select>
-                    <img src="/img/vector-dark.svg" alt="">
-                   </div>
+
+                    <div class="pagination__select-wrapper">
+                        <select class="pagination__select">
+                            <option value="10">10</option>
+                            <option value="50">50</option>
+                        </select>
+                        <img src="/img/vector-dark.svg" alt="">
+                    </div>
 
                     <div class="pagination__buttons">
                         <button>
@@ -638,11 +668,13 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 
 
 </body>
+
 </html>
 
 
 <script src="./script.js"></script>
+<script src="./js/select.js"></script>

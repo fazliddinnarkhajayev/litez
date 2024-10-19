@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,26 @@
     <link rel="stylesheet" href="styles/task/task-detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Tasks</title>
 </head>
+
 <body>
-    
-<div class="container">
+
+    <div class="container">
         <div class="header">
 
             <div class="header__logo-wrapper">
                 <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
-            <h1 class="header__title">Litez Management System</h1>
+                <h1 class="header__title">Litez Management System</h1>
             </div>
 
             <div class="header__search-wrapper">
-                <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                <div class="img-wrapper">
+                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                </div>
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
 
@@ -41,13 +47,13 @@
                         <button class="info-list__item-button">
                             <img src="./img/comment.svg" alt="icon" width="20" height="20">
                             <span class="info-list__item-badge badge badge-danger">1</span>
-                        </li>
+                    </li>
                     </button>
                     <li class="info-list__item">
                         <button class="info-list__item-button">
                             <img src="./img/approve.svg" alt="icon" width="20" height="20">
                             <span class="info-list__item-badge badge badge-success">12485</span>
-                        </li>
+                    </li>
                     </button>
                 </ul>
             </div>
@@ -56,8 +62,10 @@
 
             <div class="header__account-wrapper">
                 <p class="account-name">Yuriy Li</p>
-                <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
-                <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                <button>
+                    <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                    <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                </button>
             </div>
         </div>
 
@@ -105,7 +113,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./tasks.html" class="menu__list-item-link">
@@ -147,7 +155,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./collegeus.html" class="menu__list-item-link">
@@ -174,7 +182,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./benefits.html" class="menu__list-item-link">
@@ -193,7 +201,7 @@
                         </a>
                     </li>
                 </ul>
-    
+
                 <button class="menu__toggle-button" id="menuToggle">
                     <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
                     <p>Свернуть</p>
@@ -203,7 +211,8 @@
             <div class="content">
                 <div class="append-to-order">
                     <div class="task-detail-header">
-                        <h2 class="task-detail-header__tile"><a href="./tasks.html">Задачи</a> > <span>LT-24AB26</span></h2>
+                        <h2 class="task-detail-header__tile"><a href="./tasks.html">Задачи</a> > <span>LT-24AB26</span>
+                        </h2>
                         <div class="task-detail-header__operations">
                             <button>Редактировать</button>
                             <button><img src="/img/three-dot.svg" alt="icon" width="15" height="3"></button>
@@ -222,7 +231,10 @@
                     </div>
 
                     <div class="description-wrapper">
-                        <p class="description-text">Наша задача в области логистики - обеспечить эффективное управление поставками и складскими запасами. Мы стремимся оптимизировать логистические процессы, сократить издержки и улучшить обслуживание клиентов. Для этого мы разрабатываем инновационные решения и используем передовые технологии.</p>
+                        <p class="description-text">Наша задача в области логистики - обеспечить эффективное управление
+                            поставками и складскими запасами. Мы стремимся оптимизировать логистические процессы,
+                            сократить издержки и улучшить обслуживание клиентов. Для этого мы разрабатываем
+                            инновационные решения и используем передовые технологии.</p>
                         <ul class="description-list">
                             <li>Наладить коммуникацию с клиентом</li>
                             <li>Заключить договор</li>
@@ -259,15 +271,19 @@
                                 <li>
                                     <img src="/img/account.png" alt="account image" width="40" height="40">
                                     <div class="comments-list__inner">
-                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня, 12:45</span></h4>
-                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы</p>
+                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня,
+                                                12:45</span></h4>
+                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="/img/account.png" alt="account image" width="40" height="40">
                                     <div class="comments-list__inner">
-                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня, 12:45</span></h4>
-                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы</p>
+                                        <h4 class="comments-list__account-name">Дильноза Исаева <span> Сегодня,
+                                                12:45</span></h4>
+                                        <p class="comments-list__text">Прикрепите, пожалуйста, сопровождающие документы
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
@@ -281,7 +297,7 @@
                         <li>
                             <p>Статус</p>
                             <div class="select-wrapper">
-                                <img src="/img/info.svg" alt="icon"  width="16" height="16">
+                                <img src="/img/info.svg" alt="icon" width="16" height="16">
                                 <select>
                                     <option value="">Открыта</option>
                                 </select>
@@ -290,7 +306,7 @@
                         <li>
                             <p>Приоритет</p>
                             <div class="select-wrapper">
-                                <img src="/img/priority-pink.svg" alt="icon"  width="16" height="16">
+                                <img src="/img/priority-pink.svg" alt="icon" width="16" height="16">
                                 <select>
                                     <option value="">Открыта</option>
                                 </select>
@@ -299,7 +315,7 @@
                         <li>
                             <p>Дедлайн</p>
                             <div class="select-wrapper">
-                                <img src="/img/calendar-balck.svg" alt="icon"  width="16" height="18">
+                                <img src="/img/calendar-balck.svg" alt="icon" width="16" height="18">
                                 <select>
                                     <option value="">5 июля, 11:30</option>
                                 </select>
@@ -312,14 +328,14 @@
                         <li>
                             <p>Автор</p>
                             <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                <img src="/img/account.png" alt="icon" width="30" height="30">
                                 <p class="account-name">Yuriy Li</p>
                             </div>
                         </li>
                         <li>
                             <p>Исполнитель</p>
                             <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                <img src="/img/account.png" alt="icon" width="30" height="30">
                                 <select>
                                     <option value="">Открыта</option>
                                 </select>
@@ -330,19 +346,19 @@
                             <ul class="authir-inner-lists">
                                 <li>
                                     <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <img src="/img/account.png" alt="icon" width="30" height="30">
                                         <p class="account-name">Yuriy Li</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <img src="/img/account.png" alt="icon" width="30" height="30">
                                         <p class="account-name">Yuriy Li</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon"  width="30" height="30">
+                                        <img src="/img/account.png" alt="icon" width="30" height="30">
                                         <p class="account-name">Yuriy Li</p>
                                     </div>
                                 </li>
@@ -370,7 +386,7 @@
                             <p class="name">Посл. изменение</p>
                             <div class="text-wrapper">
                                 <img src="/img/account.png" alt="account icon" width="30" height="30">
-                                <p >Yuriy Li</p>
+                                <p>Yuriy Li</p>
                             </div>
                         </li>
                     </ul>
@@ -378,10 +394,11 @@
 
             </div>
         </div>
-</div>
+    </div>
 
 
 </body>
+
 </html>
 
 

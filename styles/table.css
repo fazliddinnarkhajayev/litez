@@ -31,9 +31,10 @@ th {
     padding: 20px 5px;
 }
 
-th.directions, th.product {
+th.directions,
+th.product {
     min-width: 360px;
-} 
+}
 
 th.date {
     min-width: 170px;
@@ -43,7 +44,8 @@ td {
     padding: 0;
 }
 
-th, td {
+th,
+td {
     white-space: nowrap;
     text-align: left;
     background-color: #fff;
@@ -122,6 +124,7 @@ th.th-filter {
     font-weight: 400;
     line-height: 21px;
 }
+
 .th-filter-data.date button {
     padding: 2px;
     border: none;
@@ -138,7 +141,7 @@ th.th-filter {
     display: flex;
     align-items: center;
     height: 100%;
-  
+
 }
 
 .th-select {
@@ -374,7 +377,9 @@ th.th-filter {
     color: #8C8B98;
 }
 
-.td-data .read-more, .td-data .orders-count, .copy {
+.td-data .read-more,
+.td-data .orders-count,
+.copy {
     padding: 3px;
     color: #2196F3;
     border: none;
@@ -437,14 +442,19 @@ th.th-filter {
 }
 
 .td-data.accounts img:not(:nth-child(1)) {
-    width: 30px; /* Adjust size */
+    width: 30px;
+    /* Adjust size */
     height: 30px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 2px solid white; /* Optional: Adds a white border around the image */
-    margin-left: -15px; /* Overlapping effect */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); /* Optional: Adds a subtle shadow */
-  }
+    border-radius: 50%;
+    /* Makes the image circular */
+    border: 2px solid white;
+    /* Optional: Adds a white border around the image */
+    margin-left: -15px;
+    /* Overlapping effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    /* Optional: Adds a subtle shadow */
+}
 
-  tr.open td {
+tr.open td {
     background-color: #E1E0EB;
-  }
+}
