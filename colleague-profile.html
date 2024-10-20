@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/task/create-task.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/colleguages/colleagues-profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <title>Tasks</title>
+    <title>Orders</title>
 </head>
 
 <body>
@@ -208,135 +209,104 @@
             </div>
 
             <div class="content">
-                <div class="append-to-order">
-                    <h2 class="append-to-order__title"><a href="./tasks.html">Задачи</a> > <span>Создание задачи</span>
-                    </h2>
-                    <input type="text" class="append-to-order__title-input" placeholder="Заголовок задачи">
-                    <div class="order-choise">
-                        <h3 class="order-choise__title">Привязать к заказу</h3>
-                        <select class="order-choise__select">
-                            <option value="SA45">SA43</option>
-                            <option value="SA45">SA44</option>
-                            <option value="SA45">SA45</option>
-                            <option value="SA45">SA46</option>
-                        </select>
+                <div class="user-info">
+                    <div class="user-info_header">
+                        <div class="account-wrapper">
+                            <img src="/img/account.png" alt="account photo" width="90" height="90">
+                            <div class="user-info__account-name-wrapper">
+                                <p class="name">Даниил Иванов</p>
+                                <p class="position"><span class="live">Онлайн · </span>Должность · Был онлайн 11 октября 2024, 11:40</p>
+                            </div>
+                        </div>
+                        <button class="delete">Удалить из коллег</button>
                     </div>
-                    <textarea class="task-description" placeholder="Описание задачи"></textarea>
-                    <div class="files">
-                        <button class="files_attach-button">
-                            <img src="/img/file-attach.svg" alt="attach icon" width="14" height="16">
-                            <span>Прикрепить</span>
-                        </button>
-                        <ul class="files__list">
-                            <li class="files__list-item">
-                                <img src="/img/jpeg-icon.png" alt="icon" width="16" height="20">
-                                <p>photo-18200905-1145.jpg</p>
-                                <img src="/img/garbage.svg" alt="icon" width="16" height="16">
+
+                    <ul class="user-info__routes-list">
+                        <li class="active">
+                            <a href="./colleague-profile.html">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-orders.html">Заказы</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-tasks.html">Задачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Документы</a>
+                        </li>
+                        <li>
+                            <a href="#">Статистика</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-colleagues.html">Коллеги</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-review-complaint.html">Отзывы и Жалобы</a>
+                        </li>
+                    </ul>
+
+                    <div class="user-info-list-wrapper">
+                        <ul class="user-info__list">
+                            <li>
+                                <h3 class="user_info__item-title">Персональные данные</h3>
+                                <p class="user_info__item-text">Ваши персональные </p>
+    
+                                <label for="name">ФИО </label>
+                                <input id="name" type="text" placeholder="Юрий Ли">
+                              
+                                <label for="birth-date">Дата рождения</label>
+                                <input id="birth-date" type="text" placeholder="04.07.1983">
+                               
+                                <label for="about-user">Дополнительно</label>
+                                <textarea id="about-user" placeholder="О пользователе"></textarea>
                             </li>
-                            <li class="files__list-item">
-                                <img src="/img/zip-icon.png" alt="icon" width="16" height="20">
-                                <p>photo-20240905-1145.jpg</p>
-                                <img src="/img/garbage.svg" alt="icon" width="16" height="16">
+                            <li>
+                                <h3 class="user_info__item-title">Контакты</h3>
+    
+                                <label for="email">Email </label>
+                                <input id="email" type="text" placeholder="yuriy.li@litez.uz">
+                              
+                                <label for="phone">Телефон</label>
+                                <input id="phone" type="text" placeholder="Телефон">
+    
+                                <label for="telegram">Telegram</label>
+                                <input id="telegram" type="text" placeholder="Telegram">
+    
+                                <label for="linkedin">Linkedin</label>
+                                <input id="linkedin-date" type="text" placeholder="Linkedin">
+                            </li>
+                            <li>
+                                <h3 class="user_info__item-title">Сведения о компании</h3>
+    
+                                <label for="position">Должность </label>
+                                <input id="position" type="text" placeholder="Должность">
+                              
+                                <label for="branch">Отдел</label>
+                                <input id="branch" type="text" placeholder="Отдел">
+                               
+                                <label for="company">Компания</label>
+                                <input id="company" placeholder="Компания"></input>
+                            </li>
+                            <li>
+                                <h3 class="user_info__item-title">Сменить пароль</h3>
+    
+                                <label for="ol-password">Старый пароль </label>
+                                <input id="ol-password" type="text" placeholder="Введите текущий пароль">
+                              
+                                <label for="new-password">Новый пароль</label>
+                                <input id="new-password" type="text" placeholder="Введите новый пароль">
+                               
+                                <label for="new-password-2">Подтвердите новый пароль</label>
+                                <input id="new-password-2" placeholder="Повторите новый пароль"></input>
+    
+                                <div class="operation-buttons">
+                                    <button class="save">Сохранить</button>
+                                    <button class="cancel">Отменить</button>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="additional-info">
-
-                    <div class="operation-buttons">
-                        <button class="cancel">Отменить</button>
-                        <button class="save">Сохранить</button>
-                    </div>
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-info__list">
-                        <li>
-                            <p>Статус</p>
-                            <div class="select-wrapper">
-                                <img src="/img/info.svg" alt="icon" width="16" height="16">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Приоритет</p>
-                            <div class="select-wrapper">
-                                <img src="/img/priority-pink.svg" alt="icon" width="16" height="16">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Дедлайн</p>
-                            <div class="select-wrapper">
-                                <img src="/img/calendar-balck.svg" alt="icon" width="16" height="18">
-                                <select>
-                                    <option value="">5 июля, 11:30</option>
-                                </select>
-                            </div>
-                        </li>
-                    </ul>
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-info__list author">
-                        <li>
-                            <p>Автор</p>
-                            <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon" width="30" height="30">
-                                <p class="account-name">Yuriy Li</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Исполнитель</p>
-                            <div class="select-wrapper">
-                                <img src="/img/account.png" alt="icon" width="30" height="30">
-                                <select>
-                                    <option value="">Открыта</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Наблюдатели</p>
-                            <ul class="authir-inner-lists">
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon" width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon" width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-wrapper">
-                                        <img src="/img/account.png" alt="icon" width="30" height="30">
-                                        <p class="account-name">Yuriy Li</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <span class="additional-info__border"></span>
-
-                    <ul class="additional-date__list">
-                        <li>
-                            <p class="name">ID задачи</p>
-                            <p class="text">LT-24AB26</p>
-                        </li>
-                        <li>
-                            <p class="name">Дата создание</p>
-                            <p class="text">5 июля, 11:30</p>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </div>
@@ -348,3 +318,4 @@
 
 
 <script src="./script.js"></script>
+<script src="./js/select.js"></script>

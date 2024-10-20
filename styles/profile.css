@@ -1,0 +1,138 @@
+.user-info_header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.account-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-info__account-name-wrapper p {
+    margin: 0;
+}
+
+.user-info__account-name-wrapper p.name {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.user-info__account-name-wrapper p.email {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #535260;
+}
+
+.user-info__account-name-wrapper p.position {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.user-info__account-name-wrapper p.position .live {
+    color: #43A047;
+}
+
+.user-info_header .delete {
+    color: #F44336;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 20px;
+    border: 1px solid #C5C4CF;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.user-info-list-wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    height: 100%;
+}
+
+.user-info__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.user-info__list li {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    height: 445px;
+    width: 401px;
+}
+
+.user_info__item-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;  
+    color: #000000;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.user_info__item-text {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #535260;
+}
+
+.user-info__list li label {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #535260;
+    margin-bottom: 5px;
+}
+
+.user-info__list li input, .user-info__list li textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #C5C4CF;
+    color: #F8F7FA;
+    margin-bottom: 15px;
+}
+
+.user-info__list li textarea {
+    height: 145px;
+}
+
+.operation-buttons button {
+    text-align: center;
+    border: 1px solid #C5C4CF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.operation-buttons button.cancel {
+    border-color: #C5C4CF;
+    color: #535260;
+}
+
+.operation-buttons button.save {
+    color: white;
+    background-color: #2196F3;
+}

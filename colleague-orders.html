@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/pagination.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/colleguages/colleagues-profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Orders</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+
+            <div class="header__logo-wrapper">
+                <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
+                <h1 class="header__title">Litez Management System</h1>
+            </div>
+
+            <div class="header__search-wrapper">
+                <div class="img-wrapper">
+                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                </div>
+                <input class="search-input" type="text" placeholder="Искать везде">
+            </div>
+
+            <div class="header__info-wrapper">
+                <ul class="info-list">
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/bell.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-blue">1</span>
+                            <!-- <span class="info-list__item-badge badge badge-extra-small badge-blue">1</span> -->
+                        </button>
+                    </li>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/comment.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-danger">1</span>
+                    </li>
+                    </button>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/approve.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-success">12485</span>
+                    </li>
+                    </button>
+                </ul>
+            </div>
+
+            <button class="header__create">Создать</button>
+
+            <div class="header__account-wrapper">
+                <p class="account-name">Yuriy Li</p>
+                <button>
+                    <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                    <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                </button>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./main.html" class="menu__list-item-link">
+                            <img class="svg-icon" src="/img/main-vector.svg" alt="image" width="20" height="20">
+                            <p>Главная</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./index.html" class="menu__list-item-link">
+                            <img src="/img/orders.svg" alt="image" width="20" height="20">
+                            <p>Мои заказы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./finances.html" class="menu__list-item-link">
+                            <img src="/img/dollar.svg" alt="image" width="20" height="20">
+                            <p>Финансы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./statistics.html" class="menu__list-item-link">
+                            <img src="/img/grow-graph.svg" alt="image" width="20" height="20">
+                            <p>Статистика</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./documents" class="menu__list-item-link">
+                            <img src="/img/document.svg" alt="image" width="20" height="20">
+                            <p>Документы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./tasks.html" class="menu__list-item-link">
+                            <img src="/img/approve.svg" alt="image" width="20" height="20">
+                            <p>Задачи</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./chat.html" class="menu__list-item-link">
+                            <img src="/img/chat.svg" alt="image" width="20" height="20">
+                            <p>Чат</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./requests.html" class="menu__list-item-link">
+                            <img src="/img/request.svg" alt="image" width="20" height="20">
+                            <p>Мои запросы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./unread-notifications.html" class="menu__list-item-link">
+                            <img src="/img/bell.svg" alt="image" width="20" height="20">
+                            <p>Уведомления</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./review-complaints.html" class="menu__list-item-link">
+                            <img src="/img/start.svg" alt="image" width="20" height="20">
+                            <p>Отзывы и жалобы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./colleagues.html" class="menu__list-item-link">
+                            <img src="/img/callegue.svg" alt="image" width="20" height="20">
+                            <p>Коллеги</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./my-companies.html" class="menu__list-item-link">
+                            <img src="/img/buildings.svg" alt="image" width="20" height="20">
+                            <p>Мои компании</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./profiles.html" class="menu__list-item-link">
+                            <img src="/img/profile.svg" alt="image" width="20" height="20">
+                            <p>Профиль</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./benefits.html" class="menu__list-item-link">
+                            <img src="/img/help.svg" alt="image" width="20" height="20">
+                            <p>Полезное</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./support.html" class="menu__list-item-link">
+                            <img src="/img/message.svg" alt="image" width="20" height="20">
+                            <p>Написать нам</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="menu__toggle-button" id="menuToggle">
+                    <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
+                    <p>Свернуть</p>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="user-info">
+                    <div class="user-info_header">
+                        <div class="account-wrapper">
+                            <img src="/img/account.png" alt="account photo" width="90" height="90">
+                            <div class="user-info__account-name-wrapper">
+                                <p class="name">Даниил Иванов</p>
+                                <p class="position"><span class="live">Онлайн · </span>Должность · Был онлайн 11 октября 2024, 11:40</p>
+                            </div>
+                        </div>
+                        <button class="delete">Удалить из коллег</button>
+                    </div>
+
+                    <ul class="user-info__routes-list">
+                        <li>
+                            <a href="./colleague-profile.html">Профиль</a>
+                        </li>
+                        <li class="active">
+                            <a href="./colleague-orders.html">Заказы</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-tasks.html">Задачи</a>
+                        </li>
+                        <li>
+                            <a href="#">Документы</a>
+                        </li>
+                        <li>
+                            <a href="#">Статистика</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-colleagues.html">Коллеги</a>
+                        </li>
+                        <li>
+                            <a href="./colleague-review-complaint.html">Отзывы и Жалобы</a>
+                        </li>
+                    </ul>
+
+                    <div class="content-filter">
+                        <div class="content-filter__item">
+                            <div class="content-filter__image-wrapper">
+                                <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
+                            </div>
+                            <input type="text" placeholder="Поиск в заказах">
+                        </div>
+    
+                        <div class="content-filter__item">
+                            <div class="select-wrapper">
+                                <button class="selected-option">
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/date.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <span>За весь период</span>
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                    </div>
+                                </button>
+    
+                                <!-- Options dropdown -->
+                                <div class="options-wrapper" style="display: none;">
+                                    <!-- Text option -->
+                                    <button class="select__option" id="allTimeOption">За весь период</button>
+    
+                                    <!-- Date input with save button -->
+                                    <div class="select__option">
+                                        <input type="date" class="date-input">
+                                        <button class="save-date-btn">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="content-filter__item switch">
+                            <button class="on">
+                                <img src="/img/filter.svg" alt="incon" width="20" height="20">
+                                <p class="indicators__list-item-text">Фильтры</p>
+                            </button>
+                            <button class="off">
+                                <img src="/img/no-filter.svg" alt="incon" width="20" height="20">
+                            </button>
+                        </div>
+    
+                        <div class="content-filter__item sort">
+                            <button class="sort-button">
+                                <img src="/img/top-bottom.svg" alt="incon" width="10" height="10">
+                                <p class="indicators__list-item-text">Сортировать</p>
+                            </button>
+                        </div>
+    
+                        <div class="content-filter__item hide">
+                            <button class="sort-button">
+                                <img src="/img/hide.svg" alt="incon" width="20" height="20">
+                                <p class="indicators__list-item-text">Скрыть</p>
+                            </button>
+                        </div>
+    
+                        <div class="pagination">
+                            <p class="pagination__count-text">1-50 из 128 заказов</p>
+    
+                            <div class="pagination__select-wrapper">
+                                <select class="pagination__select">
+                                    <option value="10">10</option>
+                                    <option value="50">50</option>
+                                </select>
+                                <img src="/img/vector-dark.svg" alt="">
+                            </div>
+    
+                            <div class="pagination__buttons">
+                                <button>
+                                    <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
+                                </button>
+                                <button>
+                                    <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="table-container">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="checkbox">
+                                            <input class="checkbox-input" type="checkbox" checked />
+                                        </th>
+                                        <th class="directions">Номер заказа · Маршрут</th>
+                                        <th>Статус</th>
+                                        <th class="date">Дата погрузки</th>
+                                        <th>Клиент</th>
+                                        <th class="product">Товар</th>
+                                        <th>Пункт назначения / Таможня</th>
+                                        <th>Договор №</th>
+                                        <th class="date">Дата договор</th>
+                                        <th>Заявка №</th>
+                                        <th class="date">Дата заявки</th>
+                                        <th>Вид транспорта</th>
+                                        <th>Номер транспорта</th>
+                                        <th>Данные водителя</th>
+                                        <th>Контакты водителя</th>
+                                        <th>Погран переход</th>
+                                        <th>Статус перевозки</th>
+                                        <th>Заезд на СВХ</th>
+                                        <th class="date">Дата выгрузки</th>
+                                        <th>Простой</th>
+                                        <th>Ставка</th>
+                                        <th>НДС 12%</th>
+                                        <th>Предоплата</th>
+                                        <th>Долг</th>
+                                        <th>Сумма поступлений</th>
+                                        <th>Сообщений</th>
+                                        <th>Задач</th>
+                                        <th>Документов</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="checkbox">
+                                            <img src="/img/filter.svg" alt="filter-logo" width="16" height="16">
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data select">
+                                                <div class="th-select-wrapper">
+                                                    <button class="th-selected-option">
+                                                        <span>Все</span>
+                                                        <img src="/img/select-vector.svg" alt="search-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <div class="th-select">
+                                                        <button class="th-select__option" disabled>Все</button>
+                                                        <button class="th-select__option">Активный</button>
+                                                        <button class="th-select__option">Завершен</button>
+                                                        <button class="th-select__option">Запланирован</button>
+                                                        <button class="th-select__option">Аннулирован</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data date">
+                                                <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                                <button class="th-date-clear-button"><img src="/img/x-vector.svg"
+                                                        alt="search-icon" width="10" height="10"></button>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data date">
+                                                <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                                <button class="th-date-clear-button"><img src="/img/x-vector.svg"
+                                                        alt="search-icon" width="10" height="10"></button>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data date">
+                                                <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                                <button class="th-date-clear-button"><img src="/img/x-vector.svg"
+                                                        alt="search-icon" width="10" height="10"></button>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data date">
+                                                <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                                <button class="th-date-clear-button"><img src="/img/x-vector.svg"
+                                                        alt="search-icon" width="10" height="10"></button>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data date">
+                                                <input class="th-filter-data__input date" type="date" placeholder="Поиск">
+                                                <button class="th-date-clear-button"><img src="/img/x-vector.svg"
+                                                        alt="search-icon" width="10" height="10"></button>
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                        <th class="th-filter">
+                                            <div class="th-filter-data">
+                                                <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                                <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                    width="13" height="13">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="td-data checkbox">
+                                                <input class="checkbox-input" type="checkbox" checked />
+                                                <span class="checkbox-span-border active"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data"><span class="status active">Активный</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ООО “Компания клиента”</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ARTC-0009/23-МТ</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">02.05.24</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">06-24/FY-17И </p>
+                                                <span class="subtext">(ВКУП-002082)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Тент 92-96</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">01X123VB / 01Z123VB</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Mukhammedov Zulfiddin, FA3329265</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">+998 90 123 45 67</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Наджимов Казыгурт</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 дня / 3 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">25 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 750 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">15 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">10 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14 335 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-danger">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">14545</span>
+                                                    <span class="td-badge badge badge-success">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-blue">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-data checkbox">
+                                                <input class="checkbox-input" type="checkbox" checked />
+                                                <span class="checkbox-span-border completed"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                                <ul class="route-list">
+                                                    <li>
+                                                        <img class="route-list-img" src="./img/chat-blue.svg"
+                                                            alt="chat-icon" width="13" height="13">
+                                                        <p class="route-list-text">Чат</p>
+                                                    </li>
+                                                    <li>
+                                                        <img class="route-list-img" src="./img/approve-blue.svg"
+                                                            alt="chat-icon" width="13" height="13">
+                                                        <p class="route-list-text">Задачи</p>
+                                                    </li>
+                                                    <li>
+                                                        <img class="route-list-img" src="./img/document-blue.svg"
+                                                            alt="chat-icon" width="10" height="13">
+                                                        <p class="route-list-text">Документы</p>
+                                                        <button class="route-list-button">
+                                                            <img class="route-list-img" src="./img/plus-blue.svg"
+                                                                alt="chat-icon" width="10" height="10">
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data"><span class="status completed">Завершен</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ООО “Компания клиента”</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                                <div class="inner">
+                                                    <span class="count">20 т · 120 м³</span>
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                        Товары (3)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                                <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="copy">
+                                                        <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
+                                                            height="13">
+                                                        Копировать
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
+                                                            height="13">
+                                                        Пункты (3)
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ARTC-0009/23-МТ</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">02.05.24</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">06-24/FY-17И </p>
+                                                <span class="subtext">(ВКУП-002082)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Тент 92-96</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">01X123VB / 01Z123VB</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Mukhammedov Zulfiddin, FA3329265</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">+998 90 123 45 67</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Наджимов Казыгурт</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                                <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 дня / 3 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">25 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 750 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">15 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">10 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14 335 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-danger">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">14545</span>
+                                                    <span class="td-badge badge badge-success">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-blue">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-data checkbox">
+                                                <input class="checkbox-input" type="checkbox" checked />
+                                                <span class="checkbox-span-border planned"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data"><span class="status planned">Запланирован</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ООО “Компания клиента”</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ARTC-0009/23-МТ</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">02.05.24</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">06-24/FY-17И </p>
+                                                <span class="subtext">(ВКУП-002082)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Тент 92-96</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">01X123VB / 01Z123VB</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Mukhammedov Zulfiddin, FA3329265</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">+998 90 123 45 67</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Наджимов Казыгурт</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 дня / 3 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">25 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 750 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">15 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">10 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14 335 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-danger">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">14545</span>
+                                                    <span class="td-badge badge badge-success">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-blue">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-data checkbox">
+                                                <input class="checkbox-input" type="checkbox" checked />
+                                                <span class="checkbox-span-border canceled"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data"><span class="status canceled">Аннулирован</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ООО “Компания клиента”</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">ARTC-0009/23-МТ</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">02.05.24</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">06-24/FY-17И </p>
+                                                <span class="subtext">(ВКУП-002082)</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Тент 92-96</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">01X123VB / 01Z123VB</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Mukhammedov Zulfiddin, FA3329265</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">+998 90 123 45 67</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">Наджимов Казыгурт</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">24.09.2024</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 дня / 3 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">25 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">3 750 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">15 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">10 000 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">14 335 000 сум</div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-danger">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">14545</span>
+                                                    <span class="td-badge badge badge-success">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td-data">
+                                                <div class="td-data-badge">
+                                                    <span class="text">1</span>
+                                                    <span class="td-badge badge badge-blue">1</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <div class="pagination">
+                        <p class="pagination__count-text">1-50 из 128 заказов</p>
+    
+                        <div class="pagination__select-wrapper">
+                            <select class="pagination__select">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                            </select>
+                            <img src="/img/vector-dark.svg" alt="">
+                        </div>
+    
+                        <div class="pagination__buttons">
+                            <button>
+                                <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
+                            </button>
+                            <button>
+                                <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script src="./script.js"></script>
+<script src="./js/select.js"></script>

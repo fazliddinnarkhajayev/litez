@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/table.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/menu.css">
+  <link rel="stylesheet" href="/styles/pagination.css">
+  <link rel="stylesheet" href="/styles/requests/requests.css">
+  <link rel="stylesheet" href="/styles/requests/request-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Tasks</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+
+      <div class="header__logo-wrapper">
+        <img src="../img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
+        <h1 class="header__title">Litez Management System</h1>
+      </div>
+
+      <div class="header__search-wrapper">
+        <div class="img-wrapper">
+          <img src="../img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+        </div>
+        <input class="search-input" type="text" placeholder="Искать везде">
+      </div>
+
+      <div class="header__info-wrapper">
+        <ul class="info-list">
+          <li class="info-list__item">
+            <button class="info-list__item-button">
+              <img src="../img/bell.svg" alt="icon" width="20" height="20">
+              <span class="info-list__item-badge badge badge-blue">1</span>
+              <!-- <span class="info-list__item-badge badge badge-extra-small badge-blue">1</span> -->
+            </button>
+          </li>
+          <li class="info-list__item">
+            <button class="info-list__item-button">
+              <img src="../img/comment.svg" alt="icon" width="20" height="20">
+              <span class="info-list__item-badge badge badge-danger">1</span>
+          </li>
+          </button>
+          <li class="info-list__item">
+            <button class="info-list__item-button">
+              <img src="../img/approve.svg" alt="icon" width="20" height="20">
+              <span class="info-list__item-badge badge badge-success">12485</span>
+          </li>
+          </button>
+        </ul>
+      </div>
+
+      <button class="header__create">Создать</button>
+
+      <div class="header__account-wrapper">
+        <p class="account-name">Yuriy Li</p>
+        <button>
+          <img class="account-logo" src="../img/account.png" alt="account logo" width="30" height="30">
+          <img class="account-drop-icon" src="../img/vector.svg" alt="account drop icon" width="9" height="6">
+        </button>
+      </div>
+    </div>
+
+    <div class="page-wrapper">
+
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="./main.html" class="menu__list-item-link">
+              <img class="svg-icon" src="/img/main-vector.svg" alt="image" width="20" height="20">
+              <p>Главная</p>
+              <span class="menu__list-item-badge badge">1</span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./index.html" class="menu__list-item-link">
+              <img src="/img/orders.svg" alt="image" width="20" height="20">
+              <p>Мои заказы</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./finances.html" class="menu__list-item-link">
+              <img src="/img/dollar.svg" alt="image" width="20" height="20">
+              <p>Финансы</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./statistics.html" class="menu__list-item-link">
+              <img src="/img/grow-graph.svg" alt="image" width="20" height="20">
+              <p>Статистика</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./documents" class="menu__list-item-link">
+              <img src="/img/document.svg" alt="image" width="20" height="20">
+              <p>Документы</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="./tasks.html" class="menu__list-item-link">
+              <img src="/img/approve.svg" alt="image" width="20" height="20">
+              <p>Задачи</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./chat.html" class="menu__list-item-link">
+              <img src="/img/chat.svg" alt="image" width="20" height="20">
+              <p>Чат</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./requests.html" class="menu__list-item-link">
+              <img src="/img/request.svg" alt="image" width="20" height="20">
+              <p>Мои запросы</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./unread-notifications.html" class="menu__list-item-link">
+              <img src="/img/bell.svg" alt="image" width="20" height="20">
+              <p>Уведомления</p>
+              <span class="menu__list-item-badge badge">1</span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./review-complaints.html" class="menu__list-item-link">
+              <img src="/img/start.svg" alt="image" width="20" height="20">
+              <p>Отзывы и жалобы</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="./colleagues.html" class="menu__list-item-link">
+              <img src="/img/callegue.svg" alt="image" width="20" height="20">
+              <p>Коллеги</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./my-companies.html" class="menu__list-item-link">
+              <img src="/img/buildings.svg" alt="image" width="20" height="20">
+              <p>Мои компании</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./profiles.html" class="menu__list-item-link">
+              <img src="/img/profile.svg" alt="image" width="20" height="20">
+              <p>Профиль</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="./benefits.html" class="menu__list-item-link">
+              <img src="/img/help.svg" alt="image" width="20" height="20">
+              <p>Полезное</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="./support.html" class="menu__list-item-link">
+              <img src="/img/message.svg" alt="image" width="20" height="20">
+              <p>Написать нам</p>
+              <!-- <span class="menu__list-item-badge badge">1</span> -->
+              <span class="item-right-border"></span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu__toggle-button" id="menuToggle">
+          <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
+          <p>Свернуть</p>
+        </button>
+      </div>
+
+      <div class="content">
+
+        <div class="requests-wrapper">
+
+            <div class="request-chat">
+                <div class="request-chat__header">
+                    <div class="request-chat__title-wrapper">
+                        <h2 class="request-chat__title">Мои запросы</h2>
+                        <img src="/img/to-right.svg" alt="icon" width="8">
+                        <p>RQ-0001</p>
+                    </div>
+                    <div class="request-chat__info">
+                        <p class="directions">Ташкент — Санкт-петербург</p>
+                        <p class="date">12.06.2024</p>
+                        <p class="status">Новый</p>
+                    </div>
+                </div>
+
+                <div class="request-chat__body">
+                    <ul>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name">Yuriy Li</p>
+                                    <p class="date">28 августа, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">ЦАО, Улица Пушкина, 99 (Текстовое сообщение)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">29 августа, 11:30</p>
+                                </div>
+                                <p class="message-wrapper__text">Форма оплаты? (Текстовое сообщение)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name">Yuriy Li</p>
+                                    <p class="date">3 сентября, 10:11</p>
+                                </div>
+                                <p class="message-wrapper__text">Перечислением (Текстовое сообщение)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">5 сентября, 9:41</p>
+                                </div>
+                                <p class="message-wrapper__text">Ваш запрос принят в обработку, ожидайте (Автоматическое)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name">Yuriy Li</p>
+                                    <p class="date">Вчера, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Хорошо (Текстовое сообщение)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/img/account.png" alt="account image" width="45" height="45">
+                            <div class="message-wrapper">
+                                <div class="message-wrapper__header">
+                                    <p class="message-account-name msg">Муаммар М.</p>
+                                    <p class="messenger">Менеджер</p>
+                                    <p class="date">Сегодня, 12:06</p>
+                                </div>
+                                <p class="message-wrapper__text">Запрос обработан. Проверьте детали и подтвердите <br> Простой: +10 USD в день<br> Предоплата: не требуется (1 000 USD)<br> Стоимость перевозки: 10 000 USD</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="request-chat__footer">
+                    <div class="input-yield">
+                        <div class="input-wrapper">
+                            <div class="input-wrapper-image">
+                                <img src="/img/input-chat-icon.svg" alt="chat icon" width="16" height="16">
+                            </div>
+                            <input type="text" placeholder="Написать сообщение">
+                            <div class="input-wrapper-image">
+                                <img src="/img/chat-photo-icon.svg" alt="chat file icon" width="14" height="16">
+                            </div>
+                        </div>
+                        <button class="send">Отправить</button>
+                    </div>
+                </div>
+            </div>
+
+          <div class="request-detail">
+            <div class="request-detail__header">
+                <h2>Детали запроса</h2>
+            </div>
+            <div class="request-detail__body">
+                <ul>
+                    <li>
+                        <p class="name">Статус</p>
+                        <p class="description status">Новый</p>
+                    </li>
+                    <li>
+                        <p class="name">Номер запроса</p>
+                        <p class="description">RQ-0001</p>
+                    </li>
+                    <li>
+                        <p class="name">Маршрут</p>
+                        <p class="description">Ташкент — Санкт-петербург</p>
+                    </li>
+                    <li>
+                        <p class="name">Дата создания</p>
+                        <p class="description">20 января 2024</p>
+                    </li>
+                    <li>
+                        <p class="name">Номер заказа</p>
+                        <p class="description process">В обработке</p>
+                    </li>
+                    <li>
+                        <p class="name">Статус</p>
+                        <p class="description order-number">A1234</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="request-detail__author">
+                <ul>
+                    <li>
+                        <p class="name">Автор</p>
+                        <div class="account">
+                            <img src="/img/account.png" alt="account logo" width="30" height="30">
+                            <p class="description">Yuriy Li</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="name">Менеджер</p>
+                        <div class="account">
+                            <img src="/img/account.png" alt="account logo" width="30" height="30">
+                            <p class="description">Муаммар М.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+
+<script src="./script.js"></script>

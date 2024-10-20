@@ -86,3 +86,9 @@ th:nth-child(1) {
 td:nth-child(1) {
   padding-left: 15px;
 } 
+
+.td-data .text.bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}

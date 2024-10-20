@@ -47,7 +47,7 @@ html {
 }
 
 .content {
-    padding: 20px 30px;
+    padding: 30px;
     width: 100%;
     max-width: 1710px;
     height: calc(100vh - 66px);
