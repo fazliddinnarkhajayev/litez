@@ -217,14 +217,14 @@
             <div class="request-chat">
                 <div class="request-chat__header">
                     <div class="request-chat__title-wrapper">
-                        <h2 class="request-chat__title">Мои запросы</h2>
+                        <h2 class="request-chat__title">Чаты по заказам</h2>
                         <img src="/img/to-right.svg" alt="icon" width="8">
-                        <p>RQ-0001</p>
+                        <p>A1920</p>
                     </div>
                     <div class="request-chat__info">
                         <p class="directions">Ташкент — Санкт-петербург</p>
                         <p class="date">12.06.2024</p>
-                        <p class="status">Новый</p>
+                        <p class="status active">Активный</p>
                     </div>
                 </div>
 
@@ -373,46 +373,72 @@
             <div class="request-detail__body">
                 <ul>
                     <li>
-                        <p class="name">Статус</p>
-                        <p class="description status">Новый</p>
-                    </li>
-                    <li>
-                        <p class="name">Номер запроса</p>
-                        <p class="description">RQ-0001</p>
+                        <p class="name">Номер заказа</p>
+                        <p class="description order-number">A1920</p>
                     </li>
                     <li>
                         <p class="name">Маршрут</p>
                         <p class="description">Ташкент — Санкт-петербург</p>
                     </li>
                     <li>
-                        <p class="name">Дата создания</p>
-                        <p class="description">20 января 2024</p>
-                    </li>
-                    <li>
-                        <p class="name">Номер заказа</p>
-                        <p class="description process">В обработке</p>
-                    </li>
-                    <li>
-                        <p class="name">Номер заказа</p>
-                        <p class="description order-number">A1234</p>
+                        <p class="name">Статус</p>
+                        <p class="description status active">Активный</p>
                     </li>
                 </ul>
             </div>
-            <div class="request-detail__author">
-                <ul>
+           
+            <div class="chat-board">
+                <h3 class="chat-board__title">5 участников</h3>
+                <ul class="chat-board__list">
                     <li>
-                        <p class="name">Автор</p>
-                        <div class="account">
-                            <img src="/img/account.png" alt="account logo" width="30" height="30">
-                            <p class="description">Yuriy Li</p>
+                        <div class="chat-image-wrapper">
+                            <img src="/img/account.png" alt="account icon" width="30" height="30">
+                            <p class="chat-account-name">Yuriy Li</p>
                         </div>
+                        <p class="chat-board__item-position">Автор</p>
+                        <button class="chat-board__item-operation">
+                            <img src="/img/three-dot.svg" alt="operations button"  width="12" height="2">
+                        </button>
                     </li>
                     <li>
-                        <p class="name">Менеджер</p>
-                        <div class="account">
-                            <img src="/img/account.png" alt="account logo" width="30" height="30">
-                            <p class="description">Муаммар М.</p>
+                        <div class="chat-image-wrapper">
+                            <img src="/img/account.png" alt="account icon" width="30" height="30">
+                            <p class="chat-account-name">Муаммар Мансуров</p>
                         </div>
+                        <p class="chat-board__item-position">Менеджер</p>
+                        <button class="chat-board__item-operation">
+                            <img src="/img/three-dot.svg" alt="operations button"  width="12" height="2">
+                        </button>
+                    </li>
+                    <li>
+                        <div class="chat-image-wrapper">
+                            <img src="/img/account.png" alt="account icon" width="30" height="30">
+                            <p class="chat-account-name">Баходир У.</p>
+                        </div>
+                        <p class="chat-board__item-position">Коллега</p>
+                        <button class="chat-board__item-operation">
+                            <img src="/img/three-dot.svg" alt="operations button"  width="12" height="2">
+                        </button>
+                    </li>
+                    <li>
+                        <div class="chat-image-wrapper">
+                            <img src="/img/account.png" alt="account icon" width="30" height="30">
+                            <p class="chat-account-name">Муаммар Мансуров</p>
+                        </div>
+                        <p class="chat-board__item-position">Коллега</p>
+                        <button class="chat-board__item-operation">
+                            <img src="/img/three-dot.svg" alt="operations button"  width="12" height="2">
+                        </button>
+                    </li>
+                    <li>
+                        <div class="chat-image-wrapper">
+                            <img src="/img/account.png" alt="account icon" width="30" height="30">
+                            <p class="chat-account-name">Камила А.</p>
+                        </div>
+                        <p class="chat-board__item-position">Коллега</p>
+                        <button class="chat-board__item-operation">
+                            <img src="/img/three-dot.svg" alt="operations button"  width="12" height="2">
+                        </button>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/task/tasks.css">
+    <link rel="stylesheet" href="styles/pagination.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Tasks</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+
+            <div class="header__logo-wrapper">
+                <img src="./img/logo.svg" class="header__logo" alt="logo" width="26" height="36">
+                <h1 class="header__title">Litez Management System</h1>
+            </div>
+
+            <div class="header__search-wrapper">
+                <div class="img-wrapper">
+                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                </div>
+                <input class="search-input" type="text" placeholder="Искать везде">
+            </div>
+
+            <div class="header__info-wrapper">
+                <ul class="info-list">
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/bell.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-blue">1</span>
+                            <!-- <span class="info-list__item-badge badge badge-extra-small badge-blue">1</span> -->
+                        </button>
+                    </li>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/comment.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-danger">1</span>
+                    </li>
+                    </button>
+                    <li class="info-list__item">
+                        <button class="info-list__item-button">
+                            <img src="./img/approve.svg" alt="icon" width="20" height="20">
+                            <span class="info-list__item-badge badge badge-success">12485</span>
+                    </li>
+                    </button>
+                </ul>
+            </div>
+
+            <button class="header__create">Создать</button>
+
+            <div class="header__account-wrapper">
+                <p class="account-name">Yuriy Li</p>
+                <button>
+                    <img class="account-logo" src="./img/account.png" alt="account logo" width="30" height="30">
+                    <img class="account-drop-icon" src="./img/vector.svg" alt="account drop icon" width="9" height="6">
+                </button>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./main.html" class="menu__list-item-link">
+                            <img class="svg-icon" src="/img/main-vector.svg" alt="image" width="20" height="20">
+                            <p>Главная</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./index.html" class="menu__list-item-link">
+                            <img src="/img/orders.svg" alt="image" width="20" height="20">
+                            <p>Мои заказы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./finances.html" class="menu__list-item-link">
+                            <img src="/img/dollar.svg" alt="image" width="20" height="20">
+                            <p>Финансы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./statistics.html" class="menu__list-item-link">
+                            <img src="/img/grow-graph.svg" alt="image" width="20" height="20">
+                            <p>Статистика</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./documents" class="menu__list-item-link">
+                            <img src="/img/document.svg" alt="image" width="20" height="20">
+                            <p>Документы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./tasks.html" class="menu__list-item-link">
+                            <img src="/img/approve.svg" alt="image" width="20" height="20">
+                            <p>Задачи</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./chat.html" class="menu__list-item-link">
+                            <img src="/img/chat.svg" alt="image" width="20" height="20">
+                            <p>Чат</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./requests.html" class="menu__list-item-link">
+                            <img src="/img/request.svg" alt="image" width="20" height="20">
+                            <p>Мои запросы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./unread-notifications.html" class="menu__list-item-link">
+                            <img src="/img/bell.svg" alt="image" width="20" height="20">
+                            <p>Уведомления</p>
+                            <span class="menu__list-item-badge badge">1</span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./review-complaints.html" class="menu__list-item-link">
+                            <img src="/img/start.svg" alt="image" width="20" height="20">
+                            <p>Отзывы и жалобы</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./colleagues.html" class="menu__list-item-link">
+                            <img src="/img/callegue.svg" alt="image" width="20" height="20">
+                            <p>Коллеги</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./my-companies.html" class="menu__list-item-link">
+                            <img src="/img/buildings.svg" alt="image" width="20" height="20">
+                            <p>Мои компании</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./profiles.html" class="menu__list-item-link">
+                            <img src="/img/profile.svg" alt="image" width="20" height="20">
+                            <p>Профиль</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="./benefits.html" class="menu__list-item-link">
+                            <img src="/img/help.svg" alt="image" width="20" height="20">
+                            <p>Полезное</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="./support.html" class="menu__list-item-link">
+                            <img src="/img/message.svg" alt="image" width="20" height="20">
+                            <p>Написать нам</p>
+                            <!-- <span class="menu__list-item-badge badge">1</span> -->
+                            <span class="item-right-border"></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="menu__toggle-button" id="menuToggle">
+                    <img src="/img/left-alignment.svg" alt="to left icon" width="16" height="15">
+                    <p>Свернуть</p>
+                </button>
+            </div>
+
+            <div class="content">
+
+                <div class="content-header">
+                    <h2 class="content-header__title">Чаты по заказам</h2>
+
+                    <a class="content-header__create-link" href="./chat-board.html">
+                        <button class="content-header__create">
+                            <img src="/img/plus-white.svg" alt="export-icon" width="13" height="13">
+                            <span>Новый чат</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="content-filter">
+
+                    <div class="review-route-wrapper">
+                        <ul class="review-complaint__routes-list">
+                            <li class="active">
+                                <a href="./chat.html">Заказы</a>
+                            </li>
+                            <li>
+                                <a href="./chat-colleague.html">Коллеги</a>
+                            </li>
+                            <li>
+                                <a href="./chat-managers.html">Менеджеры</a>
+                            </li>
+                            <li>
+                                <a href="./chat-archive.html">Архив</a>
+                            </li>
+                        </ul>
+
+                        <div class="content-filter__item">
+                            <div class="content-filter__image-wrapper">
+                                <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
+                            </div>
+                            <input type="text" placeholder="Поиск">
+                        </div>
+    
+                        <div class="content-filter__item">
+                            <div class="select-wrapper">
+                                <button class="selected-option">
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/top-bottom.svg" alt="icon" width="10" height="15">
+                                    </div>
+                                    <span>Недавние</span>
+                                    <div class="content-filter__image-wrapper">
+                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                    </div>
+                                </button>
+    
+                                <!-- Options dropdown -->
+                                <div class="options-wrapper" style="display: none;">
+                                    <!-- Text option -->
+                                    <button class="select__option" id="allTimeOption">Недавние</button>
+
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="pagination">
+                            <p class="pagination__count-text">1-50 из 128 заказов</p>
+    
+                            <div class="pagination__select-wrapper">
+                                <select class="pagination__select">
+                                    <option value="10">10</option>
+                                    <option value="50">50</option>
+                                </select>
+                                <img src="/img/vector-dark.svg" alt="">
+                            </div>
+    
+                            <div class="pagination__buttons">
+                                <button>
+                                    <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
+                                </button>
+                                <button>
+                                    <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Заказ</th>
+                                    <th>Последнее сообщение</th>
+                                    <th>Участники</th>
+                                    <th>Автор</th>
+                                    <th>Статус заказа</th>
+                                    <th>Действия</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text bold">A1920 / 12.02.24 · Ташкент — Санкт-петербург</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data badge-data">
+                                            <span class="badge badge-danger">1</span>
+                                            <p class="text"><span class="bold">Руслан А.:</span> Договорились, ожидаем подтверждения</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data accounts">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <p class="text">Yuriy Li</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <span class="status active">Активный</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data operations">
+                                            <ul class="operations__list">
+                                                <li>
+                                                    <button><img src="/img/add-user.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                                <li>
+                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text bold">A1919 / 12.02.24 · Ташкент — Екатеринбург</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data badge-data">
+                                            <span class="badge badge-danger">1</span>
+                                            <p class="text"><span class="bold">Yuriy Li.: </span> Ок</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data accounts">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <p class="text">Муаммар М.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <span class="status completed">Завершен</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data operations">
+                                            <ul class="operations__list">
+                                                <li>
+                                                    <button><img src="/img/add-user.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                                <li>
+                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text bold">A1917 / 12.02.24 · Волгоград — Наманган</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">Баходыр Ю.: </span> Принято</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data accounts">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <p class="text">Yuriy Li</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <span class="status planned">Запланирован</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data operations">
+                                            <ul class="operations__list">
+                                                <li>
+                                                    <button><img src="/img/add-user.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                                <li>
+                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text bold">A1916 / 12.02.24 · Бухара — Ургенч</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">Руслан А.: </span> Необходимо согласовать с директором отдела продаж. Отпишусь позже</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data accounts">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <p class="text">Баходир У.</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <span class="status canceled">Аннулирован</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data operations">
+                                            <ul class="operations__list">
+                                                <li>
+                                                    <button><img src="/img/add-user.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                                <li>
+                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text bold">A1920 / 12.02.24 · Ташкент — Санкт-петербург</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <p class="text"><span class="bold">Камила А.: </span>Договорились, ожидаем подтверждения</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data accounts">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">
+                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
+                                            <p class="text">Yuriy Li</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">
+                                            <span class="status active">Активный</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data operations">
+                                            <ul class="operations__list">
+                                                <li>
+                                                    <button><img src="/img/add-user.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                                <li>
+                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="14"> </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <p class="pagination__count-text">1-50 из 128 заказов</p>
+
+                    <div class="pagination__select-wrapper">
+                        <select class="pagination__select">
+                            <option value="10">10</option>
+                            <option value="50">50</option>
+                        </select>
+                        <img src="/img/vector-dark.svg" alt="">
+                    </div>
+
+                    <div class="pagination__buttons">
+                        <button>
+                            <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
+                        </button>
+                        <button>
+                            <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script src="./script.js"></script>
+<script src="./js/select.js"></script>
