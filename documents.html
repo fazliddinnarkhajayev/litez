@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/content-headers.css">
-    <link rel="stylesheet" href="styles/pagination.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/status-multi-select.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/task/tasks.css">
+    <link rel="stylesheet" href="styles/documents.css">
+    <link rel="stylesheet" href="styles/pagination.css">
     <link rel="stylesheet" href="styles/table.css">
-    <link rel="stylesheet" href="styles/colleguages/colleagues.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <title>Orders</title>
+    <title>Tasks</title>
 </head>
 
 <body>
@@ -157,7 +159,7 @@
                         </a>
                     </li>
                 </ul>
-                
+
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a href="./colleagues.html" class="menu__list-item-link">
@@ -168,7 +170,7 @@
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a href="./my-colleagues.html" class="menu__list-item-link">
+                        <a href="./my-companies.html" class="menu__list-item-link">
                             <img src="/img/buildings.svg" alt="image" width="20" height="20">
                             <p>Мои компании</p>
                             <!-- <span class="menu__list-item-badge badge">1</span> -->
@@ -211,16 +213,41 @@
             </div>
 
             <div class="content">
-                <div class="colleagues__header">
-                    <h2 class="colleagues__title">Коллеги</h2>
-                    <div class="colleagues__operations">
-                        <button class="archive">Архив</button>
-                        <button class="add">
-                            <img src="/img/add-colleague.svg" alt="company icon" width="16" height="16">
-                            <span>Добавить коллегу</span>
-                        </button>
+
+                <div class="content-header">
+                    <h2 class="content-header__title">Документы</h2>
+
+                    <div class="content-header__status-filters filter">
+                        <div class="default-option">
+                            <div class="filter-option selected"> 
+                                <a href="./documents.html">
+                                    <p class="filter-option__text">По заказам</p>
+                                </a>
+                            </div>
+                            <span class="seperator-border"></span>
+                        </div>
+                        <ul class="filters">
+                            <li class="filter-option" data-value="open">
+                                <a href="./documents-contract.html">
+                                    <p class="filter-option__text">Договоры и соглашения</p>
+                                </a>
+                            </li>
+                            <li class="filter-option" data-value="open">
+                                <a href="#">
+                                    <p class="filter-option__text">Уставные документы</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <a class="content-header__create-link" href="./create-task.html">
+                        <button class="content-header__remove">
+                            <img src="/img/remove-icon-grey.svg" alt="export-icon" width="13" height="13">
+                            <span>Корзина</span>
+                        </button>
+                    </a>
                 </div>
+
                 <div class="content-filter">
                     <div class="content-filter__item">
                         <div class="content-filter__image-wrapper">
@@ -229,7 +256,20 @@
                         <input type="text" placeholder="Поиск в заказах">
                     </div>
 
-            
+                    <div class="content-filter__item sort">
+                        <button class="sort-button">
+                            <img src="/img/top-bottom.svg" alt="incon" width="10" height="10">
+                            <p class="indicators__list-item-text">Сортировать</p>
+                        </button>
+                    </div>
+
+                    <div class="content-filter__item hide">
+                        <button class="sort-button">
+                            <img src="/img/hide.svg" alt="incon" width="20" height="20">
+                            <p class="indicators__list-item-text">Скрыть</p>
+                        </button>
+                    </div>
+
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
@@ -259,327 +299,207 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="table-container">
                     <div class="table-wrapper">
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Имя пользователя</th>
-                                    <th>Телефон</th>
-                                    <th>Эл.почта</th>
-                                    <th>Должность</th>
-                                    <th>Отдел</th>
-                                    <th>Посл. посещение</th>
-                                    <th>Действия</th>
+                                    <th class="document-directions">Номер заказа · Маршрут</th>
+                                    <th>Компания / Клиент</th>
+                                    <th>Дата погрузки</th>
+                                    <th>Договор №</th>
+                                    <th>Посл. изменения</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Алишер Убайдуллаев</p>
+                                        <span class="tr-span-border"></span>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">user@email.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">Коммерческий директор </div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Юрий Ли</p>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <div class="td-documents">
+                                                <a class="td-documents__title-link" href="#"><h3 class="td-documents__title">Все файлы</h3></a>
+                                                <span class="documents__span-border"></span>
+                                                <ul class="td-documents__list">
+                                                    <li>
+                                                        <a href="#">На авто</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Отгрузочные</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Документы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Подписанные</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Почта</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">user@email.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">Генеральный директор</div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Муаммар Мансуров</p>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">user@email.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">UX Designer</div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Design Department</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Баходыр Исмаилов</p>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">johndoe@example.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">Logistics Coordinator</div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
+                                </tr>
+                              
+                                <tr>
                                     <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ООО “Компания клиента”</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">02.05.24</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Алина Смирнова</p>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">user@email.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">Logistics Planner</div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Даниил Иванов</p>
+                                        <span class="tr-span-border"></span>
+                                        <div class="td-data document-directions">
+                                            <a class="td-data__link" href="./task-detail.html">
+                                                <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
+                                            <span class="sub-text">18 файлов</span>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
+                                        <div class="td-data">ООО “Компания клиента”</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">user@email.com</div>
+                                        <div class="td-data">02.05.24</div>
                                     </td>
                                     <td>
-                                        <div class="td-data">Logistics Specialist</div>
+                                        <div class="td-data">ARTC-0009/23-МТ</div>
                                     </td>
                                     <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="td-data account">
-                                            <img src="/img/account.png" alt="account-logo" width="30" height="30">
-                                            <a class="td-data__link" href="./colleague-profile.html">
-                                                <p class="text bold">Елена Петрова</p>
-                                            </a>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data">+998 90 123 45 67</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data">user@email.com</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data">Logistics Analyst</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data account">Отдел продаж Алма-аты</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data accounts">11:30, 12 октября 2024</div>
-                                    </td>
-                                    <td>
-                                        <div class="td-data operations">
-                                            <ul class="operations__list">
-                                                <li>
-                                                    <button><img src="/img/grey-edit.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/input-chat-icon.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/grey-approve.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="/img/three-dot.svg" alt="edit icon" width="16" height="16"> </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
@@ -608,6 +528,7 @@
                         </button>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </div>
@@ -621,3 +542,4 @@
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
 <script src="./js/pagination.js"></script>
+<script src="./js/multi-select.js"></script>

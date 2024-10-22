@@ -28,6 +28,11 @@
     gap: 10px;
 }
 
+.default-option a, .filter-option a {
+    text-decoration: none;
+    color: #8C8B98;
+}
+
 .default-option .seperator-border {
     width: 2px;
     height: 20px;
@@ -36,6 +41,11 @@
 }
 
 .filter-option.selected {
+    border-color: #C5C4CF;
+    color: #000000;
+}
+
+.filter-option.selected a {
     border-color: #C5C4CF;
     color: #000000;
 }

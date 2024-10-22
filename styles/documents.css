@@ -1,0 +1,62 @@
+th.document-directions, .td-data.document-directions {
+    width: 751px;
+    max-width: 751px !important;
+}
+
+.td-data .td-documents {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.td-data .td-documents .td-documents__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #2196F3;
+    margin: 0;
+}
+
+.td-data .td-documents .td-documents__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.td-data .td-documents .td-documents__list li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+.td-data .td-documents .td-documents__list li a, .td-data .td-documents .td-documents__title-link {
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.td-data .td-documents .documents__span-border {
+    min-width: 1px;
+    height: 15px;
+    background-color: #C5C4CF;
+    display: block;
+}
+
+.tr-span-border {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 5px;
+    height: 50px;
+    background-color: #FDD835;
+    border-radius: 5px;
+}
+
+tr {
+    position: relative;
+}
