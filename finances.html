@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/status-multi-select.css">
     <link rel="stylesheet" href="styles/finances.css">
     <link rel="stylesheet" href="styles/pagination.css">
     <link rel="stylesheet" href="styles/table.css">
@@ -215,34 +216,35 @@
                 <div class="content-header">
                     <h2 class="content-header__title">Финансы</h2>
 
-                    <div class="content-header__indicators indicators">
-
-
-                        <div class="indicators__list-item">
-                            <p class="indicators__list-item-text">Все заказы</p>
+                    <div class="content-header__status-filters filter">
+                        <div class="filter">
+                            <div class="default-option">
+                                <div class="filter-option selected"> 
+                                    <p class="filter-option__text">Все заказы</p>
+                                </div>
+                            </div>
+                            <ul class="filters">
+                                <li class="filter-option">
+                                    <p class="filter-option__text">Активные</p>
+                                </li>
+                                <li class="filter-option">
+                                    <p class="filter-option__text">Завершенные</p>
+                                </li>
+                            </ul>
                         </div>
-
-                        <ul class="indicators__list">
-                            <li class="indicators__list-item active">
-                                <p class="indicators__list-item-text">Активные</p>
-                            </li>
-
-                            <li class="indicators__list-item active">
-                                <p class="indicators__list-item-text">Завершенные</p>
-                            </li>
-
-                        </ul>
-
-                        <span class="indicators__border"></span>
-
-                        <div class="indicators__list-item ">
-                            <p class="indicators__list-item-text">Все транзакции</p>
+                        <span class="seperator-border"></span>
+                        <div class="filter">
+                            <div class="default-option">
+                                <div class="filter-option selected"> 
+                                    <p class="filter-option__text">Все транзакции</p>
+                                </div>
+                            </div>
+                            <ul class="filters">
+                                <li class="filter-option">
+                                    <p class="filter-option__text">Задолжности</p>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="indicators__list-item active">
-                            <p class="indicators__list-item-text">Задолжности</p>
-                        </div>
-
                     </div>
 
                     <button class="content-header__upload">
@@ -298,13 +300,21 @@
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                        <div class="pagination__select-wrapper">
-                            <select class="pagination__select">
-                                <option value="10">10</option>
-                                <option value="50">50</option>
-                            </select>
-                            <img src="/img/vector-dark.svg" alt="">
-                        </div>
+                            <div class="pagination__select-wrapper">
+                                <button class="pg-selected-option">
+                                    <span>По 10 строк</span>
+                                    <div class="pg-image-wrapper">
+                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                    </div>
+                                </button>
+
+                                <!-- Options dropdown -->
+                                <div class="pg-options-wrapper">
+                                    <!-- Text option -->
+                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                                </div>
+                            </div>
 
                         <div class="pagination__buttons">
                             <button>
@@ -649,13 +659,21 @@
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                    <div class="pagination__select-wrapper">
-                        <select class="pagination__select">
-                            <option value="10">10</option>
-                            <option value="50">50</option>
-                        </select>
-                        <img src="/img/vector-dark.svg" alt="">
-                    </div>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                            </div>
+                        </div>
 
                     <div class="pagination__buttons">
                         <button>
@@ -678,3 +696,5 @@
 
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
+<script src="./js/pagination.js"></script>
+<script src="./js/multi-select.js"></script>

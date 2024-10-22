@@ -20,26 +20,6 @@
     position: relative;
 }
 
-.pagination__select-wrapper img {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.pagination__select {
-    width: 150px;
-    height: 40px;
-    border: 1px solid #C5C4CF;
-    border-radius: 10px;
-    background-color: transparent;
-    padding: 10px;
-    -webkit-appearance: none;
-    /* For Safari and Chrome */
-    -moz-appearance: none;
-    /* For Firefox */
-    outline: none;
-}
 
 .pagination__buttons {
     display: flex;
@@ -59,4 +39,63 @@
 
 .pagination__buttons button:hover {
     border-color: #C5C4CF;
+}
+
+.pagination__select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 180px;
+    border: 1px solid #C5C4CF;
+    border-radius: 10px;
+}
+
+.pg-selected-option {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.pg-options-wrapper {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.pg-options-wrapper .pg-select__option {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #535260;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    width: 100%;
+}
+
+.pg-options-wrapper .pg-select__option:hover {
+    background-color: #F8F7FA;
 }

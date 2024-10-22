@@ -274,13 +274,21 @@
                         <div class="pagination">
                             <p class="pagination__count-text">1-50 из 128 заказов</p>
     
-                            <div class="pagination__select-wrapper">
-                                <select class="pagination__select">
-                                    <option value="10">10</option>
-                                    <option value="50">50</option>
-                                </select>
-                                <img src="/img/vector-dark.svg" alt="">
-                            </div>
+                                <div class="pagination__select-wrapper">
+                                    <button class="pg-selected-option">
+                                        <span>По 10 строк</span>
+                                        <div class="pg-image-wrapper">
+                                            <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                        </div>
+                                    </button>
+    
+                                    <!-- Options dropdown -->
+                                    <div class="pg-options-wrapper">
+                                        <!-- Text option -->
+                                        <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                        <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                                    </div>
+                                </div>
     
                             <div class="pagination__buttons">
                                 <button>
@@ -500,13 +508,21 @@
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                    <div class="pagination__select-wrapper">
-                        <select class="pagination__select">
-                            <option value="10">10</option>
-                            <option value="50">50</option>
-                        </select>
-                        <img src="/img/vector-dark.svg" alt="">
-                    </div>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                            </div>
+                        </div>
 
                     <div class="pagination__buttons">
                         <button>
@@ -529,3 +545,4 @@
 
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
+<script src="./js/pagination.js"></script>

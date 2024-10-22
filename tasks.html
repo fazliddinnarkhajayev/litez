@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/status-multi-select.css">
     <link rel="stylesheet" href="styles/content-headers.css">
     <link rel="stylesheet" href="styles/task/tasks.css">
     <link rel="stylesheet" href="styles/pagination.css">
@@ -215,42 +216,37 @@
                 <div class="content-header">
                     <h2 class="content-header__title">Задачи</h2>
 
-                    <div class="content-header__indicators indicators">
-
-
-                        <div class="indicators__list-item">
-                            <p class="indicators__list-item-text">Все заказы</p>
+                    <div class="content-header__status-filters filter">
+                        <div class="default-option">
+                            <div class="filter-option selected"> 
+                                <span class="filter-option__badge badge">8</span>
+                                <p class="filter-option__text">Все заказы</p>
+                                <span class="remove-tag">×</span>
+                            </div>
+                            <span class="seperator-border"></span>
                         </div>
-
-                        <span class="indicators__border"></span>
-
-                        <ul class="indicators__list">
-                            <li class="indicators__list-item active">
-                                <span class="badge">8</span>
-                                <p class="indicators__list-item-text">Открыты</p>
+                        <ul class="filters">
+                            <li class="filter-option" data-value="open">
+                                <span class="filter-option__badge badge">8</span>
+                                <p class="filter-option__text">Открыты</p>
                             </li>
-
-                            <li class="indicators__list-item active">
-                                <span class="badge badge-blue">2</span>
-                                <p class="indicators__list-item-text">В работе</p>
+                            <li class="filter-option" data-value="working">
+                                <span class="filter-option__badge badge badge-blue">2</span>
+                                <p class="filter-option__text">В работе</p>
                             </li>
-
-                            <li class="indicators__list-item active">
-                                <span class="badge badge-success">4</span>
-                                <p class="indicators__list-item-text">Выполнены</p>
+                            <li class="filter-option" data-value="planned">
+                                <span class="filter-option__badge badge badge-success">4</span>
+                                <p class="filter-option__text">Выполнены</p>
                             </li>
-
-                            <li class="indicators__list-item active">
-                                <span class="badge badge-border-success">2</span>
-                                <p class="indicators__list-item-text">На рассмотрении</p>
+                            <li class="filter-option" data-value="cancelled">
+                                <span class="filter-option__badge badge badge-border-success">2</span>
+                                <p class="filter-option__text">На рассмотрении</p>
                             </li>
-
-                            <li class="indicators__list-item active">
-                                <span class="badge badge-danger">1</span>
-                                <p class="indicators__list-item-text">Отменены</p>
+                            <li class="filter-option" data-value="cancelled">
+                                <span class="filter-option__badge badge badge-danger">1</span>
+                                <p class="filter-option__text">Отменены</p>
                             </li>
                         </ul>
-
                     </div>
 
                     <a class="content-header__create-link" href="./create-task.html">
@@ -309,13 +305,21 @@
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                        <div class="pagination__select-wrapper">
-                            <select class="pagination__select">
-                                <option value="10">10</option>
-                                <option value="50">50</option>
-                            </select>
-                            <img src="/img/vector-dark.svg" alt="">
-                        </div>
+                            <div class="pagination__select-wrapper">
+                                <button class="pg-selected-option">
+                                    <span>По 10 строк</span>
+                                    <div class="pg-image-wrapper">
+                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                    </div>
+                                </button>
+
+                                <!-- Options dropdown -->
+                                <div class="pg-options-wrapper">
+                                    <!-- Text option -->
+                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                                </div>
+                            </div>
 
                         <div class="pagination__buttons">
                             <button>
@@ -568,17 +572,24 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                    <div class="pagination__select-wrapper">
-                        <select class="pagination__select">
-                            <option value="10">10</option>
-                            <option value="50">50</option>
-                        </select>
-                        <img src="/img/vector-dark.svg" alt="">
-                    </div>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                            </div>
+                        </div>
 
                     <div class="pagination__buttons">
                         <button>
@@ -588,6 +599,7 @@
                             <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
                         </button>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -601,3 +613,5 @@
 
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
+<script src="./js/pagination.js"></script>
+<script src="./js/multi-select.js"></script>

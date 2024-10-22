@@ -14,64 +14,6 @@
     margin: 0;
 }
 
-.indicators {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.indicators__border {
-    width: 2px;
-    height: 20px;
-    border: 1px 0px 0px 0px;
-    background-color: #C5C4CF;
-}
-
-.indicators__list {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    gap: 5px;
-}
-
-.indicators__list-item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #C5C4CF;
-}
-
-.indicators__list-item.active {
-    border-color: transparent;
-    color: #8C8B98;
-}
-
-.indicators__list-item.canceled {
-    border-color: transparent;
-    color: #8C8B98;
-}
-
-.indicators__list-item p {
-    margin: 0;
-    margin-left: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0.01em;
-    text-align: center;
-}
-
-.indicators__list-item button {
-    margin: 0;
-    margin-left: 5px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-}
-
 .content-header__upload {
     display: flex;
     align-items: center;

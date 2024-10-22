@@ -115,3 +115,7 @@ html {
   .badge-warning {
     background-color: #ffc107;    /* Yellow color for warning */
   }
+
+  .badge-planned {
+    background-color: #8C8B98;  
+  }
