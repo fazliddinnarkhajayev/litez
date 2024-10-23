@@ -268,12 +268,42 @@
                                     <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
                             </button>
-
+                        
                             <!-- Options dropdown -->
                             <div class="options-wrapper" style="display: none;">
                                 <!-- Text option -->
-                                <button class="select__option" id="allTimeOption">За весь период</button>
+                                <button class="select__option" data-value="all-time">За весь период</button>
+                        
+                                <!-- Date input with save button -->
+                                <div class="select__option">
+                                    <input type="date" class="date-input">
+                                    <button class="save-date-btn">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                        
+                    </div>
 
+                    <div class="content-filter__item">
+                         <!-- Another select component -->
+                         <div class="select-wrapper">
+                            <button class="selected-option">
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/date.svg" alt="icon" width="20" height="20">
+                                </div>
+                                <span>За весь период</span>
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
+                        
+                            <!-- Options dropdown -->
+                            <div class="options-wrapper" style="display: none;">
+                                <!-- Text option -->
+                                <button class="select__option" data-value="all-time">За весь период</button>
+                        
                                 <!-- Date input with save button -->
                                 <div class="select__option">
                                     <input type="date" class="date-input">
@@ -405,9 +435,26 @@
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
-                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
-                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg"
-                                                    alt="search-icon" width="10" height="10"></button>
+                                             <div class="select-wrapper">
+                                                 <button class="selected-option">
+                                                     <span>Все</span>
+                                                     <div class="content-filter__image-wrapper">
+                                                         <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                     </div>
+                                                 </button>
+                                             
+                                                 <!-- Options dropdown -->
+                                                 <div class="options-wrapper" style="display: none;">
+                                                     <!-- Text option -->
+                                                     <button class="select__option" data-value="all-time">Все</button>
+                                                
+                                                     <!-- Date input with save button -->
+                                                     <div class="select__option">
+                                                         <input type="date" class="date-input">
+                                                         <button class="save-date-btn">Save</button>
+                                                     </div>
+                                                 </div>
+                                             </div>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -440,9 +487,92 @@
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
-                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
-                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg"
-                                                    alt="search-icon" width="10" height="10"></button>
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+                                            
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+                                               
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data date">
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+                                            
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+                                               
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -454,66 +584,51 @@
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
-                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
-                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg"
-                                                    alt="search-icon" width="10" height="10"></button>
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+                                            
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+                                               
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
-                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
-                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg"
-                                                    alt="search-icon" width="10" height="10"></button>
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data date">
-                                            <input class="th-filter-data__input date" type="date" placeholder="Поиск">
-                                            <button class="th-date-clear-button"><img src="/img/x-vector.svg"
-                                                    alt="search-icon" width="10" height="10"></button>
-                                        </div>
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+                                            
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+                                               
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data">
