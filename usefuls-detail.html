@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/usefuls.css">
+    <link rel="stylesheet" href="styles/my-companies.css">
     <link rel="stylesheet" href="styles/pagination.css">
-    <link rel="stylesheet" href="styles/review-complaint/review-comlaints.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -208,141 +210,102 @@
                 </button>
             </div>
 
-            <div class="content">
-                <div class="review-complaint__header">
-                    <h2 class="review-complaint__title">Отзывы и жалобы</h2>
+            <div class="content userfules-detail">
+                    <a class="usefuls__return-button" href="./usefuls.html" role="button">
+                        <img src="/img/to-left-grey.svg" alt="to left icon" width="6" height="11">
+                        <span>Назад к статьям</span>
+                    </a>
 
-                    <div class="review-complaint__operations">
-                        <button class="complaint">
-                            <img src="/img/comlaint-vector-grey.svg" alt="company icon" width="17" height="16">
-                            <span>Оставить жалобу</span>
-                        </button>
-                        <button class="review">
-                            <img src="/img/edit-white.svg" alt="company icon" width="16" height="16">
-                            <span>Написать отзыв</span>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="review-route-wrapper">
-                    <ul class="review-complaint__routes-list">
-                        <li>
-                            <a href="./review-complaints.html">Заказы</a>
-                        </li>
-                        <li class="active">
-                            <a href="./review-complaints-managers.html">Менеджеры</a>
-                        </li>
-                        <li>
-                            <a href="./review-complaints-complaint.html">Жалобы</a>
-                        </li>
-                    </ul>
-
-                    <div class="pagination">
-                        <p class="pagination__count-text">1-50 из 128 заказов</p>
-
-                            <div class="pagination__select-wrapper">
-                                <button class="pg-selected-option">
-                                    <span>По 10 строк</span>
-                                    <div class="pg-image-wrapper">
-                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                    </div>
+                    <div class="usefules__body">
+                        <div class="usefules__body-header">
+                            <p class="category">Категория · 1 января, 12:07</p>
+                            <div class="usefules__body-header-operations">
+                                <button>
+                                    <img src="/img/print-grey.svg" alt="to left icon" width="16" height="16">
+                                    <span>Печать</span>
                                 </button>
-
-                                <!-- Options dropdown -->
-                                <div class="pg-options-wrapper">
-                                    <!-- Text option -->
-                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
-                                </div>
-                            </div>
-
-                        <div class="pagination__buttons">
-                            <button>
-                                <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
-                            </button>
-                            <button>
-                                <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-             
-                <div class="review-complaint-list-wrapper">
-                    <ul class="review-complaint-list">
-                        <li class="review-complaint-item">
-                            <div class="review-complaint-item__wrapper">
-                                <img src="/img/account.png" alt="account image" width="45" height="45">
-                                <p class="directions">Руслан А.</p>
-                                <p class="manager">Менеджер</p>
-                                <div class="rate">
-                                    <img src="/img/rating-bar.svg" alt="rating bar" width="128" height="24">
-                                </div>
-                                <p class="date">3 сентября 2024, 11:45</p>
-                            </div>
-                            <p class="review-complaint-item__text">Nunc mattis ipsum sodales adipiscing quis gravida id amet nam. In dictum bibendum lacus facilisis. Non nunc odio vitae vitae eget mattis lacus nam diam. Ut libero odio pretium rhoncus purus nunc pellentesque pellentesque ut. In nulla suspendisse tempor mattis sodales convallis dignissim.</p>
-                            <ul class="review-complaint-item__files-list">
-                                <li>
-                                    <a href="#"><img src="/img/boxes.png" alt="boxes image"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="/img/pdf-image.png" alt="pdf file image"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="/img/word-image.png" alt="word file image"></a>
-                                </li>
-                            </ul>
-                            <div class="review-complaint-item__operations">
-                                <button class="edit">Изменить отзыв</button>
-                                <button class="delete">Удалить</button>
-                            </div>
-                        </li>
-                        <li class="review-complaint-item">
-                            <div class="review-complaint-item__wrapper">
-                                <img src="/img/account.png" alt="account image" width="45" height="45">
-                                <p class="directions">Имя Менеджера</p>
-                                <p class="manager">Менеджер</p>
-                                <div class="rate">
-                                    <img src="/img/rating-bar.svg" alt="rating bar" width="128" height="24">
-                                </div>
-                                <p class="date">3 сентября 2024, 11:45</p>
-                            </div>
-                            <p class="review-complaint-item__text">Nunc mattis ipsum sodales adipiscing quis gravida id amet nam. In dictum bibendum lacus facilisis.</p>
-                            <div class="review-complaint-item__operations">
-                                <button class="edit">Изменить отзыв</button>
-                                <button class="delete">Удалить</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="pagination">
-                    <p class="pagination__count-text">1-50 из 128 заказов</p>
-
-                        <div class="pagination__select-wrapper">
-                            <button class="pg-selected-option">
-                                <span>По 10 строк</span>
-                                <div class="pg-image-wrapper">
-                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                </div>
-                            </button>
-
-                            <!-- Options dropdown -->
-                            <div class="pg-options-wrapper">
-                                <!-- Text option -->
-                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                                <button>
+                                    <img src="/img/download-vector-grey.svg" alt="to left icon" width="16" height="16">
+                                    <span>Скачать PDF</span>
+                                </button>
                             </div>
                         </div>
 
-                    <div class="pagination__buttons">
-                        <button>
-                            <img src="/img/left-vector.svg" alt="to back button" width="8" height="11">
-                        </button>
-                        <button>
-                            <img src="/img/right-vector.svg" alt="to front button" width="8" height="11">
-                        </button>
+                        <h2 class="usefules__body-title">Экспортные грузоперевозки из Узбекистана в Россию выросли на 64% — ATI.SU</h2>
+                        <p class="usefules__body-pre-text">Краткое описание. На фоне проблем с платежами в Китае российские импортеры переориентируются на узбекских поставщиков.</p>
+                        <img class="usefules__body-image" src="/img/truck-with-sun.png" alt="truck image" width="720" height="480">
+                        <ul class="usefules__body-text-list">
+                            <li>В третьем квартале количество размещенных заявок на автомобильные грузоперевозки из Узбекистана увеличилось на 71% в годовом выражении. Об этом Spot сообщили в бирже грузоперевозок ATI.SU.</li>
+                            <li>Основной прирост пришелся на российское направление на фоне проблем с платежами в Китай (рост на 64% год к году). Спрос на экспортные автоперевозки в Беларусь и Казахстан показал почти двукратный рост.</li>
+                            <li>«В международных перевозках мы видим уверенный рост спроса на российском направлении, но при этом не настолько экстремальный, как в перевозках из Казахстана в Россию. И если в Казахстане он обусловлен в большей степени реэкспортом китайских товаров, то в Узбекистане скорее наблюдается реальный рост поставок именно узбекской продукции. Хотя бы потому, что реэкспорт из Китая через Узбекистан не слишком удобен, а банки страны не особенно лояльны к подобного рода операциям.</li>
+                            <li>Между тем проблемы российских импортеров с оплатой китайских поставок заставляют их переориентироваться на другие рынки, в том числе находить поставщиков в Узбекистане», — заявил директор местного представительства биржи Фарид Вахидов</li>
+                            <li>Сокращение спроса на импортные грузоперевозки, наметившееся во втором квартале, не получило продолжения. В июле-сентябре число заявок на перевозки в Узбекистан из других стран выросло на треть. </li>
+                            <li>Однако заявки на доставку грузов из России сократились на 8%. Из Казахстана и Беларуси перевозки остались на прежнем уровне, в то время как спрос на доставку грузов из Китая практически удвоился</li>
+                            <li>Ранее Spot писал, что Узбекистан намерен вступить в систему разрешений на перевозки ЕКМТ.</li>
+                        </ul>
+
+                        <h3 class="usefules__body-app-title">Приложения</h3>
+                        <ul class="usefules__body-app-list">
+                            <li><img src="/img/first-app-image.png" alt="image" width="118" height="90"></li>
+                            <li><img src="/img/first-app-image.png" alt="image" width="118" height="90"></li>
+                            <li><img src="/img/first-app-image.png" alt="image" width="118" height="90"></li>
+                            <li><img src="/img/first-app-image.png" alt="image" width="118" height="90"></li>
+                            <li><img src="/img/first-app-image.png" alt="image" width="118" height="90"></li>
+                        </ul>
+                        <div class="usefules__body-header">
+                            <p class="category">Категория · 1 января, 12:07</p>
+                            <div class="usefules__body-header-operations">
+                                <button>
+                                    <img src="/img/download-vector-grey.svg" alt="to left icon" width="16" height="16">
+                                    <span>Печать</span>
+                                </button>
+                                <button>
+                                    <img src="/img/print-grey.svg" alt="to left icon" width="16" height="16">
+                                    <span>Скачать PDF</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="last-staty">
+                        <div class="last-staty__operations">
+                            <button>
+                                <img src="/img/to-left-white.svg" alt="previous icon" width="6" height="11">
+                                <span>Предыдущая</span>
+                            </button>
+                            <button>
+                                <span>Следующая</span>
+                                <img src="/img/to-right-white.svg" alt="next icon" width="6" height="11">
+                            </button>
+                        </div>
+
+                        <div class="last-staty__body">
+                            <h2 class="last-staty__title">Последние статьи</h2>
+
+                        <ul class="last-staty__list">
+                            <li>
+                                <p class="text">Исследование: влияние пандемии на глобальные логистические цепочки</p>
+                                <p class="date">Категория · 1 января, 12:07</p>
+                            </li>
+                            <li>
+                                <p class="text">Как электрические грузовики изменят логистику в ближайшие годы</p>
+                                <p class="date">Категория · 1 января, 12:07</p>
+                            </li>
+                            <li>
+                                <p class="text">Новые технологии в логистике: как они меняют отрасль</p>
+                                <p class="date">Категория · 1 января, 12:07</p>
+                            </li>
+                            <li>
+                                <p class="text">Исследование: влияние пандемии на глобальные логистические цепочки</p>
+                                <p class="date">Категория · 1 января, 12:07</p>
+                            </li>
+                            <li>
+                                <p class="text">Как электрические грузовики изменят логистику в ближайшие годы</p>
+                                <p class="date">Категория · 1 января, 12:07</p>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -355,4 +318,3 @@
 
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
-<script src="./js/pagination.js"></script>

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/content-headers.css">
+    <link rel="stylesheet" href="styles/usefuls.css">
+    <link rel="stylesheet" href="styles/my-companies.css">
     <link rel="stylesheet" href="styles/pagination.css">
-    <link rel="stylesheet" href="styles/review-complaint/review-comlaints.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -209,33 +211,51 @@
             </div>
 
             <div class="content">
-                <div class="review-complaint__header">
-                    <h2 class="review-complaint__title">Отзывы и жалобы</h2>
-
-                    <div class="review-complaint__operations">
-                        <button class="complaint">
-                            <img src="/img/comlaint-vector-grey.svg" alt="company icon" width="17" height="16">
-                            <span>Оставить жалобу</span>
-                        </button>
-                        <button class="review">
-                            <img src="/img/edit-white.svg" alt="company icon" width="16" height="16">
-                            <span>Написать отзыв</span>
-                        </button>
-                    </div>
+                <div class="companies__header">
+                    <h2 class="companies__title">Полезное</h2>
                 </div>
 
-                <div class="review-route-wrapper">
-                    <ul class="review-complaint__routes-list">
-                        <li>
-                            <a href="./review-complaints.html">Заказы</a>
-                        </li>
-                        <li class="active">
-                            <a href="./review-complaints-managers.html">Менеджеры</a>
-                        </li>
-                        <li>
-                            <a href="./review-complaints-complaint.html">Жалобы</a>
-                        </li>
-                    </ul>
+                <ul class="usefuls__route-list">
+                    <li class="active">
+                        <button>Каталог</button>
+                    </li>
+                    <li>
+                        <button>Новости</button>
+                    </li>
+                    <li>
+                        <button>Регламенты и Инструкции</button>
+                    </li>
+                    <li>
+                        <button>Приказы</button>
+                    </li>
+                    <li>
+                        <button>Обучение</button>
+                    </li>
+                    <li>
+                        <button>Шаблоны документов</button>
+                    </li>
+                    <li>
+                        <button>Справочники</button>
+                    </li>
+                    <li>
+                        <button>Литература</button>
+                    </li>
+                    <li>
+                        <button>Организации</button>
+                    </li>
+                    <li>
+                        <button>Законодательство</button>
+                    </li>
+                </ul>
+
+                
+                <div class="content-filter">
+                    <div class="content-filter__item">
+                        <div class="content-filter__image-wrapper">
+                            <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
+                        </div>
+                        <input type="text" placeholder="Поиск в статьях">
+                    </div>
 
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
@@ -266,55 +286,80 @@
                         </div>
                     </div>
                 </div>
-             
-                <div class="review-complaint-list-wrapper">
-                    <ul class="review-complaint-list">
-                        <li class="review-complaint-item">
-                            <div class="review-complaint-item__wrapper">
-                                <img src="/img/account.png" alt="account image" width="45" height="45">
-                                <p class="directions">Руслан А.</p>
-                                <p class="manager">Менеджер</p>
-                                <div class="rate">
-                                    <img src="/img/rating-bar.svg" alt="rating bar" width="128" height="24">
-                                </div>
-                                <p class="date">3 сентября 2024, 11:45</p>
-                            </div>
-                            <p class="review-complaint-item__text">Nunc mattis ipsum sodales adipiscing quis gravida id amet nam. In dictum bibendum lacus facilisis. Non nunc odio vitae vitae eget mattis lacus nam diam. Ut libero odio pretium rhoncus purus nunc pellentesque pellentesque ut. In nulla suspendisse tempor mattis sodales convallis dignissim.</p>
-                            <ul class="review-complaint-item__files-list">
-                                <li>
-                                    <a href="#"><img src="/img/boxes.png" alt="boxes image"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="/img/pdf-image.png" alt="pdf file image"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="/img/word-image.png" alt="word file image"></a>
-                                </li>
-                            </ul>
-                            <div class="review-complaint-item__operations">
-                                <button class="edit">Изменить отзыв</button>
-                                <button class="delete">Удалить</button>
-                            </div>
-                        </li>
-                        <li class="review-complaint-item">
-                            <div class="review-complaint-item__wrapper">
-                                <img src="/img/account.png" alt="account image" width="45" height="45">
-                                <p class="directions">Имя Менеджера</p>
-                                <p class="manager">Менеджер</p>
-                                <div class="rate">
-                                    <img src="/img/rating-bar.svg" alt="rating bar" width="128" height="24">
-                                </div>
-                                <p class="date">3 сентября 2024, 11:45</p>
-                            </div>
-                            <p class="review-complaint-item__text">Nunc mattis ipsum sodales adipiscing quis gravida id amet nam. In dictum bibendum lacus facilisis.</p>
-                            <div class="review-complaint-item__operations">
-                                <button class="edit">Изменить отзыв</button>
-                                <button class="delete">Удалить</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
 
+               <ul class="usefuls__list">
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/useful.svg" alt="image" width="390" height="260">
+                        <h3>Новые технологии в логистике: как они меняют отрасль</h3>
+                        <div class="date-wrapper">
+                            <p>Категория</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/containers.png" alt="image" width="390" height="260">
+                        <h3>Исследование: влияние пандемии на глобальные логистические цепочки</h3>
+                        <div class="date-wrapper">
+                            <p>Регламенты и Инструкции</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/containers-from-top.png" alt="image" width="390" height="260">
+                        <h3>Экспертный обзор: перспективы развития морских перевозок</h3>
+                        <div class="date-wrapper">
+                            <p>Категория</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/innovation-truck.png" alt="image" width="390" height="260">
+                        <h3>Инновации в складском хозяйстве: новые подходы и решения</h3>
+                        <div class="date-wrapper">
+                            <p>Шаблоны документов </p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/blue-truck-with-man.png" alt="image" width="390" height="260">
+                        <h3>Как электрические грузовики изменят логистику в ближайшие годы</h3>
+                        <div class="date-wrapper">
+                            <p>Справочники</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/useful.svg" alt="image" width="390" height="260">
+                        <h3>Новые технологии в логистике: как они меняют отрасль</h3>
+                        <div class="date-wrapper">
+                            <p>Литература</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./usefuls-detail.html">
+                        <img src="/img/containers-from-top.png" alt="image" width="390" height="260">
+                        <h3>Экспертный обзор: перспективы развития морских перевозок</h3>
+                        <div class="date-wrapper">
+                            <p>Организации</p> · 
+                            <p>1 января, 12:07</p>
+                        </div>
+                    </a>
+                </li>
+               </ul>
+                
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
@@ -355,4 +400,3 @@
 
 <script src="./script.js"></script>
 <script src="./js/select.js"></script>
-<script src="./js/pagination.js"></script>
