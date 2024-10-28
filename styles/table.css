@@ -23,6 +23,15 @@ tr {
     border-bottom: 1pt solid #E1E0EB;
 }
 
+tr:hover {
+    background-color: #F8F7FA;
+}
+
+tr:hover .route-list,
+tr:hover .inner {
+    display: flex;
+}
+
 th {
     font-size: 13px;
     font-weight: 600;
@@ -40,15 +49,15 @@ th.date {
     min-width: 170px;
 }
 
-td {
-    padding: 0;
-}
-
 th,
 td {
     white-space: nowrap;
     text-align: left;
-    background-color: #fff;
+}
+
+td {
+    padding: 0;
+    min-height: 1px;
 }
 
 th.checkbox {
@@ -62,7 +71,7 @@ th.checkbox {
     width: 16px;
     height: 16px;
     border-radius: 3px;
-    border: 1px solid #C5C4CF;
+    border: 1px solid red;
 }
 
 th.th-filter {
@@ -96,6 +105,7 @@ th.th-filter {
     padding: 10px 5px 10px 25px;
     border-radius: 10px;
     border: none;
+    background-color: transparent;
     outline: none;
 }
 
@@ -274,7 +284,7 @@ th.th-filter {
 
 .td-data {
     position: relative;
-    padding: 20px 5px;
+    padding: 10px 5px;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -283,6 +293,12 @@ th.th-filter {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    min-height: 67px;
+}
+
+.td-data.text-wrap {
+    overflow: auto;
+    text-overflow: initial;
 }
 
 .td-data.checkbox {
@@ -305,15 +321,15 @@ th.th-filter {
 }
 
 .checkbox-span-border.active {
-    background-color: #F57F17;
+    background-color: #FDD835;
 }
 
 .checkbox-span-border.completed {
-    background-color: #43A047;
+    background-color: #4CAF50;
 }
 
 .checkbox-span-border.canceled {
-    background-color: #B71C1C;
+    background-color: #F44336;
 }
 
 .checkbox-span-border.planned {
@@ -378,6 +394,12 @@ th.th-filter {
     text-overflow: ellipsis;
 }
 
+.td-data.text-wrap .text {
+    white-space: normal;
+    overflow: auto;
+    text-overflow: initial;
+}
+
 /* for span inside p class=text */
 .td-data .text .bold {
     font-weight: 600;
@@ -415,7 +437,7 @@ th.th-filter {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 6px;
 }
@@ -445,8 +467,14 @@ th.th-filter {
     cursor: pointer;
 }
 
-.td-data .inner {
+.td-data .inner-wrapper {
     display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.td-data .inner {
+    display: none;
     align-items: center;
     gap: 7px;
 }

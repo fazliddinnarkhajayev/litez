@@ -24,14 +24,19 @@
     font-weight: 600;
     line-height: 20px;
     border: 1px solid transparent;
-    border-radius: 10px;   
-    background-color: transparent; 
+    border-radius: 10px;
+    background-color: transparent;
 }
 
 .colleagues__operations button.archive {
     padding: 10px 20px;
     border-color: #C5C4CF;
     color: #535260;
+    background-color: #FFF;
+}
+
+.colleagues__operations button.archive:hover {
+    background-color: #F8F7FA;
 }
 
 .colleagues__operations button.add {
@@ -45,6 +50,10 @@
     gap: 10px;
 }
 
+.colleagues__operations button.add:hover {
+    background-color: #42A5F5;
+}
+
 th:nth-child(1) {
     padding-left: 15px;
 }
@@ -52,4 +61,3 @@ th:nth-child(1) {
 td:nth-child(1) {
     padding-left: 15px;
 }
-

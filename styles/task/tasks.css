@@ -10,6 +10,10 @@
     gap: 10px;
 }
 
+.content-header__create:hover {
+    background-color: #42A5F5;
+}
+
 .content-header__create-link {
     text-decoration: none;
 }

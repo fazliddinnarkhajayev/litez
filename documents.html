@@ -33,7 +33,8 @@
 
             <div class="header__search-wrapper">
                 <div class="img-wrapper">
-                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                    <img src="./img/main-search-vector.svg" class="search-icon" alt="search-icon" width="20"
+                        height="20">
                 </div>
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
@@ -219,7 +220,7 @@
 
                     <div class="content-header__status-filters filter">
                         <div class="default-option">
-                            <div class="filter-option selected"> 
+                            <div class="default-filter-option selected">
                                 <a href="./documents.html">
                                     <p class="filter-option__text">По заказам</p>
                                 </a>
@@ -273,21 +274,21 @@
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                            <div class="pagination__select-wrapper">
-                                <button class="pg-selected-option">
-                                    <span>По 10 строк</span>
-                                    <div class="pg-image-wrapper">
-                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                    </div>
-                                </button>
-
-                                <!-- Options dropdown -->
-                                <div class="pg-options-wrapper">
-                                    <!-- Text option -->
-                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
                             </div>
+                        </div>
 
                         <div class="pagination__buttons">
                             <button>
@@ -345,7 +346,9 @@
                                                 <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
                                             </a>
                                             <div class="td-documents">
-                                                <a class="td-documents__title-link" href="#"><h3 class="td-documents__title">Все файлы</h3></a>
+                                                <a class="td-documents__title-link" href="#">
+                                                    <h3 class="td-documents__title">Все файлы</h3>
+                                                </a>
                                                 <span class="documents__span-border"></span>
                                                 <ul class="td-documents__list">
                                                     <li>
@@ -426,7 +429,7 @@
                                         <div class="td-data account">14.09.2024</div>
                                     </td>
                                 </tr>
-                              
+
                                 <tr>
                                     <td>
                                         <span class="tr-span-border"></span>
@@ -503,21 +506,21 @@
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                        <div class="pagination__select-wrapper">
-                            <button class="pg-selected-option">
-                                <span>По 10 строк</span>
-                                <div class="pg-image-wrapper">
-                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                </div>
-                            </button>
-
-                            <!-- Options dropdown -->
-                            <div class="pg-options-wrapper">
-                                <!-- Text option -->
-                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                    <div class="pagination__select-wrapper">
+                        <button class="pg-selected-option">
+                            <span>По 10 строк</span>
+                            <div class="pg-image-wrapper">
+                                <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                             </div>
+                        </button>
+
+                        <!-- Options dropdown -->
+                        <div class="pg-options-wrapper">
+                            <!-- Text option -->
+                            <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                            <button class="pg-select__option" id="pgOption">По 50 строк</button>
                         </div>
+                    </div>
 
                     <div class="pagination__buttons">
                         <button>
@@ -528,9 +531,9 @@
                         </button>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
 

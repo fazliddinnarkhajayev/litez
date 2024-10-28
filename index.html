@@ -31,7 +31,8 @@
 
             <div class="header__search-wrapper">
                 <div class="img-wrapper">
-                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                    <img src="./img/main-search-vector.svg" class="search-icon" alt="search-icon" width="20"
+                        height="20">
                 </div>
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
@@ -216,10 +217,9 @@
 
                     <div class="content-header__status-filters filter">
                         <div class="default-option">
-                            <div class="filter-option selected"> 
+                            <div class="default-filter-option selected">
                                 <span class="filter-option__badge badge">1</span>
                                 <p class="filter-option__text">Все заказы</p>
-                                <span class="remove-tag">×</span>
                             </div>
                             <span class="seperator-border"></span>
                         </div>
@@ -268,12 +268,12 @@
                                     <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
                             </button>
-                        
+
                             <!-- Options dropdown -->
                             <div class="options-wrapper" style="display: none;">
                                 <!-- Text option -->
                                 <button class="select__option" data-value="all-time">За весь период</button>
-                        
+
                                 <!-- Date input with save button -->
                                 <div class="select__option">
                                     <input type="date" class="date-input">
@@ -281,14 +281,14 @@
                                 </div>
                             </div>
                         </div>
-                        
-                       
-                        
+
+
+
                     </div>
 
                     <div class="content-filter__item">
-                         <!-- Another select component -->
-                         <div class="select-wrapper">
+                        <!-- Another select component -->
+                        <div class="select-wrapper">
                             <button class="selected-option">
                                 <div class="content-filter__image-wrapper">
                                     <img src="/img/date.svg" alt="icon" width="20" height="20">
@@ -298,12 +298,12 @@
                                     <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
                             </button>
-                        
+
                             <!-- Options dropdown -->
                             <div class="options-wrapper" style="display: none;">
                                 <!-- Text option -->
                                 <button class="select__option" data-value="all-time">За весь период</button>
-                        
+
                                 <!-- Date input with save button -->
                                 <div class="select__option">
                                     <input type="date" class="date-input">
@@ -340,21 +340,21 @@
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                            <div class="pagination__select-wrapper">
-                                <button class="pg-selected-option">
-                                    <span>По 10 строк</span>
-                                    <div class="pg-image-wrapper">
-                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                    </div>
-                                </button>
-
-                                <!-- Options dropdown -->
-                                <div class="pg-options-wrapper">
-                                    <!-- Text option -->
-                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
                             </div>
+                        </div>
 
                         <div class="pagination__buttons">
                             <button>
@@ -435,26 +435,26 @@
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
-                                             <div class="select-wrapper">
-                                                 <button class="selected-option">
-                                                     <span>Все</span>
-                                                     <div class="content-filter__image-wrapper">
-                                                         <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                                     </div>
-                                                 </button>
-                                             
-                                                 <!-- Options dropdown -->
-                                                 <div class="options-wrapper" style="display: none;">
-                                                     <!-- Text option -->
-                                                     <button class="select__option" data-value="all-time">Все</button>
-                                                
-                                                     <!-- Date input with save button -->
-                                                     <div class="select__option">
-                                                         <input type="date" class="date-input">
-                                                         <button class="save-date-btn">Save</button>
-                                                     </div>
-                                                 </div>
-                                             </div>
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -494,12 +494,12 @@
                                                         <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                                     </div>
                                                 </button>
-                                            
+
                                                 <!-- Options dropdown -->
                                                 <div class="options-wrapper" style="display: none;">
                                                     <!-- Text option -->
                                                     <button class="select__option" data-value="all-time">Все</button>
-                                               
+
                                                     <!-- Date input with save button -->
                                                     <div class="select__option">
                                                         <input type="date" class="date-input">
@@ -507,72 +507,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                       </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data date">
-                                            <div class="select-wrapper">
-                                                <button class="selected-option">
-                                                    <span>Все</span>
-                                                    <div class="content-filter__image-wrapper">
-                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                                    </div>
-                                                </button>
-                                            
-                                                <!-- Options dropdown -->
-                                                <div class="options-wrapper" style="display: none;">
-                                                    <!-- Text option -->
-                                                    <button class="select__option" data-value="all-time">Все</button>
-                                               
-                                                    <!-- Date input with save button -->
-                                                    <div class="select__option">
-                                                        <input type="date" class="date-input">
-                                                        <button class="save-date-btn">Save</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                       </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
-                                        </div>
-                                    </th>
-                                    <th class="th-filter">
-                                        <div class="th-filter-data">
-                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
-                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
-                                                width="13" height="13">
                                         </div>
                                     </th>
                                     <th class="th-filter">
@@ -591,12 +525,12 @@
                                                         <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                                     </div>
                                                 </button>
-                                            
+
                                                 <!-- Options dropdown -->
                                                 <div class="options-wrapper" style="display: none;">
                                                     <!-- Text option -->
                                                     <button class="select__option" data-value="all-time">Все</button>
-                                               
+
                                                     <!-- Date input with save button -->
                                                     <div class="select__option">
                                                         <input type="date" class="date-input">
@@ -604,7 +538,49 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                       </div>
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data">
+                                            <input class="th-filter-data__input" type="text" placeholder="Поиск">
+                                            <img class="search-image" src="/img/magnifier.svg" alt="search-icon"
+                                                width="13" height="13">
+                                        </div>
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data date">
@@ -615,12 +591,12 @@
                                                         <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                                     </div>
                                                 </button>
-                                            
+
                                                 <!-- Options dropdown -->
                                                 <div class="options-wrapper" style="display: none;">
                                                     <!-- Text option -->
                                                     <button class="select__option" data-value="all-time">Все</button>
-                                               
+
                                                     <!-- Date input with save button -->
                                                     <div class="select__option">
                                                         <input type="date" class="date-input">
@@ -628,7 +604,31 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                       </div>
+                                        </div>
+                                    </th>
+                                    <th class="th-filter">
+                                        <div class="th-filter-data date">
+                                            <div class="select-wrapper">
+                                                <button class="selected-option">
+                                                    <span>Все</span>
+                                                    <div class="content-filter__image-wrapper">
+                                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                                    </div>
+                                                </button>
+
+                                                <!-- Options dropdown -->
+                                                <div class="options-wrapper" style="display: none;">
+                                                    <!-- Text option -->
+                                                    <button class="select__option" data-value="all-time">Все</button>
+
+                                                    <!-- Date input with save button -->
+                                                    <div class="select__option">
+                                                        <input type="date" class="date-input">
+                                                        <button class="save-date-btn">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </th>
                                     <th class="th-filter">
                                         <div class="th-filter-data">
@@ -706,6 +706,27 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            <ul class="route-list">
+                                                <li>
+                                                    <img class="route-list-img" src="./img/chat-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Чат</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/approve-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Задачи</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/document-blue.svg"
+                                                        alt="chat-icon" width="10" height="13">
+                                                    <p class="route-list-text">Документы</p>
+                                                    <button class="route-list-button">
+                                                        <img class="route-list-img" src="./img/plus-blue.svg"
+                                                            alt="chat-icon" width="10" height="10">
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </td>
                                     <td>
@@ -719,12 +740,42 @@
                                     </td>
                                     <td>
                                         <div class="td-data">
-                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт awfawfw</p>
+                                            <div class="inner-wrapper">
+                                                <span class="count">20 т · 120 м³</span>
+                                            <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                        Товары (3)
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                                <button class="copy">
+                                                    <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
+                                                        height="13">
+                                                    Копировать
+                                                </button>
+                                                <button class="orders-count">
+                                                    <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
+                                                        height="13">
+                                                    Пункты (3)
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -760,6 +811,12 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -856,17 +913,19 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
-                                            <div class="inner">
+                                            <div class="inner-wrapper">
                                                 <span class="count">20 т · 120 м³</span>
-                                                <button class="read-more"> Читать далее
-                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
-                                                        height="4">
-                                                </button>
-                                                <button class="orders-count">
-                                                    <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
-                                                        height="4">
-                                                    Товары (3)
-                                                </button>
+                                            <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                        Товары (3)
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -991,6 +1050,27 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            <ul class="route-list">
+                                                <li>
+                                                    <img class="route-list-img" src="./img/chat-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Чат</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/approve-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Задачи</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/document-blue.svg"
+                                                        alt="chat-icon" width="10" height="13">
+                                                    <p class="route-list-text">Документы</p>
+                                                    <button class="route-list-button">
+                                                        <img class="route-list-img" src="./img/plus-blue.svg"
+                                                            alt="chat-icon" width="10" height="10">
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </td>
                                     <td>
@@ -1005,11 +1085,41 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <div class="inner-wrapper">
+                                                <span class="count">20 т · 120 м³</span>
+                                            <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                        Товары (3)
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                                <button class="copy">
+                                                    <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
+                                                        height="13">
+                                                    Копировать
+                                                </button>
+                                                <button class="orders-count">
+                                                    <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
+                                                        height="13">
+                                                    Пункты (3)
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -1045,6 +1155,12 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -1106,6 +1222,27 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text bold">A1234 · Санкт-Петербург — Ташкент</p>
+                                            <ul class="route-list">
+                                                <li>
+                                                    <img class="route-list-img" src="./img/chat-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Чат</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/approve-blue.svg"
+                                                        alt="chat-icon" width="13" height="13">
+                                                    <p class="route-list-text">Задачи</p>
+                                                </li>
+                                                <li>
+                                                    <img class="route-list-img" src="./img/document-blue.svg"
+                                                        alt="chat-icon" width="10" height="13">
+                                                    <p class="route-list-text">Документы</p>
+                                                    <button class="route-list-button">
+                                                        <img class="route-list-img" src="./img/plus-blue.svg"
+                                                            alt="chat-icon" width="10" height="10">
+                                                    </button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </td>
                                     <td>
@@ -1120,11 +1257,41 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <div class="inner-wrapper">
+                                                <span class="count">20 т · 120 м³</span>
+                                            <div class="inner">
+                                                    <button class="read-more"> Читать далее
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                    </button>
+                                                    <button class="orders-count">
+                                                        <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
+                                                            height="4">
+                                                        Товары (3)
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                                <button class="copy">
+                                                    <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
+                                                        height="13">
+                                                    Копировать
+                                                </button>
+                                                <button class="orders-count">
+                                                    <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
+                                                        height="13">
+                                                    Пункты (3)
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -1160,6 +1327,12 @@
                                     <td>
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
+                                            <div class="inner">
+                                                <button class="read-more"> Читать далее
+                                                    <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
+                                                        height="4">
+                                                </button>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -1219,21 +1392,21 @@
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                        <div class="pagination__select-wrapper">
-                            <button class="pg-selected-option">
-                                <span>По 10 строк</span>
-                                <div class="pg-image-wrapper">
-                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                </div>
-                            </button>
-
-                            <!-- Options dropdown -->
-                            <div class="pg-options-wrapper">
-                                <!-- Text option -->
-                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                    <div class="pagination__select-wrapper">
+                        <button class="pg-selected-option">
+                            <span>По 10 строк</span>
+                            <div class="pg-image-wrapper">
+                                <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                             </div>
+                        </button>
+
+                        <!-- Options dropdown -->
+                        <div class="pg-options-wrapper">
+                            <!-- Text option -->
+                            <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                            <button class="pg-select__option" id="pgOption">По 50 строк</button>
                         </div>
+                    </div>
 
                     <div class="pagination__buttons">
                         <button>

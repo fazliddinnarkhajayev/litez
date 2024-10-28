@@ -24,6 +24,10 @@
   padding: 11px 13px;
 }
 
+.requets__header-create:hover {
+  background-color: #42A5F5;
+}
+
 .requets__header-create p {
   margin: 0;
   font-size: 14px;

@@ -114,10 +114,14 @@
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #4CAF50;
+  background-color: #43A047;
   color: #fff;
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.header__create:hover {
+  background-color: #4CAF50;
 }
 
 .header__account-wrapper {

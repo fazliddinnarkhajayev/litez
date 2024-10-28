@@ -226,6 +226,10 @@
     border: none;
 }
 
+.last-staty__operations button:hover {
+    background-color: #42A5F5;
+}
+
 .last-staty__title {
     font-size: 20px;
     font-weight: 600;

@@ -80,7 +80,7 @@
 .user_info__item-title {
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;  
+    line-height: 30px;
     color: #000000;
     margin: 0;
     margin-bottom: 15px;
@@ -102,7 +102,8 @@
     margin-bottom: 5px;
 }
 
-.user-info__list li input, .user-info__list li textarea {
+.user-info__list li input,
+.user-info__list li textarea {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -135,4 +136,8 @@
 .operation-buttons button.save {
     color: white;
     background-color: #2196F3;
+}
+
+.operation-buttons button.save:hover {
+    background-color: #42A5F5;
 }

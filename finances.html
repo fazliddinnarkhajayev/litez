@@ -32,7 +32,8 @@
 
             <div class="header__search-wrapper">
                 <div class="img-wrapper">
-                    <img src="./img/magnifier.svg" class="search-icon" alt="search-icon" width="20" height="20">
+                    <img src="./img/main-search-vector.svg" class="search-icon" alt="search-icon" width="20"
+                        height="20">
                 </div>
                 <input class="search-input" type="text" placeholder="Искать везде">
             </div>
@@ -219,15 +220,15 @@
                     <div class="content-header__status-filters filter">
                         <div class="filter">
                             <div class="default-option">
-                                <div class="filter-option selected"> 
+                                <div class="default-filter-option selected">
                                     <p class="filter-option__text">Все заказы</p>
                                 </div>
                             </div>
                             <ul class="filters">
-                                <li class="filter-option">
+                                <li class="filter-option" data-value="active">
                                     <p class="filter-option__text">Активные</p>
                                 </li>
-                                <li class="filter-option">
+                                <li class="filter-option" data-value="completed">
                                     <p class="filter-option__text">Завершенные</p>
                                 </li>
                             </ul>
@@ -235,7 +236,7 @@
                         <span class="seperator-border"></span>
                         <div class="filter">
                             <div class="default-option">
-                                <div class="filter-option selected"> 
+                                <div class="default-filter-option selected">
                                     <p class="filter-option__text">Все транзакции</p>
                                 </div>
                             </div>
@@ -300,21 +301,21 @@
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                            <div class="pagination__select-wrapper">
-                                <button class="pg-selected-option">
-                                    <span>По 10 строк</span>
-                                    <div class="pg-image-wrapper">
-                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                    </div>
-                                </button>
-
-                                <!-- Options dropdown -->
-                                <div class="pg-options-wrapper">
-                                    <!-- Text option -->
-                                    <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                    <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                        <div class="pagination__select-wrapper">
+                            <button class="pg-selected-option">
+                                <span>По 10 строк</span>
+                                <div class="pg-image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                                 </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="pg-options-wrapper">
+                                <!-- Text option -->
+                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
                             </div>
+                        </div>
 
                         <div class="pagination__buttons">
                             <button>
@@ -659,21 +660,21 @@
                 <div class="pagination">
                     <p class="pagination__count-text">1-50 из 128 заказов</p>
 
-                        <div class="pagination__select-wrapper">
-                            <button class="pg-selected-option">
-                                <span>По 10 строк</span>
-                                <div class="pg-image-wrapper">
-                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                </div>
-                            </button>
-
-                            <!-- Options dropdown -->
-                            <div class="pg-options-wrapper">
-                                <!-- Text option -->
-                                <button class="pg-select__option" id="pgOption">По 10 строк</button>
-                                <button class="pg-select__option" id="pgOption">По 50 строк</button>
+                    <div class="pagination__select-wrapper">
+                        <button class="pg-selected-option">
+                            <span>По 10 строк</span>
+                            <div class="pg-image-wrapper">
+                                <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
                             </div>
+                        </button>
+
+                        <!-- Options dropdown -->
+                        <div class="pg-options-wrapper">
+                            <!-- Text option -->
+                            <button class="pg-select__option" id="pgOption">По 10 строк</button>
+                            <button class="pg-select__option" id="pgOption">По 50 строк</button>
                         </div>
+                    </div>
 
                     <div class="pagination__buttons">
                         <button>

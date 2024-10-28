@@ -49,6 +49,10 @@
     gap: 10px;
 }
 
+.review-complaint__operations button.review:hover{
+    background-color: #42A5F5;
+}
+
 .review-route-wrapper {
     display: flex;
     align-items: center;

@@ -31,6 +31,9 @@
   gap: 8px;
 }
 
+.notifications-header__set-all-read:hover {
+  background-color: #42A5F5;
+}
 
 .notifications-pagination {
   display: flex;

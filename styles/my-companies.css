@@ -34,6 +34,10 @@
     color: #535260;
 }
 
+.companies__operations button.archive:hover {
+    background-color: #F8F7FA;
+}
+
 .companies__operations button.add {
     display: flex;
     align-items: center;
@@ -43,6 +47,10 @@
     color: white;
     background-color: #2196F3;
     gap: 10px;
+}
+
+.companies__operations button.add:hover {
+    background-color: #42A5F5;
 }
 
 .companies__list {

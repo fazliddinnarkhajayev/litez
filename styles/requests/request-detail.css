@@ -205,6 +205,10 @@
     background-color: #2196F3;
 }
 
+.input-yield .send:hover {
+    background-color: #42A5F5;
+}
+
 .request-detail {
     width: 100%;
     max-width: 450px;

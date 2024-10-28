@@ -103,3 +103,11 @@ dateInputs.forEach((input, index) => {
       toggleClearButton(input, button);
   });
 });
+
+// Select the "Читать далее" button and the containing div
+document.querySelectorAll('.td-data .read-more').forEach(button => {
+  button.addEventListener('click', function() {
+      // Toggle the 'text-wrap' class on the closest .td-data element
+      this.closest('.td-data').classList.toggle('text-wrap');
+  });
+});
