@@ -76,6 +76,7 @@
 .content-filter {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
     padding-top: 10px;
@@ -262,3 +263,12 @@
 .content-filter__item .select__option:hover {
     background-color: #F8F7FA;
 }
+
+
+@media (min-width: 1450px) {
+    .content {
+      font-size: 1.25rem; /* 20px */
+      padding: 2rem; /* 32px */
+    }
+  }
+  

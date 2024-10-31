@@ -111,3 +111,20 @@ document.querySelectorAll('.td-data .read-more').forEach(button => {
       this.closest('.td-data').classList.toggle('text-wrap');
   });
 });
+
+
+// Select all checkboxes with the class 'checkbox'
+const checkboxes = document.querySelectorAll(".checkbox");
+console.log(checkboxes)
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", (event) => {
+    console.log(event.target.checked);
+    const label = event.target.parentElement; // Get the parent label
+
+    if (event.target.checked) {
+      label.classList.add("selected"); // Add 'selected' class if checked
+    } else {
+      label.classList.remove("selected"); // Remove 'selected' class if unchecked
+    }
+  });
+});

@@ -1,6 +1,7 @@
 .review-route-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     width: 100%;

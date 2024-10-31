@@ -5,8 +5,7 @@
 }
 
 .append-to-order {
-    width: 100%;
-    max-width: 960px;
+    width: 68%;
 }
 
 .append-to-order__title {
@@ -114,6 +113,7 @@
     margin: 0;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
     margin-left: 8px;
@@ -139,8 +139,7 @@
 }
 
 .additional-info {
-    width: 100%;
-    max-width: 480px;
+    width: 30%;
     height: 100%;
     border-left: 1px solid #E1E0EB;
     padding-left: 30px;
@@ -154,10 +153,12 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .operation-buttons button {
-    width: 217px;
+    width: 100%;
+    max-width: 217px;
     height: 40px;
     text-align: center;
     border: 1px solid #C5C4CF;
@@ -219,7 +220,8 @@
     align-items: center;
     border: 1px solid #C5C4CF;
     border-radius: 10px;
-    width: 217px;
+    width: 60%;
+    max-width: 217px;
 
 }
 
@@ -251,16 +253,27 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+    width: 60%;
+    max-width: 217px;
+}
+
+.authir-inner-lists li {
+    width: 100%;
+}
+
+.authir-inner-lists .select-wrapper {
+    width: 100%;
 }
 
 .additional-date__list {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    width: 100%;
 }
 
 .additional-date__list li {
-    width: 450px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -272,6 +285,10 @@
 }
 
 .additional-date__list li .text {
-    width: 200px;
+    width: 45%;
     color: black;
+}
+
+.additional-date__list .text-wrapper {
+    width: 45%;
 }

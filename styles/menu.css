@@ -8,6 +8,11 @@
     transition: min-width 0.3s ease;
 }
 
+.menu__list-wrapper {
+    height: calc(100vh - 122px);
+    overflow-y: scroll;
+}
+
 .menu__list {
     padding: 0;
     margin: 0;
@@ -46,7 +51,7 @@
 }
 
 .menu__list-item.active img {
-    filter: invert(64%) sepia(97%) saturate(625%) hue-rotate(357deg) brightness(103%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(76%) sepia(92%) saturate(1934%) hue-rotate(331deg) brightness(105%) contrast(104%);
     opacity: 1;
 }
 

@@ -111,7 +111,8 @@
 }
 
 .description-wrapper .description-text {
-    width: 930px;
+    width: 100%;
+    max-width: 930px;
     margin: 0;
     margin-bottom: 15px;
 }
@@ -169,8 +170,13 @@
 
 }
 
+.comment-input-wrapper {
+    width: 100%;
+}
+
 .comment-input {
-    width: 905px;
+    width: 100%;
+    max-width: 905px;
     height: 83px;
     border: 1px solid #C5C4CF;
     border-radius: 10px;

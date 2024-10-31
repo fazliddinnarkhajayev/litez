@@ -28,7 +28,8 @@ tr:hover {
 }
 
 tr:hover .route-list,
-tr:hover .inner {
+tr:hover .inner,
+tr:hover .operation-buttons {
     display: flex;
 }
 
@@ -65,13 +66,6 @@ th.checkbox {
     height: 60px;
     text-align: center;
     justify-content: center;
-}
-
-.checkbox-input {
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    border: 1px solid red;
 }
 
 th.th-filter {
@@ -311,7 +305,7 @@ th.th-filter {
 
 .checkbox-span-border {
     position: absolute;
-    left: 0;
+    left: -1px;
     top: 50%;
     transform: translateY(-50%);
     min-width: 5px;
@@ -448,6 +442,15 @@ th.th-filter {
     gap: 5px;
 }
 
+.td-data .route-list li button {
+    padding: 0;
+    border: none;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .td-data .route-list .route-list-text {
     margin: 0;
     font-size: 14px;
@@ -455,6 +458,11 @@ th.th-filter {
     line-height: 21px;
     text-align: left;
     color: #2196F3;
+    border-bottom: 1px solid transparent;
+}
+
+.td-data .route-list .route-list-text:hover {
+    border-color: #2196F3;
 }
 
 .td-data .route-list .route-list-button {
@@ -566,7 +574,7 @@ th.th-filter {
 }
 
 .td-data .operation-buttons {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 10px;
 }

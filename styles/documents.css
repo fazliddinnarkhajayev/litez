@@ -3,8 +3,16 @@ th.document-directions, .td-data.document-directions {
     max-width: 751px !important;
 }
 
-.td-data .td-documents {
+tr:hover .td-data .td-documents {
     display: flex;
+}
+
+tr:hover .td-data .sub-text{
+    display: none;
+}
+
+.td-data .td-documents {
+    display: none;
     align-items: center;
     gap: 10px;
 }
@@ -108,8 +116,7 @@ tr {
 }
 
 .documents-details {
-    width: 100%;
-    max-width: 1170px;
+    width: 74%;
     border-radius: 10px;
     background-color: #fff;
 
@@ -118,6 +125,7 @@ tr {
 .documents-details__header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding: 15px;
@@ -227,6 +235,7 @@ tr {
 .documents-details__body-inner ul {
     padding: 0;
     padding-top: 5px;
+    padding-right: 10px;
     margin: 0;
     list-style-type: none;
     display: flex;
@@ -360,8 +369,7 @@ tr {
 }   
 
 .document-order-details {
-    width: 100%;
-    max-width: 450px;
+    width: 25%;
     background-color: #fff;
     border-radius: 10px;
 }

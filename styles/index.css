@@ -88,6 +88,47 @@ button {
   background-color: #f5a317;
 }
 
+/* Hide scrollbar if content fits within the container */
+:has(> table):not(:has(> table > *:last-child))::-webkit-scrollbar {
+  display: none;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #C5C4CF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox-label img {
+  display: none;
+}
+
+.checkbox-label.selected {
+  border-color: transparent;
+}
+
+.checkbox-label.selected img {
+  display: block;
+  min-width: 16px;
+  height: 16px;
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid red;
+  display: none;
+}
+
+
 .badge {
   padding: 4px;
   /* Adjust padding for size */
