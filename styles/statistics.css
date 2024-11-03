@@ -18,12 +18,14 @@
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .diagrams-list__item {
-    width: 810px;
+    width: 100%;
+    max-width: 620px;
     height: 540px;
     padding: 30px;
     border-radius: 15px;
@@ -98,4 +100,16 @@
 
 .diagrams-list__item.finances .dg-info-list__item .state {
     color: #8C8B98;
+}
+
+@media (max-width: 1525px) {
+    .diagrams-list__item {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1490px) {
+    .diagrams-list__item {
+        max-width: 580px;
+    }
 }

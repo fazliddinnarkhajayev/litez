@@ -291,6 +291,7 @@ tr {
 .text-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 5px;
 }
@@ -311,6 +312,7 @@ tr {
 .bottom-wrapper {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -465,4 +467,36 @@ tr {
     font-weight: 400;
     line-height: 21px;
     color: #2196F3;
+}
+
+@media (max-width: 1540px) {
+    
+    .documents-details__list li button {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    
+    .documents-details__list li:nth-child(1) {
+        margin-right: 10px;
+    }
+    
+    .documents-details__operations {
+        gap: 5px;
+    }
+    
+    .documents-details__operations button {
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .text-wrapper p {
+        font-size: 10px;
+        line-height: 1;
+    }
 }

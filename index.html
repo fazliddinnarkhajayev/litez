@@ -117,7 +117,7 @@
                             </a>
                         </li>
                     </ul>
-    
+
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a href="./tasks.html" class="menu__list-item-link">
@@ -159,7 +159,7 @@
                             </a>
                         </li>
                     </ul>
-    
+
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a href="./colleagues.html" class="menu__list-item-link">
@@ -186,7 +186,7 @@
                             </a>
                         </li>
                     </ul>
-    
+
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a href="./usefuls.html" class="menu__list-item-link">
@@ -226,21 +226,29 @@
                             <span class="seperator-border"></span>
                         </div>
                         <ul class="filters">
-                            <li class="filter-option" data-value="active">
-                                <span class="filter-option__badge badge badge-warning">12</span>
-                                <p class="filter-option__text">Активные</p>
+                            <li>
+                                <button class="filter-option" data-value="active">
+                                    <span class="filter-option__badge badge badge-warning">12</span>
+                                     <p class="filter-option__text">Активные</p>         
+                                </button>
                             </li>
-                            <li class="filter-option" data-value="completed">
-                                <span class="filter-option__badge badge badge-success">6</span>
-                                <p class="filter-option__text">Завершенные</p>
+                            <li>
+                                <button class="filter-option" data-value="completed">
+                                    <span class="filter-option__badge badge badge-success">6</span>
+                                     <p class="filter-option__text">Завершенные</p>
+                                </button>
                             </li>
-                            <li class="filter-option" data-value="planned">
-                                <span class="filter-option__badge badge badge-planned">1</span>
-                                <p class="filter-option__text">Запланированные</p>
+                            <li>
+                                <button class="filter-option" data-value="planned">
+                                    <span class="filter-option__badge badge badge-planned">1</span>
+                                    <p class="filter-option__text">Запланированные</p>
+                                </button>
                             </li>
-                            <li class="filter-option" data-value="cancelled">
-                                <span class="filter-option__badge badge badge-danger">3</span>
-                                <p class="filter-option__text">Аннулированные</p>
+                            <li>
+                                <button class="filter-option" data-value="cancelled">
+                                    <span class="filter-option__badge badge badge-danger">3</span>
+                                    <p class="filter-option__text">Аннулированные</p>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -252,66 +260,66 @@
                 </div>
 
                 <div class="content-filter">
-                        <div class="content-filter__item">
-                            <div class="content-filter__image-wrapper">
-                                <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
-                            </div>
-                            <input type="text" placeholder="Поиск в заказах">
+                    <div class="content-filter__item">
+                        <div class="content-filter__image-wrapper">
+                            <img src="/img/magnifier.svg" alt="incon" width="20" height="20">
                         </div>
-    
-                        <div class="content-filter__item">
-                            <div class="select-wrapper">
-                                <button class="selected-option">
-                                    <div class="content-filter__image-wrapper">
-                                        <img src="/img/date.svg" alt="icon" width="20" height="20">
-                                    </div>
-                                    <span>За весь период</span>
-                                    <div class="content-filter__image-wrapper">
-                                        <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
-                                    </div>
-                                </button>
-    
-                                <!-- Options dropdown -->
-                                <div class="options-wrapper" style="display: none;">
-                                    <!-- Text option -->
-                                    <button class="select__option" data-value="all-time">За весь период</button>
-    
-                                    <!-- Date input with save button -->
-                                    <div class="select__option">
-                                        <input type="date" class="date-input">
-                                        <button class="save-date-btn">Save</button>
-                                    </div>
+                        <input type="text" placeholder="Поиск в заказах">
+                    </div>
+
+                    <div class="content-filter__item">
+                        <div class="select-wrapper">
+                            <button class="selected-option">
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/date.svg" alt="icon" width="20" height="20">
+                                </div>
+                                <span>За весь период</span>
+                                <div class="content-filter__image-wrapper">
+                                    <img src="/img/vector-dark.svg" alt="icon" width="8" height="5">
+                                </div>
+                            </button>
+
+                            <!-- Options dropdown -->
+                            <div class="options-wrapper" style="display: none;">
+                                <!-- Text option -->
+                                <button class="select__option" data-value="all-time">За весь период</button>
+
+                                <!-- Date input with save button -->
+                                <div class="select__option">
+                                    <input type="date" class="date-input">
+                                    <button class="save-date-btn">Save</button>
                                 </div>
                             </div>
-    
-    
-    
                         </div>
-    
-                        <div class="content-filter__item switch">
-                            <button class="on">
-                                <img src="/img/filter.svg" alt="incon" width="20" height="20">
-                                <p class="indicators__list-item-text">Фильтры</p>
-                            </button>
-                            <button class="off">
-                                <img src="/img/no-filter.svg" alt="incon" width="20" height="20">
-                            </button>
-                        </div>
-    
-                        <div class="content-filter__item sort">
-                            <button class="sort-button">
-                                <img src="/img/top-bottom.svg" alt="incon" width="10" height="10">
-                                <p class="indicators__list-item-text">Сортировать</p>
-                            </button>
-                        </div>
-    
-                        <div class="content-filter__item hide">
-                            <button class="sort-button">
-                                <img src="/img/hide.svg" alt="incon" width="20" height="20">
-                                <p class="indicators__list-item-text">Скрыть</p>
-                            </button>
-                        </div>
-    
+
+
+
+                    </div>
+
+                    <div class="content-filter__item switch">
+                        <button class="on">
+                            <img src="/img/filter.svg" alt="incon" width="20" height="20">
+                            <p class="indicators__list-item-text">Фильтры</p>
+                        </button>
+                        <button class="off">
+                            <img src="/img/no-filter.svg" alt="incon" width="20" height="20">
+                        </button>
+                    </div>
+
+                    <div class="content-filter__item sort">
+                        <button class="sort-button">
+                            <img src="/img/top-bottom.svg" alt="incon" width="10" height="10">
+                            <p class="indicators__list-item-text">Сортировать</p>
+                        </button>
+                    </div>
+
+                    <div class="content-filter__item hide">
+                        <button class="sort-button">
+                            <img src="/img/hide.svg" alt="incon" width="20" height="20">
+                            <p class="indicators__list-item-text">Скрыть</p>
+                        </button>
+                    </div>
+
                     <div class="pagination">
                         <p class="pagination__count-text">1-50 из 128 заказов</p>
 
@@ -691,22 +699,22 @@
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/chat-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                         <p class="route-list-text">Чат</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Чат</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/approve-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                    <p class="route-list-text">Задачи</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Задачи</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/document-blue.svg"
-                                                        alt="chat-icon" width="10" height="13">
-                                                    <p class="route-list-text">Документы</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Документы</p>
                                                     </button>
                                                     <button class="route-list-button">
                                                         <img class="route-list-img" src="./img/plus-blue.svg"
@@ -730,15 +738,16 @@
                                             <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт awfawfw</p>
                                             <div class="inner-wrapper">
                                                 <span class="count">20 т · 120 м³</span>
-                                            <div class="inner">
-                                                    <button class="read-more"> Читать далее
-                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
-                                                            height="4">
+                                                <div class="inner">
+                                                    <button class="read-more">
+                                                        <span>Читать далее</span>
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon"
+                                                            width="7" height="4">
                                                     </button>
                                                     <button class="orders-count">
                                                         <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
                                                             height="4">
-                                                        Товары (3)
+                                                        <span>Товары (3)</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -748,19 +757,20 @@
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
                                                 <button class="copy">
                                                     <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
                                                         height="13">
-                                                    Копировать
+                                                    <span>Копировать</span>
                                                 </button>
                                                 <button class="orders-count">
                                                     <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
                                                         height="13">
-                                                    Пункты (3)
+                                                    <span>Пункты (3)</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -799,7 +809,8 @@
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
@@ -872,22 +883,22 @@
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/chat-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                         <p class="route-list-text">Чат</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Чат</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/approve-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                    <p class="route-list-text">Задачи</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Задачи</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/document-blue.svg"
-                                                        alt="chat-icon" width="10" height="13">
-                                                    <p class="route-list-text">Документы</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Документы</p>
                                                     </button>
                                                     <button class="route-list-button">
                                                         <img class="route-list-img" src="./img/plus-blue.svg"
@@ -898,7 +909,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data"><span class="status completed">Завершен</span></div>
+                                        <div class="td-data"><span class="status completed">Активный</span></div>
                                     </td>
                                     <td>
                                         <div class="td-data">14.09.2024</div>
@@ -908,18 +919,19 @@
                                     </td>
                                     <td>
                                         <div class="td-data">
-                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт awfawfw</p>
                                             <div class="inner-wrapper">
                                                 <span class="count">20 т · 120 м³</span>
-                                            <div class="inner">
-                                                    <button class="read-more"> Читать далее
-                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
-                                                            height="4">
+                                                <div class="inner">
+                                                    <button class="read-more">
+                                                        <span>Читать далее</span>
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon"
+                                                            width="7" height="4">
                                                     </button>
                                                     <button class="orders-count">
                                                         <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
                                                             height="4">
-                                                        Товары (3)
+                                                        <span>Товары (3)</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -929,19 +941,20 @@
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
                                                 <button class="copy">
                                                     <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
                                                         height="13">
-                                                    Копировать
+                                                    <span>Копировать</span>
                                                 </button>
                                                 <button class="orders-count">
                                                     <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
                                                         height="13">
-                                                    Пункты (3)
+                                                    <span>Пункты (3)</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -980,7 +993,8 @@
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
@@ -1053,22 +1067,22 @@
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/chat-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                         <p class="route-list-text">Чат</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Чат</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/approve-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                    <p class="route-list-text">Задачи</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Задачи</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/document-blue.svg"
-                                                        alt="chat-icon" width="10" height="13">
-                                                    <p class="route-list-text">Документы</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Документы</p>
                                                     </button>
                                                     <button class="route-list-button">
                                                         <img class="route-list-img" src="./img/plus-blue.svg"
@@ -1079,7 +1093,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data"><span class="status planned">Запланирован</span></div>
+                                        <div class="td-data"><span class="status planned">Активный</span></div>
                                     </td>
                                     <td>
                                         <div class="td-data">14.09.2024</div>
@@ -1089,18 +1103,19 @@
                                     </td>
                                     <td>
                                         <div class="td-data">
-                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт awfawfw</p>
                                             <div class="inner-wrapper">
                                                 <span class="count">20 т · 120 м³</span>
-                                            <div class="inner">
-                                                    <button class="read-more"> Читать далее
-                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
-                                                            height="4">
+                                                <div class="inner">
+                                                    <button class="read-more">
+                                                        <span>Читать далее</span>
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon"
+                                                            width="7" height="4">
                                                     </button>
                                                     <button class="orders-count">
                                                         <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
                                                             height="4">
-                                                        Товары (3)
+                                                        <span>Товары (3)</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -1110,19 +1125,20 @@
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
                                                 <button class="copy">
                                                     <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
                                                         height="13">
-                                                    Копировать
+                                                    <span>Копировать</span>
                                                 </button>
                                                 <button class="orders-count">
                                                     <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
                                                         height="13">
-                                                    Пункты (3)
+                                                    <span>Пункты (3)</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -1161,7 +1177,8 @@
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
@@ -1234,22 +1251,22 @@
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/chat-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                         <p class="route-list-text">Чат</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Чат</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/approve-blue.svg"
-                                                        alt="chat-icon" width="13" height="13">
-                                                    <p class="route-list-text">Задачи</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Задачи</p>
                                                     </button>
                                                 </li>
                                                 <li>
                                                     <button>
                                                         <img class="route-list-img" src="./img/document-blue.svg"
-                                                        alt="chat-icon" width="10" height="13">
-                                                    <p class="route-list-text">Документы</p>
+                                                            alt="chat-icon" width="16" height="16">
+                                                        <p class="route-list-text">Документы</p>
                                                     </button>
                                                     <button class="route-list-button">
                                                         <img class="route-list-img" src="./img/plus-blue.svg"
@@ -1260,7 +1277,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="td-data"><span class="status canceled">Аннулирован</span></div>
+                                        <div class="td-data"><span class="status canceled">Активный</span></div>
                                     </td>
                                     <td>
                                         <div class="td-data">14.09.2024</div>
@@ -1270,18 +1287,19 @@
                                     </td>
                                     <td>
                                         <div class="td-data">
-                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт</p>
+                                            <p class="text">Ткань / Полотно х/б. Если строка длиннее скрыт awfawfw</p>
                                             <div class="inner-wrapper">
                                                 <span class="count">20 т · 120 м³</span>
-                                            <div class="inner">
-                                                    <button class="read-more"> Читать далее
-                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
-                                                            height="4">
+                                                <div class="inner">
+                                                    <button class="read-more">
+                                                        <span>Читать далее</span>
+                                                        <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon"
+                                                            width="7" height="4">
                                                     </button>
                                                     <button class="orders-count">
                                                         <img src="/img/info-blue.svg" alt="to-bottom-icon" width="7"
                                                             height="4">
-                                                        Товары (3)
+                                                        <span>Товары (3)</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -1291,19 +1309,20 @@
                                         <div class="td-data">
                                             <p class="text">СВХ ОАО МП "Совтрансавто-Брянск-Холдинг" Скпуы</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
                                                 <button class="copy">
                                                     <img src="/img/copy-blue.svg" alt="to-bottom-icon" width="12"
                                                         height="13">
-                                                    Копировать
+                                                    <span>Копировать</span>
                                                 </button>
                                                 <button class="orders-count">
                                                     <img src="/img/circle-info-blue.svg" alt="to-bottom-icon" width="13"
                                                         height="13">
-                                                    Пункты (3)
+                                                    <span>Пункты (3)</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -1342,7 +1361,8 @@
                                         <div class="td-data">
                                             <p class="text">29/04 - проверка от опер тест удаление данных водителя</p>
                                             <div class="inner">
-                                                <button class="read-more"> Читать далее
+                                                <button class="read-more"> 
+                                                    <span>Читать далее</span>
                                                     <img src="/img/to-bottom-blue.svg" alt="to-bottom-icon" width="7"
                                                         height="4">
                                                 </button>
