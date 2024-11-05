@@ -79,10 +79,14 @@ tr {
 .document-detail-header__title {
     margin: 0;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .document-detail-header__title a {
     font-size: 32px;
+    line-height: 1;
     font-weight: 500;
     line-height: 40px;
     color: #8C8B98;
@@ -91,6 +95,12 @@ tr {
 
 .document-detail-header__title span {
     color: #000000;
+    display: block;
+    line-height: 32px;
+}
+
+.document-detail-header__title img {
+    margin-top: 5px;
 }
 
 .document-detail-header__location {
@@ -116,7 +126,7 @@ tr {
 }
 
 .documents-details {
-    width: 74%;
+    width: 68%;
     border-radius: 10px;
     background-color: #fff;
 
@@ -355,6 +365,7 @@ tr {
     padding: 77px 15px;
     border-radius: 15px;
     background-color: #F8F7FA;
+    margin-left: 10px;
 }
 
   /* Style the scrollbar thumb */
@@ -371,7 +382,7 @@ tr {
 }   
 
 .document-order-details {
-    width: 25%;
+    width: 30%;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -414,7 +425,7 @@ tr {
     margin-bottom: 20px;
 }
 
-.document-order-details__body ul {
+.document-order-details__body .order-detail-list {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -452,16 +463,17 @@ tr {
 }
 
 .inner-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
-    flex-direction: row !important;
-    align-items: center;
     gap: 5px;
-    margin-top: 5px !important;
+    margin-top: 5px;
 }
 
 .inner-list .inner-list__item {
     display: flex;
-    align-items: center;
+    align-items: center !important;
     gap: 5px;
     font-size: 14px;
     font-weight: 400;
@@ -469,8 +481,37 @@ tr {
     color: #2196F3;
 }
 
+.inner-list .inner-list__item span {
+    display: block;
+    border-bottom: 1px solid transparent;
+}
+
+.inner-list .inner-list__item span:hover{
+    border-color: #2196F3;
+}
+
 @media (max-width: 1540px) {
     
+    .truck-image-wrapper {
+        width: 80%;
+        max-width: 555px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #F8F7FA;
+    }
+
+    .documents-details__body-inner ul {
+        max-height: 370px;
+    }
+
+    .document-order-details__body .order-detail-list {
+        max-height: 400px;
+    }
+
+    .document-order-details__body .order-detail-list.contract {
+        max-height: 300px;
+    }
+
     .documents-details__list li button {
         font-size: 12px;
         font-weight: 500;
@@ -485,6 +526,7 @@ tr {
     
     .documents-details__operations {
         gap: 5px;
+        margin-top: 10px;
     }
     
     .documents-details__operations button {
@@ -498,5 +540,13 @@ tr {
     .text-wrapper p {
         font-size: 10px;
         line-height: 1;
+    }
+
+    .inner-list {
+        flex-wrap: wrap;
+    }
+
+    .company-logo {
+        width: 60px;
     }
 }

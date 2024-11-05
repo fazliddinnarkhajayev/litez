@@ -65,7 +65,8 @@
 }
 
 .companies__list-item {
-    width: 530px;
+    width: 100%;
+    max-width: 530px;
     height: 316px;
     background-color: #fff;
     border-radius: 15px;
@@ -118,4 +119,48 @@
     line-height: 20px;
     padding: 10px 20px;
     color: #535260;
+}
+
+@media (max-width: 1725px) {
+    .companies__list {
+        gap: 10px;
+    }
+    
+    .companies__list-item {
+        max-width: 465px;
+        height: 356px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+    }
+    
+}
+
+@media (max-width: 1537px) {
+    .companies__list {
+        gap: 10px;
+    }
+    
+    .companies__list-item {
+        max-width: 410px;
+        height: 356px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+    }   
+    
+}
+
+@media (max-width: 1522px) {
+    .companies__list {
+        gap: 10px;
+    }
+    
+    .companies__list-item {
+        max-width: 350px;
+        height: 356px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+    }
 }

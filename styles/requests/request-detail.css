@@ -30,6 +30,7 @@
 
 .request-chat__title-wrapper img {
     line-height: 1;
+    margin-top: 5px;
 }
 
 .request-chat__title,

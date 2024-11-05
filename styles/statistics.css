@@ -18,14 +18,14 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .diagrams-list__item {
     width: 100%;
-    max-width: 620px;
+    max-width: 810px;
     height: 540px;
     padding: 30px;
     border-radius: 15px;
@@ -102,7 +102,25 @@
     color: #8C8B98;
 }
 
-@media (max-width: 1525px) {
+@media (max-width: 1710px) {
+    .diagrams-list__item {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1610px) {
+    .diagrams-list__item {
+        max-width: 630px;
+    }
+}
+
+@media (max-width: 1540px) {
+    .diagrams-list__item {
+        max-width: 615px;
+    }
+}
+
+@media (max-width: 1515px) {
     .diagrams-list__item {
         max-width: 600px;
     }
@@ -110,6 +128,6 @@
 
 @media (max-width: 1490px) {
     .diagrams-list__item {
-        max-width: 580px;
+        max-width: 555px;
     }
 }

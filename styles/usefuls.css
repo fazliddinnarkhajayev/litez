@@ -7,11 +7,15 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid #C5C4CF;
 }
 
 .usefuls__route-list li {
-    border-bottom: 1px solid #C5C4CF;
     padding: 15px 5px;
+}
+
+.usefuls__route-list li:nth-child(1) {
+    padding-left: 0;
 }
 
 .usefuls__route-list li button {
@@ -38,7 +42,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -89,6 +92,8 @@
     max-width: 740px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .last-staty {
@@ -132,6 +137,7 @@
     text-align: left;
     color: #8C8B98;
     margin: 0;
+    white-space: nowrap;
 }
 
 .usefules__body-header-operations {
@@ -175,8 +181,7 @@
 }
 
 .usefules__body-image {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
     border-radius: 10px;
 }
 
@@ -191,7 +196,8 @@
 }
 
 .usefules__body-text-list li {
-    width: 710px;
+    width: 100%;
+    max-width: 710px;
     color: #000000;
 }
 
@@ -220,7 +226,8 @@
 }
 
 .last-staty__operations button {
-    width: 212px;
+    width: 100%;
+    max-width: 212px;
     font-size: 14px;
     text-align: center;
     color: white;
@@ -289,13 +296,13 @@
         padding: 10px 0;
     }
 
-    .usefuls__return-button { 
+    .usefuls__return-button {
         gap: 4px;
-        padding: 5px 10px 5px 5px;
     }
 
     .usefuls__route-list li button {
         padding: 5px;
+        border-radius: 6px;
     }
 
     .last-staty__operations {
@@ -313,18 +320,16 @@
         flex-direction: column;
     }
 
-    .usefules__body-image {
-        width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .usefules__body-text-list li {
-        width: 470px;
+
+}
+
+@media (max-width: 1475px) {
+    .usefuls__route-list {
+        border: none;
     }
 
-
-    .last-staty {
-        max-width: 360px;
+    .usefuls__route-list li {
+        border-bottom: 1px solid #C5C4CF;
     }
+
 }
