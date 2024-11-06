@@ -498,6 +498,7 @@ th.th-filter {
     color: #2196F3;
     padding-left: 3px;
     padding-right: 3px;
+    padding-bottom: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -514,6 +515,10 @@ th.th-filter {
 
 .td-data .inner button:hover span {
     border-color: #2196F3;
+}
+
+.td-data .inner button img {
+    margin-bottom: 2px;
 }
 
 .td-data .count {
