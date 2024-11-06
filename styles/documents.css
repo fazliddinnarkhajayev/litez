@@ -475,18 +475,19 @@ tr {
     display: flex;
     align-items: center !important;
     gap: 5px;
+}
+
+.inner-list .inner-list__item a {
+    display: block;
+    border-bottom: 1px solid transparent;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #2196F3;
+    text-decoration: none;
 }
 
-.inner-list .inner-list__item span {
-    display: block;
-    border-bottom: 1px solid transparent;
-}
-
-.inner-list .inner-list__item span:hover{
+.inner-list .inner-list__item a:hover{
     border-color: #2196F3;
 }
 

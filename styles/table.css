@@ -489,7 +489,7 @@ th.th-filter {
 }
 
 .td-data .inner {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 5px;
 }

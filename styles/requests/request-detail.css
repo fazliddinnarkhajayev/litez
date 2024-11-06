@@ -304,6 +304,12 @@
     color: #2196F3;
 }
 
+.request-detail__body ul li p.order-number a {
+    color: #2196F3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .request-detail__author ul li .account {
     display: flex;
     align-items: center;
