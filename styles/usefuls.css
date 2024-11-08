@@ -1,13 +1,21 @@
 .usefuls__route-list {
-    padding: 15px 0;
+    padding: 0;
     margin: 0;
     margin-bottom: 15px;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid #C5C4CF;
     width: 100%;
+    border-bottom: 1px solid #C5C4CF;
+}
+
+.usefuls__route-list li {
+    padding: 15px 5px;
+}
+
+.usefuls__route-list li:nth-child(1) {
+    padding-left: 0;
 }
 
 .usefuls__route-list li button {
@@ -34,7 +42,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -68,7 +75,7 @@
     line-height: 21px;
     color: #8C8B98;
     margin-top: 5px;
-} 
+}
 
 .usefuls__list li .date-wrapper p {
     margin: 0;
@@ -85,6 +92,8 @@
     max-width: 740px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .last-staty {
@@ -107,6 +116,7 @@
     gap: 8px;
     padding: 10px 20px 10px 12px;
     background-color: transparent;
+    white-space: nowrap;
 }
 
 .usefuls__return-button img {
@@ -126,6 +136,8 @@
     line-height: 21px;
     text-align: left;
     color: #8C8B98;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .usefules__body-header-operations {
@@ -169,8 +181,7 @@
 }
 
 .usefules__body-image {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
     border-radius: 10px;
 }
 
@@ -185,7 +196,8 @@
 }
 
 .usefules__body-text-list li {
-    width: 710px;
+    width: 100%;
+    max-width: 710px;
     color: #000000;
 }
 
@@ -202,18 +214,20 @@
     gap: 10px;
 }
 
-.usefules__body-app-list li img{
+.usefules__body-app-list li img {
     border-radius: 10px;
 }
 
 .last-staty__operations {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
 .last-staty__operations button {
-    width: 212px;
+    width: 100%;
+    max-width: 212px;
     font-size: 14px;
     text-align: center;
     color: white;
@@ -275,4 +289,47 @@
     color: #8C8B98;
     font-size: 14px;
     font-weight: 400;
+}
+
+@media (max-width: 1665px) {
+    .usefuls__route-list {
+        padding: 10px 0;
+    }
+
+    .usefuls__return-button {
+        gap: 4px;
+    }
+
+    .usefuls__route-list li button {
+        padding: 5px;
+        border-radius: 6px;
+    }
+
+    .last-staty__operations {
+        gap: 5px;
+    }
+
+    .last-staty__operations button {
+        width: 140px;
+    }
+
+    .usefules__body {
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 1475px) {
+    .usefuls__route-list {
+        border: none;
+    }
+
+    .usefuls__route-list li {
+        border-bottom: 1px solid #C5C4CF;
+    }
+
 }

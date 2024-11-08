@@ -433,19 +433,20 @@ th.th-filter {
     list-style-type: none;
     display: none;
     align-items: center;
-    gap: 6px;
+    /* gap: 6px; */
 }
 
 .td-data .route-list li {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
+    padding: 3px;
 }
 
 .td-data .route-list li button {
     padding: 0;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -463,6 +464,12 @@ th.th-filter {
 
 .td-data .route-list .route-list-text:hover {
     border-color: #2196F3;
+}
+
+.td-data .route-list .route-list-img {
+    height: 16px;
+    width: 16px;
+    border-bottom: 1px solid transparent;
 }
 
 .td-data .route-list .route-list-button {
@@ -484,7 +491,34 @@ th.th-filter {
 .td-data .inner {
     display: none;
     align-items: center;
-    gap: 7px;
+    gap: 5px;
+}
+
+.td-data .inner button {
+    color: #2196F3;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.td-data .inner button span {
+    display: inline-block;
+    line-height: 21px;
+    border-bottom: 1px solid transparent;
+}
+
+.td-data .inner button:hover span {
+    border-color: #2196F3;
+}
+
+.td-data .inner button img {
+    margin-bottom: 2px;
 }
 
 .td-data .count {
@@ -493,25 +527,6 @@ th.th-filter {
     line-height: 21px;
     text-align: left;
     color: #8C8B98;
-}
-
-.td-data .read-more,
-.td-data .orders-count,
-.copy {
-    padding: 3px;
-    color: #2196F3;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.copy {
-    border-bottom: 1px solid #2196F3;
-    padding-bottom: 0;
-}
-
-.td-data .read-more img {
-    margin-bottom: 2px;
 }
 
 .td-data-badge {

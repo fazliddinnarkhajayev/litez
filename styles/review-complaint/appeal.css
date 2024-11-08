@@ -6,6 +6,7 @@
 .append-to-order {
     width: 100%;
     max-width: 960px;
+    margin-right: 20px;
 }
 
 .append-to-order__title {
@@ -15,6 +16,9 @@
     color: #8C8B98;
     margin: 0;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .append-to-order__title a {
@@ -117,6 +121,7 @@
     list-style-type: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-left: 8px;
 }
@@ -138,6 +143,7 @@
     line-height: 21px;
     color: #000000;
     margin: 0;
+    white-space: nowrap;
 }
 
 .additional-info {
@@ -156,10 +162,12 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .operation-buttons button {
-    width: 217px;
+    width: 100%;
+    max-width: 217px;
     height: 40px;
     text-align: center;
     border: 1px solid #C5C4CF;

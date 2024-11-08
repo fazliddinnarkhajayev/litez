@@ -158,3 +158,13 @@
 .menu.close .menu__toggle-button p {
     display: none;
 }
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Style the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    border: none;
+  }

@@ -64,7 +64,6 @@
     display: flex;
     height: 100%;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -109,7 +108,6 @@
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #C5C4CF;
-    color: #F8F7FA;
     margin-bottom: 15px;
 }
 
@@ -141,4 +139,63 @@
 
 .operation-buttons button.save:hover {
     background-color: #42A5F5;
+}
+
+@media (max-width: 1540px) {
+    .user-info__list {
+        gap: 10px;
+    }
+
+    .user-info__list li {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .user_info__item-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+
+    .user-info__list li input,
+    .user-info__list li textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #C5C4CF;
+        margin-bottom: 15px;
+    }
+
+    .user-info__list li textarea {
+        height: 145px;
+    }
+
+    .operation-buttons button {
+        text-align: center;
+        border: 1px solid #C5C4CF;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    .operation-buttons button.cancel {
+        border-color: #C5C4CF;
+        color: #535260;
+    }
+
+    .operation-buttons button.save {
+        color: white;
+        background-color: #2196F3;
+    }
+
+    .operation-buttons button.save:hover {
+        background-color: #42A5F5;
+    }
+
 }
