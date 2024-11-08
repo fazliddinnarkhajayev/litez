@@ -119,7 +119,11 @@ tr {
     width: 74%;
     border-radius: 10px;
     background-color: #fff;
+}
 
+/* for collegue documents page */
+.documents-details.colleague {
+    width: 100%;
 }
 
 .documents-details__header {
@@ -221,6 +225,12 @@ tr {
 .documents-details__body-inner {
     max-width: 560px;
     width: 100%;
+}
+
+/* for collegue documents page */
+.documents-details__body-inner.colleague {
+    max-width: 100%;
+    margin-right: 20px;
 }
 
 .documents-details__body-inner .files-count {
@@ -365,7 +375,7 @@ tr {
 } 
 
 ::-webkit-scrollbar-track {
-    background-color: #F8F7FA; /* Change the background of the scrollbar track */
+    background-color: #E1E0EB; /* Change the background of the scrollbar track */
 }   
 
 .document-order-details {
