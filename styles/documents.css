@@ -225,6 +225,14 @@ tr {
     border-color: #2196F3;
 }
 
+.documents-details__operations button.download:hover, .documents-details__operations button.send:hover {
+    background-color: #F8F7FA;
+}
+
+.documents-details__operations button.upload:hover {
+    background-color: #42A5F5;
+}
+
 /* documents list body */
 
 .documents-details__body {
