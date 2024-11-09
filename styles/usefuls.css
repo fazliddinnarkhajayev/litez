@@ -30,6 +30,10 @@
     background-color: transparent;
 }
 
+.usefuls__route-list li button:hover {
+    background-color: #fff;
+}
+
 .usefuls__route-list li.active button {
     border-color: #C5C4CF;
     color: #000000;

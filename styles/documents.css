@@ -167,6 +167,10 @@ tr {
     background-color: transparent;
 }
 
+.documents-details__list li button:hover {
+    background-color: #F8F7FA;
+}
+
 .documents-details__list li {
     position: relative;
 }

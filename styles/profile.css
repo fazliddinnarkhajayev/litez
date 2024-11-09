@@ -50,6 +50,10 @@
     background-color: transparent;
 }
 
+.user-info_header .delete:hover {
+    background-color: #FFF;
+  }
+
 .user-info-list-wrapper {
     padding-top: 10px;
     padding-bottom: 10px;

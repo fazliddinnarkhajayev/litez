@@ -70,6 +70,10 @@
     color: #000000;
 }
 
+.filter-option a:hover {
+    color: #000000;
+}
+
 .default-filter-option.selected {
     border-color: #C5C4CF;
     color: #000000;

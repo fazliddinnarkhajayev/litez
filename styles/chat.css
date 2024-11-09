@@ -30,6 +30,10 @@
     font-weight: 600;
 }
 
+.review-complaint__routes-list li:hover {
+    background-color: #FFF;
+}
+
 .review-complaint__routes-list li a {
     font-size: 14px;
     font-weight: 600;

@@ -73,6 +73,10 @@
     border-radius: 10px;
 }
 
+.review-complaint__routes-list li:hover {
+    background-color: #FFF;
+}
+
 .review-complaint__routes-list li.active {
     border-color: #C5C4CF;
 }
@@ -178,6 +182,10 @@
     font-weight: 600;
     line-height: 20px;
     color: #535260;
+}
+
+.review-complaint-item__operations button:hover {
+    background-color: #F8F7FA;
 }
 
 .review-complaint-item__operations button.delete {
